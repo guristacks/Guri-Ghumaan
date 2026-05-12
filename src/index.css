@@ -352,6 +352,10 @@ header .container {
 .site2 {
   background: linear-gradient(10deg, #0000005a, #0171ae2e 40% 50%, #000);
 }
+.site0 .techStack p:nth-child(6),
+.site2 .techStack p:nth-child(6) {
+  display: none;
+}
 .workCta {
   margin-top: 50px;
 }
