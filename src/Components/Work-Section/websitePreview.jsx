@@ -3,8 +3,29 @@ import nexaWaveImg from "../../assets/Images/Work/nexa-wave-mockup.webp";
 import elenaMorganImg from "../../assets/Images/Work/elena-morgan-mockup.webp";
 import stacksImg from "../../assets/Images/Work/stacks-mockup.webp";
 import SiteCard from "./SiteCard";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(ScrollTrigger);
 
 const WebsitePreview = () => {
+  useGSAP(() => {
+    ["site0", "site1", "site2"].forEach((site) => {
+      gsap.from(`.${site}`, {
+        y: 40,
+        opacity: 0,
+        scale: 0.9,
+
+        scrollTrigger: {
+          trigger: `.${site}`,
+          start: "top 80%",
+          end: "top 50%",
+          scrub: true,
+        },
+      });
+    });
+  });
+
   const siteInfo = [
     {
       className: "site0",
