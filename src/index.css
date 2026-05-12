@@ -7,7 +7,7 @@ html {
   scroll-behavior: smooth;
 }
 html::-webkit-scrollbar {
-  display: none; /* Chrome, Edge, Safari */
+  display: none;
 }
 :root {
   --btnBg: #d0ff71;
