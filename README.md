@@ -42,6 +42,7 @@ This portfolio reflects a creative approach to frontend development — combinin
 - `React.js`
 - `GSAP`
 - `Lenis`
+- `Git & Github`
 
 ---
 
