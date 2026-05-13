@@ -1,90 +1,73 @@
 # 🚀 Guri Ghumaan — Frontend Developer
 
-Guri Ghumaan is a modern and interactive **developer portfolio website** built to showcase projects, frontend development skills, and creative web experiences.
+Guri Ghumaan is a modern frontend developer focused on creating **high-converting websites**, premium landing pages, and interactive web experiences that help brands stand out online.
 
-This portfolio is designed with a clean UI, smooth animations, responsive layouts, and performance-focused development practices to create a premium user experience across all devices.
+From smooth animations to clean UI design, every section of this portfolio is crafted to showcase modern development, strong visual storytelling, and performance-focused user experiences.
 
-The website highlights personal projects, technical skills, and modern frontend development capabilities using the latest web technologies.
+This portfolio reflects a creative approach to frontend development — combining aesthetics, motion, responsiveness, and modern technologies to build websites that not only look premium but also feel engaging and professional.
 
-
----
-
-## 📄 Sections Included
-
-- 🏠 Home  
-- 👨‍💻 About  
-- 🛠️ Skills  
-- 🚀 Projects  
-- 📩 Contact  
+**Live Website** 🔗 https://guri-ghumaan.vercel.app/
 
 ---
 
-## 📌 Features & ⚡ Optimization Techniques
+## ✨ What I Build
 
-- 💎 Modern and premium UI design  
-- 🎨 Clean and visually balanced layout  
-- ⚛️ Built with React.js component architecture  
-- 📱 Fully responsive (Mobile, Tablet, Desktop)  
-- 🎞️ Smooth scrolling experience using Lenis  
-- ✨ Advanced animations powered by GSAP  
-- 🖼️ Optimized images using modern formats  
-- ⚡ Lazy loading implementation  
-- 📦 Optimized and clean code structure  
-- 🚫 Reduced unnecessary re-renders  
-- 🎯 Performance-focused development approach  
+- 🚀 Modern Landing Pages  
+- 💎 Premium Portfolio Websites  
+- 🎨 Interactive Frontend Experiences  
+- ⚡ Smooth Animated Websites  
+- 📱 Fully Responsive Designs  
+- 🛍️ Brand & Business Websites  
+- 🎯 Conversion-Focused UI Design  
 
 ---
 
-## 🚀 Performance
+## 🔥 Why Work With Me?
 
-This website is optimized to provide fast, smooth, and efficient performance using modern frontend development best practices.
-
----
-
-## 📊 Lighthouse Scores
-
-### 💻 Desktop Score
-
-- Performance: **95+**  
-- Accessibility: **95+**  
-- Best Practices: **100**  
-- SEO: **100**
-
-### 📱 Mobile Score
-
-- Performance: **90+**  
-- Accessibility: **95+**  
-- Best Practices: **100**  
-- SEO: **100**
-
----
-
-## 👨‍💻 About Developer
-
-- **Name:** Gurwinder Singh (Guri Ghumaan)  
-- **Role:** Frontend Web Developer  
-- **Focus:** Creating modern, interactive, and performance-driven web experiences  
+- Clean and modern UI/UX approach  
+- Smooth GSAP-powered animations  
+- Responsive design for all devices  
+- Fast-loading and optimized websites  
+- Attention to detail and visual hierarchy  
+- Modern React.js development workflow  
+- Interactive experiences that keep users engaged  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- `HTML5`  
-- `CSS3`  
-- `JavaScript`  
-- `React.js`  
-- `GSAP` — Animation Library  
-- `Lenis` — Smooth Scrolling Library  
+- `HTML5`
+- `CSS3`
+- `JavaScript`
+- `React.js`
+- `GSAP`
+- `Lenis`
 
 ---
 
-## 📬 Contact
+## ⚡ Features Included In My Projects
 
-- **GitHub:** `https://github.com/guristacks`  
-- **LinkedIn:** `https://www.linkedin.com/in/guristacks`  
+- Premium modern layouts  
+- Interactive animations and transitions  
+- Smooth scrolling experiences  
+- Optimized performance and SEO  
+- Mobile-first responsive development  
+- Reusable and scalable code structure  
+- Clean and maintainable frontend architecture  
+
+---
+
+## 📬 Contact Me
+
+If you're looking for a modern website, landing page, or interactive frontend experience, feel free to reach out.
+
+- **GitHub:** https://github.com/guristacks  
+- **LinkedIn:** https://www.linkedin.com/in/guristacks  
+- **Email:** [guristacks@gmail.com](mailto:guristacks@gmail.com)
+- **Instagram:** https://www.instagram.com/guri_ghumxn 
 
 ---
 
 ## 🌟 Support
 
-If you like this project, consider giving it a ⭐ on GitHub!
+If you like this portfolio, consider giving it a ⭐ on GitHub.
