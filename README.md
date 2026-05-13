@@ -43,6 +43,7 @@ This portfolio reflects a creative approach to frontend development — combinin
 - `GSAP`
 - `Lenis`
 - `Git & Github`
+- `Deployment`
 
 ---
 
