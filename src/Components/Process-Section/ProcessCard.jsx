@@ -1,4 +1,6 @@
 import React from "react";
+import { MoveUpRight } from "lucide-react";
+
 
 const ProcessCard = (props) => {
   return (
@@ -8,7 +10,7 @@ const ProcessCard = (props) => {
         <div className="process-inner flex f-clmn">
           <p>{props.processDetails}</p>
           <a className="primaryBtn" href="#">
-            Learn More <i className="ri-arrow-right-up-long-line"></i>
+            Learn More <MoveUpRight size={14} strokeWidth={2} />
           </a>
         </div>
       </div>

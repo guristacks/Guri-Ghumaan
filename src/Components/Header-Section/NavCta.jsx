@@ -1,4 +1,5 @@
 import React from "react";
+import { MoveUpRight } from "lucide-react";
 
 const NavCta = () => {
   return (
@@ -6,7 +7,7 @@ const NavCta = () => {
       <ul className="cta flex ac">
         <li>
           <a href="contact.html">
-            Contact <i className="ri-arrow-right-up-long-line"></i>
+            Contact <MoveUpRight size={14} strokeWidth={2} />
           </a>
         </li>
       </ul>
