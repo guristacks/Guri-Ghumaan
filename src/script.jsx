@@ -1,65 +1,36 @@
-import React, { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "lenis";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const Script = () => {
+  const lenisRef = useRef(null);
+
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+    window.history.scrollRestoration = "manual";
 
-    // Debounce Function
-    const debounce = (fn, wait = 150) => {
-      let t;
+    // LENIS
+    const lenis = new Lenis({
+      duration: 1.2,
+      smoothWheel: true,
+      smoothTouch: true,
+      touchMultiplier: 2,
+    });
 
-      return (...args) => {
-        clearTimeout(t);
+    lenisRef.current = lenis;
 
-        t = setTimeout(() => {
-          fn(...args);
-        }, wait);
-      };
+    lenis.on("scroll", ScrollTrigger.update);
+
+    const update = (time) => {
+      lenis.raf(time * 1000);
     };
 
-    // Lenis Smooth Scroll
-    let lenis;
-    let rafFn;
+    gsap.ticker.add(update);
+    gsap.ticker.lagSmoothing(0);
 
-    const initLenis = () => {
-      if (window.innerWidth > 1024 && !lenis) {
-        lenis = new Lenis();
-
-        lenis.on("scroll", ScrollTrigger.update);
-
-        rafFn = (time) => {
-          lenis.raf(time * 1000);
-        };
-
-        gsap.ticker.add(rafFn);
-        gsap.ticker.lagSmoothing(0);
-      }
-    };
-
-    const destroyLenis = () => {
-      if (lenis) {
-        gsap.ticker.remove(rafFn);
-        lenis.destroy();
-        lenis = null;
-      }
-    };
-
-    initLenis();
-
-    const handleResize = debounce(() => {
-      if (window.innerWidth > 1024) {
-        initLenis();
-      } else {
-        destroyLenis();
-      }
-    }, 200);
-
-    window.addEventListener("resize", handleResize);
-
-    // Mobile Navbar Animation
+    // MOBILE NAVBAR
     const menuBtn = document.querySelector(".menuBtn");
     const closeBtn = document.querySelector(".closeBtn");
     const list = document.querySelectorAll(".nav-links li");
@@ -70,9 +41,9 @@ const Script = () => {
 
       gsap.to(list, {
         display: "flex",
-        y: "10px",
-        duration: 0.1,
-        stagger: -0.1,
+        y: 10,
+        duration: 0.2,
+        stagger: 0.05,
       });
     };
 
@@ -82,9 +53,9 @@ const Script = () => {
 
       gsap.to(list, {
         display: "none",
-        y: "-10px",
-        duration: 0.1,
-        stagger: -0.1,
+        y: -10,
+        duration: 0.2,
+        stagger: -0.05,
       });
     };
 
@@ -93,11 +64,10 @@ const Script = () => {
       closeBtn?.addEventListener("click", closeMenu);
     }
 
-    // Hero Parallax
+    // HERO PARALLAX
     gsap.to(".name", {
       y: -120,
       ease: "none",
-
       scrollTrigger: {
         trigger: ".hero",
         start: "top top",
@@ -106,11 +76,10 @@ const Script = () => {
       },
     });
 
-    // Work Section Animation
+    // WORK SECTION
     gsap.from(".work-title", {
       y: 40,
       opacity: 0,
-
       scrollTrigger: {
         trigger: ".work-title",
         start: "top 80%",
@@ -119,12 +88,11 @@ const Script = () => {
       },
     });
 
-    [".site0", ".site1", ".site2"].forEach((site) => {
+    gsap.utils.toArray(".site").forEach((site) => {
       gsap.from(site, {
         y: 40,
         opacity: 0,
         scale: 0.9,
-
         scrollTrigger: {
           trigger: site,
           start: "top 80%",
@@ -134,16 +102,58 @@ const Script = () => {
       });
     });
 
-    // Cleanup
-    return () => {
-      window.removeEventListener("resize", handleResize);
+    // PROCESS SECTION
+    gsap.from(".process-title", {
+      y: 40,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".process-title",
+        start: "top 80%",
+        end: "top 50%",
+        scrub: true,
+      },
+    });
 
-      destroyLenis();
+    gsap.utils.toArray(".process").forEach((pro) => {
+      gsap.from(pro, {
+        y: 40,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: pro,
+          start: "top 90%",
+          end: "top 60%",
+          scrub: true,
+        },
+      });
+    });
+
+    gsap.utils.toArray(".process").forEach((card, index) => {
+      if (index !== 4) {
+        gsap.to(card, {
+          scale: 0.8,
+          filter: "blur(3px)",
+          ease: "none",
+          scrollTrigger: {
+            trigger: card,
+            start: "top 10%",
+            scrub: true,
+          },
+        });
+      }
+    });
+
+    ScrollTrigger.refresh();
+
+    // CLEANUP
+    return () => {
+      gsap.ticker.remove(update);
+
+      lenis.destroy();
+
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
 
       menuBtn?.removeEventListener("click", openMenu);
       closeBtn?.removeEventListener("click", closeMenu);
-
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
 

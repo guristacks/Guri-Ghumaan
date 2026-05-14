@@ -7,7 +7,17 @@ html {
   scroll-behavior: smooth;
 }
 html::-webkit-scrollbar {
-  display: none;
+  display: none; /* Chrome, Edge, Safari */
+}
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
 }
 :root {
   --btnBg: #d0ff71;
@@ -73,6 +83,7 @@ h2 {
   line-height: 1.2;
   font-family: Oswald, Montserrat;
   margin-bottom: 80px;
+  color: #b3b3b3;
 }
 h3 {
   font-size: clamp(1.5rem, 3vw, 2.2rem);
@@ -250,7 +261,8 @@ header .container {
 .work {
   padding: 100px 0px;
 }
-.work h2 {
+.work h2,
+.process h2 {
   width: fit-content;
   text-align: center;
 }
@@ -339,6 +351,10 @@ header .container {
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.071);
 }
+.site0 .techStack p:nth-child(6),
+.site2 .techStack p:nth-child(6) {
+  display: none;
+}
 .siteBtns {
   gap: 15px;
   margin-top: 10px;
@@ -352,10 +368,6 @@ header .container {
 .site2 {
   background: linear-gradient(10deg, #0000005a, #0171ae2e 40% 50%, #000);
 }
-.site0 .techStack p:nth-child(6),
-.site2 .techStack p:nth-child(6) {
-  display: none;
-}
 .workCta {
   margin-top: 50px;
 }
@@ -367,8 +379,65 @@ header .container {
   font-size: 10px;
 }
 
+/* SECTION - 5 PROCESS */
+
+.allProcess {
+  position: relative;
+}
+.process {
+  padding: 50px 10px;
+  height: fit-content;
+  position: sticky;
+  margin-bottom: 50px;
+  color: #ffffff;
+  background: radial-gradient(
+    circle at 50% -40%,
+    #08ffff5a  0%,
+    transparent 60%
+  );
+  border-radius: 20px;
+  border: 1px solid #ffffff2e;
+}
+.process-content {
+  width: 70%;
+}
+.process-inner {
+  align-items: end;
+  padding-left: 10rem;
+  padding-right: 8rem;
+}
+.process-content h3 {
+  font-size: clamp(1.5rem, 4.5vw, 4rem);
+  margin-bottom: 30px;
+}
+.process-content p {
+  color: var(--lightWhiteP);
+  text-align: right;
+}
+.process-numbering {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.process-numbering h2 {
+  margin: 0;
+  color: #ffffff4a;
+  font-size: clamp(2.5rem, 33vw, 20rem);
+}
+.process a {
+  margin-top: 30px;
+}
+.process a i {
+  font-size: 16px;
+}
+
 /* 📲 Tablets */
 @media (max-width: 1024px) {
+  .process-inner {
+    text-align: right;
+    padding-left: 5rem;
+    padding-right: 0rem;
+  }
 }
 
 /* 📱 Large Mobile */
@@ -452,6 +521,18 @@ header .container {
   .techStack p {
     padding: 4px 10px;
   }
+
+  /* SECTION - PROCESS */
+
+  .process-inner {
+    text-align: left;
+    align-items: start;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .process-inner p {
+    text-align: left;
+  }
 }
 
 /* 📱 Small Mobile */
@@ -459,5 +540,11 @@ header .container {
   .threeImages img {
     object-position: center;
     height: 250px;
+  }
+
+  /* SECTION - 5 PROCESS */
+
+  .process-content {
+    width: 75%;
   }
 }
