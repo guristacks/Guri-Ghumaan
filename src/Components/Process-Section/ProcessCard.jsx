@@ -9,7 +9,7 @@ const ProcessCard = (props) => {
         <h3>{props.processName}</h3>
         <div className="process-inner flex f-clmn">
           <p>{props.processDetails}</p>
-          <a className="primaryBtn" href="#">
+          <a href="#">
             Learn More <MoveUpRight size={14} strokeWidth={2} />
           </a>
         </div>

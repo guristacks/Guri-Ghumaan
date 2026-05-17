@@ -240,6 +240,9 @@ header .container {
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(0.9);
+  position: sticky;
+  top: 0;
+  overflow: hidden;
 }
 .f-name {
   width: 100%;
@@ -262,6 +265,11 @@ header .container {
 
 .work {
   padding: 100px 0px;
+  position: sticky;
+  margin-top: -10px;
+  z-index: 2;
+  border-radius: 20px 20px 0px 0px;
+  background-color: #222;
 }
 .work h2,
 .process h2 {
@@ -279,7 +287,8 @@ header .container {
   border-radius: 30px;
   align-items: center;
   border: 1px solid #ffffff1f;
-  background: linear-gradient(10deg, black, #c300ff22 40% 50%, #000);
+  background: #000;
+  /* background: radial-gradient(#00a0ff14, #000000); */
 }
 .site img {
   transition: var(--transition);
@@ -308,7 +317,7 @@ header .container {
   gap: 20px;
   margin-bottom: 10px;
 }
-.identityp {
+.identity p {
   font-size: 15px;
   color: #fff;
   border: 1px solid #ffffff29;
@@ -353,18 +362,12 @@ header .container {
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.071);
 }
-.site0 .techStack p:nth-child(6){
+.site0 .techStack p:nth-child(6) {
   display: none;
 }
 .siteBtns {
   gap: 15px;
   margin-top: 10px;
-}
-.site1 {
-  background: linear-gradient(10deg, black, #ffffff20 40% 50%, #000);
-}
-.site2 {
-  background: linear-gradient(10deg, #0000005a, #0171ae2e 40% 50%, #000);
 }
 .workCta {
   margin-top: 50px;
@@ -376,6 +379,14 @@ header .container {
 
 /* SECTION - 5 PROCESS */
 
+.processSec {
+  padding: 100px 0px;
+  border-radius: 20px 20px 0px 0px;
+  position: sticky;
+  z-index: 3;
+  margin-top: -17px;
+  background: #000;
+}
 .allProcess {
   position: relative;
 }
@@ -384,14 +395,9 @@ header .container {
   height: fit-content;
   position: sticky;
   margin-bottom: 50px;
-  color: #ffffff;
-  background: radial-gradient(
-    circle at 50% -40%,
-    #08ffff5a 0%,
-    transparent 60%
-  );
+  color: #000000;
+  background: #c7c7c7;
   border-radius: 20px;
-  border: 1px solid #ffffff2e;
 }
 .process-content {
   width: 70%;
@@ -406,7 +412,7 @@ header .container {
   margin-bottom: 30px;
 }
 .process-content p {
-  color: var(--lightWhiteP);
+  color: var(--lightBlackP);
   text-align: right;
 }
 .process-numbering {
@@ -416,7 +422,7 @@ header .container {
 }
 .process-numbering h2 {
   margin: 0;
-  color: #ffffff4a;
+  color: #0000004a;
   font-size: clamp(2.5rem, 33vw, 20rem);
 }
 .process a {
@@ -424,6 +430,8 @@ header .container {
   display: flex;
   align-items: center;
   gap: 3px;
+  text-decoration: underline;
+  padding-bottom: 10px;
 }
 
 /* 📲 Tablets */
