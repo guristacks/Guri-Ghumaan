@@ -4,10 +4,28 @@ import elenaMorganImg from "../../assets/Images/Work/elena-morgan-mockup.webp";
 import stacksImg from "../../assets/Images/Work/stacks-mockup.webp";
 import SiteCard from "./SiteCard";
 
-
 const WebsitePreview = () => {
-
   const siteInfo = [
+    {
+      className: "site2",
+      img: stacksImg,
+      identity: "Landing Page",
+      tag1: "• Agency",
+      tag2: "2026",
+      title: "Stacks - IT Agency",
+      description:
+        "Stacks creates modern websites, seamless user experiences, and powerful digital solutions for businesses.",
+      tech: "Teck Stack",
+      stack1: "React.js",
+      stack2: "javaScript",
+      stack3: "Gsap",
+      stack4: "Html5",
+      stack5: "Css3",
+      stack6: "Lenis",
+      liveLink: "https://stacks-design-development.vercel.app/",
+      liveLinkCta: "stacks-design...",
+      githubLink: "https://github.com/guristacks/Stacks-design-development",
+    },
     {
       className: "site0",
       img: nexaWaveImg,
@@ -18,8 +36,8 @@ const WebsitePreview = () => {
       description:
         "Nexa Wave Agency builds modern websites, powerful brands, and digital experiences that help businesses grow online.",
       tech: "Teck Stack",
-      stack1: "Html",
-      stack2: "Css",
+      stack1: "Html5",
+      stack2: "Css3",
       stack3: "javaScript",
       stack4: "Gsap",
       stack5: "Lenis",
@@ -39,32 +57,13 @@ const WebsitePreview = () => {
       tech: "Teck Stack",
       stack1: "Next.js",
       stack2: "React.js",
-      stack3: "typeScript",
-      stack4: "javaScript",
-      stack5: "Html + Css",
-      stack6: "Gsap",
+      stack3: "Gsap",
+      stack4: "typeScript",
+      stack5: "javaScript",
+      stack6: "Html5 + Css3",
       liveLink: "https://elena-morgan.vercel.app/",
       liveLinkCta: "elena-morgan...",
       githubLink: "https://github.com/guristacks/Elena-Morgan-Photography",
-    },
-    {
-      className: "site2",
-      img: stacksImg,
-      identity: "Landing Page",
-      tag1: "• Agency",
-      tag2: "2026",
-      title: "Stacks - IT Agency",
-      description:
-        "Stacks creates modern websites, seamless user experiences, and powerful digital solutions for businesses.",
-      tech: "Teck Stack",
-      stack1: "Html",
-      stack2: "Css",
-      stack3: "javaScript",
-      stack4: "Gsap",
-      stack5: "Lenis",
-      liveLink: "https://stacks-design-development.vercel.app/",
-      liveLinkCta: "stacks-design...",
-      githubLink: "https://github.com/guristacks/Stacks-design-development",
     },
   ];
 
