@@ -1,6 +1,5 @@
 import React from "react";
 import WorkTitle from "./workTitle";
-import WorkCta from "./workCta";
 import WebsitePreview from "./websitePreview";
 
 const Work = () => {
@@ -10,7 +9,6 @@ const Work = () => {
       <div className="container">
         <WorkTitle />
         <WebsitePreview />
-        <WorkCta />
       </div>
     </section>
   );
