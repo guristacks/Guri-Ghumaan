@@ -266,7 +266,6 @@ header .container {
 .work {
   padding: 100px 0px;
   position: sticky;
-  margin-top: -10px;
   z-index: 2;
   border-radius: 20px 20px 0px 0px;
   background-color: #222;
@@ -371,6 +370,7 @@ header .container {
 }
 .workCta {
   margin-top: 50px;
+  text-decoration: underline;
 }
 .workCta a sup {
   margin-left: 3px;
@@ -387,6 +387,9 @@ header .container {
   margin-top: -17px;
   background: #000;
 }
+.processSec h2 {
+  color: #899388;
+}
 .allProcess {
   position: relative;
 }
@@ -396,7 +399,7 @@ header .container {
   position: sticky;
   margin-bottom: 50px;
   color: #000000;
-  background: #c7c7c7;
+  background: #899388;
   border-radius: 20px;
 }
 .process-content {
@@ -410,9 +413,11 @@ header .container {
 .process-content h3 {
   font-size: clamp(1.5rem, 4.5vw, 4rem);
   margin-bottom: 30px;
+  border-bottom: 1px solid #3a3a3a;
+  border-right: 1px solid #3a3a3a;
 }
 .process-content p {
-  color: var(--lightBlackP);
+  color: rgb(39 39 39);
   text-align: right;
 }
 .process-numbering {
@@ -422,7 +427,7 @@ header .container {
 }
 .process-numbering h2 {
   margin: 0;
-  color: #0000004a;
+  color: #0000004a !important;
   font-size: clamp(2.5rem, 33vw, 20rem);
 }
 .process a {
