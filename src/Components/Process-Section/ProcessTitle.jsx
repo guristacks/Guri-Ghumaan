@@ -4,7 +4,7 @@ const ProcessTitle = () => {
   return (
     <h2 className="process-title">
       {" "}
-      HOW I ━ <br /> APPROACH EVERY <br /> PROJECTS ?
+      HOW I ━ <br /> APPROACH EVERY <br /> PROJECT ?
     </h2>
   );
 };
