@@ -82,8 +82,8 @@ const Script = () => {
       opacity: 0,
       scrollTrigger: {
         trigger: ".work-title",
-        start: "top 80%",
-        end: "top 50%",
+        start: "top 90%",
+        end: "top 60%",
         scrub: true,
       },
     });
@@ -95,8 +95,8 @@ const Script = () => {
         scale: 0.9,
         scrollTrigger: {
           trigger: site,
-          start: "top 80%",
-          end: "top 50%",
+          start: "top 90%",
+          end: "top 60%",
           scrub: true,
         },
       });
@@ -108,8 +108,8 @@ const Script = () => {
       opacity: 0,
       scrollTrigger: {
         trigger: ".process-title",
-        start: "top 80%",
-        end: "top 50%",
+        start: "top 90%",
+        end: "top 60%",
         scrub: true,
       },
     });
