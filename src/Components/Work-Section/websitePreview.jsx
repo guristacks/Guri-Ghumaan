@@ -1,8 +1,8 @@
 import React from "react";
 import nexaWaveImg from "../../assets/Images/Work/nexa-mockup.webp";
-import elenaMorganImg from "../../assets/Images/Work/Elena-Morgan-Mockup.webp";
-import stacksImg from "../../assets/Images/Work/Stacks-Mockup.webp";
-import aurumImg from "../../assets/Images/Work/Aurum-Mockup.webp";
+import elenaMorganImg from "../../assets/Images/Work/elena-mockup.webp";
+import stacksImg from "../../assets/Images/Work/stacks-mockup.webp";
+import aurumImg from "../../assets/Images/Work/aurum-mockup.webp";
 import SiteCard from "./SiteCard";
 
 const WebsitePreview = () => {
