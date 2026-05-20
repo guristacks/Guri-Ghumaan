@@ -1,7 +1,8 @@
 import React from "react";
-import nexaWaveImg from "../../assets/Images/Work/nexa-wave-mockup.webp";
-import elenaMorganImg from "../../assets/Images/Work/elena-morgan-mockup.webp";
-import stacksImg from "../../assets/Images/Work/stacks-mockup.webp";
+import nexaWaveImg from "../../assets/Images/Work/Nexa-Wave-Mockup.webp";
+import elenaMorganImg from "../../assets/Images/Work/Elena-Morgan-Mockup.webp";
+import stacksImg from "../../assets/Images/Work/Stacks-Mockup.webp";
+import aurumImg from "../../assets/Images/Work/Aurum-Mockup.webp";
 import SiteCard from "./SiteCard";
 
 const WebsitePreview = () => {
@@ -46,6 +47,25 @@ const WebsitePreview = () => {
       githubLink: "https://github.com/guristacks/Nexa-Wave-Agency",
     },
     {
+      className: "site3",
+      img: aurumImg,
+      identity: "Landing Page",
+      tag1: "• Jwellery Shop",
+      tag2: "2026",
+      title: "Aurum Luxe - Jewellery",
+      description:
+        "Crafting luxurious, handcrafted jewellery pieces blending modern elegance, premium materials for every occasion.",
+      tech: "Teck Stack",
+      stack1: "Html5",
+      stack2: "Css3",
+      stack3: "javaScript",
+      stack4: "Gsap",
+      stack5: "Lenis",
+      liveLink: "https://aurum-luxe-jewellery.vercel.app/",
+      liveLinkCta: "aurum-luxe... ",
+      githubLink: "https://github.com/guristacks/Aurum-Luxe-Jewellery",
+    },
+    {
       className: "site1",
       img: elenaMorganImg,
       identity: "Portfolio",
@@ -53,7 +73,7 @@ const WebsitePreview = () => {
       tag2: "2026",
       title: "Elena Morgan - Photography",
       description:
-        "Elena Morgan captures timeless portraits, emotional moments, and cinematic stories.",
+        "Elena Morgan Capturing timeless emotions, elegant portraits, and cinematic stories through natural light, creativity, and authenticity.",
       tech: "Teck Stack",
       stack1: "Next.js",
       stack2: "React.js",
