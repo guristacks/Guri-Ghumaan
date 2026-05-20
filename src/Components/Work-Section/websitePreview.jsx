@@ -15,7 +15,7 @@ const WebsitePreview = () => {
       tag2: "2026",
       title: "Stacks - IT Agency",
       description:
-        "Stacks creates modern websites, seamless user experiences, and powerful digital solutions for businesses.",
+        "Designing modern websites and powerful digital products combining creativity, performance, seamless user experiences, and scalable development.",
       tech: "Teck Stack",
       stack1: "React.js",
       stack2: "javaScript",
@@ -35,8 +35,7 @@ const WebsitePreview = () => {
       tag2: "2026",
       title: "Nexa Wave - Ai Agency",
       description:
-        "Nexa Wave Agency builds modern websites, powerful brands, and digital experiences that help businesses grow online.",
-      tech: "Teck Stack",
+        "Building intelligent AI solutions, automation systems, and digital experiences helping businesses scale faster with innovation.",
       stack1: "Html5",
       stack2: "Css3",
       stack3: "javaScript",
@@ -54,7 +53,7 @@ const WebsitePreview = () => {
       tag2: "2026",
       title: "Aurum Luxe - Jewellery",
       description:
-        "Crafting luxurious, handcrafted jewellery pieces blending modern elegance, premium materials for every occasion.",
+        "Crafting luxurious, handcrafted jewellery pieces blending modern elegance, premium materials, and timeless sophistication for every occasion.",
       tech: "Teck Stack",
       stack1: "Html5",
       stack2: "Css3",
