@@ -1,5 +1,5 @@
 import React from "react";
-import nexaWaveImg from "../../assets/Images/Work/Nexa-Wave-Mockup.webp";
+import nexaWaveImg from "../../assets/Images/Work/nexa-mockup.webp";
 import elenaMorganImg from "../../assets/Images/Work/Elena-Morgan-Mockup.webp";
 import stacksImg from "../../assets/Images/Work/Stacks-Mockup.webp";
 import aurumImg from "../../assets/Images/Work/Aurum-Mockup.webp";
