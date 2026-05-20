@@ -296,6 +296,10 @@ header .container {
   transform: scale(1.02);
   opacity: 0.7;
 }
+.threeImages{
+  border-radius: 10px;
+  overflow: hidden;
+}
 .threeImages,
 .siteContent {
   gap: 10px;
@@ -361,7 +365,8 @@ header .container {
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.071);
 }
-.site0 .techStack p:nth-child(6) {
+.site0 .techStack p:nth-child(6), 
+.site3 .techStack p:nth-child(6) {
   display: none;
 }
 .siteBtns {
