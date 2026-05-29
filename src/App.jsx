@@ -5,6 +5,7 @@ import Work from "./Components/Work-Section/work";
 import Script from "./script";
 import { Analytics } from "@vercel/analytics/react";
 import Process from "./Components/Process-Section/Process";
+import Footer from "./Components/Footer-Section/Footer";
 
 const App = () => {
   return (
@@ -20,6 +21,8 @@ const App = () => {
         <Work />
         <Process />
       </main>
+
+      <Footer />
     </>
   );
 };
