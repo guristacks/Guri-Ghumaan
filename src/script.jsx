@@ -64,18 +64,6 @@ const Script = () => {
       closeBtn?.addEventListener("click", closeMenu);
     }
 
-    // HERO PARALLAX
-    gsap.to(".name", {
-      y: -120,
-      ease: "none",
-      scrollTrigger: {
-        trigger: ".hero",
-        start: "top top",
-        end: "bottom top",
-        scrub: true,
-      },
-    });
-
     // WORK SECTION
     gsap.from(".work-title", {
       y: 40,

@@ -1,4 +1,4 @@
-# 🚀 Guri Ghumaan — Frontend Developer
+## 🚀 Guri Ghumaan — Frontend Developer
 
 Guri Ghumaan is a modern frontend developer focused on creating **high-converting websites**, premium landing pages, and interactive web experiences that help brands stand out online.
 
@@ -36,10 +36,10 @@ This portfolio reflects a creative approach to frontend development — combinin
 
 ## 🛠️ Tech Stack
 
+- `React.js`
+- `JavaScript`
 - `HTML5`
 - `CSS3`
-- `JavaScript`
-- `React.js`
 - `GSAP`
 - `Lenis`
 - `Git & Github`
