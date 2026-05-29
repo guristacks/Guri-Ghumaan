@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import HeroContent from "./HeroContent";
+import HeroContent from "./heroContent";
 import HeroAnime from "./HeroAnime";
 
 const Hero = () => {
