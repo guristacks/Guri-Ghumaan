@@ -279,8 +279,8 @@ header .container {
 .hero {
   height: 100vh;
   padding-top: 100px;
-  background-image: url("https://i.pinimg.com/1200x/d9/e1/4c/d9e14c251d468cc476c0ec33f969b5da.jpg");
-  background-position: 0% 45%;
+  background-image: url("https://i.pinimg.com/1200x/62/ee/6c/62ee6c8f6fda25185a1c91ba8dfb3971.jpg");
+  background-position: 0% 85%;
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(0.9);
@@ -530,6 +530,7 @@ footer {
   z-index: 4;
   color: #ffffff;
 }
+
 .foot-text {
   padding-bottom: 100px;
   border-bottom: 1px solid #333;
@@ -542,16 +543,15 @@ footer {
 }
 .footCta {
   border-radius: 50%;
-  padding: 70px 25px;
+  padding: 71px 25px;
   font-size: 18px;
   font-weight: 500;
   background: #a3a3a3;
   color: #000000;
   position: absolute;
   bottom: -77px;
-  left: 50%;
+  left: 70%;
   z-index: 5;
-  transform: translateX(-50%);
   transition: var(--transition);
 }
 .footCta:hover {
@@ -722,7 +722,7 @@ footer {
 
   /* FOOTER */
   .foot-text p {
-    font-size: 14vw;
+    font-size: 12vw;
     line-height: 1.3;
   }
   .footCta {
@@ -738,10 +738,11 @@ footer {
     gap: 30px;
     flex-direction: column-reverse;
   }
-  .reserve, .socialLinks, .footLinks {
+  .reserve,
+  .socialLinks,
+  .footLinks {
     width: 100%;
   }
-
 }
 
 /* 📱 Small Mobile */
@@ -762,9 +763,9 @@ footer {
   .footCta {
     padding: 60px 20px;
     font-size: 16px;
-    transform: translate(0%, 0);
+    left: 50%;
   }
-  .footMiddle a{
+  .footMiddle a {
     width: 100%;
     text-align: center;
     padding: 20px 30px;
