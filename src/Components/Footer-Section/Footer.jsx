@@ -7,12 +7,9 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content f-clmn">
           <div className="foot-text flex ac sb">
-            <div className="footImg flex">
-              <img src="" alt="" />
               <p>
                 Let's Work <br /> Together
               </p>
-            </div>
 
             <div className="footArrow">
               <svg
@@ -38,22 +35,22 @@ const Footer = () => {
           </div>
 
           <div className="footMiddle flex ac">
-            <a target="_blank" href="mailto:guristacks@gmail.com">guristacks@gmail.com</a>
-            <a target="_blank" href="tel:+917696992194">+91 7696 992194</a>
+            <a target="_blank" rel="noopener noreferrer" href="mailto:guristacks@gmail.com">guristacks@gmail.com</a>
+            <a target="_blank" rel="noopener noreferrer" href="tel:+917696992194">+91 7696 992194</a>
           </div>
 
           <div className="footBottom flex ac sb">
             <div className="reserve flex f-clmn">
               <small> Version</small>
-              <p>© 2024 Guri Ghumaan. All rights reserved.</p>
+              <p>© 2026 Guri Ghumaan. All rights reserved.</p>
             </div>
 
             <div className="footLinks flex f-clmn ac sb">
               <small> Socials</small>
               <div className="socialLinks flex ac">
-                <a target="_blank" href="https://www.linkedin.com/in/guristacks">LinkedIn</a>
-                <a target="_blank" href="https://www.instagram.com/guri_ghumxn/">Instagram</a>
-                <a target="_blank" href="https://github.com/guristacks">GitHub</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/guristacks">LinkedIn</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/guri_ghumxn/">Instagram</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/guristacks">GitHub</a>
               </div>
             </div>
           </div>
