@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import "./hero.css";
 import HeroContent from "./heroContent";
 import HeroAnime from "./HeroAnime";
 
