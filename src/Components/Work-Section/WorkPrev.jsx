@@ -24,14 +24,14 @@ const projects = [
     {
         title: "Aurum Luxe",
         type: "Jewellery Shop Landing Page",
-        link: "https://aurum-luxe.vercel.app/",
+        link: "https://aurum-luxe-jewellery.vercel.app/",
         image: Aurum,
         date: "2026"
     },
     {
         title: "Elena Morgan",
         type: "Photography Portfolio",
-        link: "https://elena-morgan-photography.vercel.app/",
+        link: "https://elena-morgan.vercel.app/",
         image: Elena,
         date: "2026"
     },
