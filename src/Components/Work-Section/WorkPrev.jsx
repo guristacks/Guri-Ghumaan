@@ -12,24 +12,28 @@ const projects = [
         type: "IT Agency Landing Page",
         link: "https://stacks-design-development.vercel.app/",
         image: Stacks,
+        date: "2026"
     },
     {
         title: "Nexa Wave",
         type: "Ai Agency Website",
         link: "https://nexa-wave-agency.vercel.app/",
         image: NexaWave,
+        date: "2026"
     },
     {
         title: "Aurum Luxe",
         type: "Jewellery Shop Landing Page",
         link: "https://aurum-luxe.vercel.app/",
         image: Aurum,
+        date: "2026"
     },
     {
         title: "Elena Morgan",
         type: "Photography Portfolio",
         link: "https://elena-morgan-photography.vercel.app/",
         image: Elena,
+        date: "2026"
     },
 ];
 
@@ -105,7 +109,10 @@ export default function WorkPreview() {
                                 className="mobile-card" >
                                 <img src={item.image} alt={item.title} />
                                 <h3>{item.title}</h3>
-                                <p>{item.type}</p>
+                                <div className="itemAndDate flex ac sb">
+                                    <p>{item.type}</p>
+                                    <p>{item.date}</p>
+                                </div>
                             </a>
                         ))}
                     </div>
