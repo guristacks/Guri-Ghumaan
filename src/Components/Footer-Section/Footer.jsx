@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowDownLeft } from "lucide-react";
+import "./Footer.css";
 import FooterTop from "./FooterTop";
 import FooterMiddle from "./FooterMiddle";
 import FooterBottom from "./FooterBottom";
