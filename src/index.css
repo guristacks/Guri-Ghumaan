@@ -284,8 +284,6 @@ header .container {
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(0.9);
-  position: sticky;
-  top: 0;
   overflow: hidden;
 }
 
@@ -312,8 +310,6 @@ header .container {
 
 .work {
   padding: 100px 0px;
-  position: sticky;
-  z-index: 2;
   border-radius: 20px 20px 0px 0px;
   background-color: #222;
 }
@@ -455,8 +451,6 @@ header .container {
 .processSec {
   padding: 100px 0px;
   border-radius: 20px 20px 0px 0px;
-  position: sticky;
-  z-index: 3;
   margin-top: -17px;
   background: #000;
 }
@@ -472,7 +466,6 @@ header .container {
 .process {
   padding: 50px 10px;
   height: fit-content;
-  position: sticky;
   margin-bottom: 50px;
   color: #000000;
   background: #899388;
@@ -526,16 +519,14 @@ header .container {
 footer {
   padding-top: 100px;
   padding-bottom: 20px;
-  position: sticky;
-  z-index: 4;
   color: #ffffff;
 }
 
 .foot-text {
-  padding-bottom: 100px;
+  padding-bottom: 75px;
   border-bottom: 1px solid #333;
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 75px;
 }
 .foot-text p {
   font-size: 8vw;
@@ -551,7 +542,6 @@ footer {
   position: absolute;
   bottom: -77px;
   left: 70%;
-  z-index: 5;
   transition: var(--transition);
 }
 .footCta:hover {
@@ -579,7 +569,7 @@ footer {
   color: #000;
 }
 .footBottom {
-  margin-top: 100px;
+  margin-top: 75px;
 }
 .socialLinks {
   gap: 20px;
@@ -732,16 +722,21 @@ footer {
   .footMiddle {
     margin-top: 130px;
     flex-direction: column-reverse;
+    align-items: baseline;
   }
   .footBottom {
+    align-items: baseline;
     width: 100%;
     gap: 30px;
     flex-direction: column-reverse;
   }
-  .reserve,
-  .socialLinks,
-  .footLinks {
-    width: 100%;
+  .reserve, .footLinks {
+    width:fit-content;
+    padding-top: 10px;
+    border-top: 1px solid #333;
+  }
+  .socialLinks {
+    width: fit-content;
   }
 }
 
