@@ -1,28 +1,28 @@
 import React from "react";
+import { Analytics } from "@vercel/analytics/react";
+import Script from "./script";
 import Header from "./Components/Header-Section/header";
 import Hero from "./Components/Hero-Section/hero";
-import Work from "./Components/Work-Section/work";
-import Script from "./script";
-import { Analytics } from "@vercel/analytics/react";
-import Process from "./Components/Process-Section/Process";
+// import Work from "./Components/Work-Section/work";
 import Footer from "./Components/Footer-Section/Footer";
+import AboutPrev from "./Components/AboutPrev-Section/AboutPrev";
+import WorkPreview from "./Components/Work-Section/WorkPrev";
 
 const App = () => {
   return (
     <>
-      <Analytics />
 
+      <Analytics />
       <Script />
 
       <Header />
-
       <main>
         <Hero />
-        <Work />
-        <Process />
+        <AboutPrev />
+        <WorkPreview />
       </main>
-
       <Footer />
+
     </>
   );
 };

@@ -1,0 +1,163 @@
+.work-preview {
+  background: #fff;
+  padding: 8rem 4rem;
+}
+
+.work-container {
+  position: relative;
+}
+
+.desktop-projects a {
+  width: 100%;
+}
+.project-row {
+  padding: 3.5rem 0;
+  border-bottom: 1px solid #cccccc;
+  transition: var(--transition);
+}
+
+.project-row h2 {
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #838383;
+  margin: 0;
+}
+
+.project-row p {
+  font-size: 1rem;
+  color: #5c5c5c;
+  font-family: "Poppins", sans-serif;
+}
+
+.image-preview {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0;
+  scale: 0.9;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+.preview-track {
+  width: 100%;
+  height: 400%;
+}
+
+.preview-image {
+  width: 100%;
+  height: 25%;
+}
+
+.preview-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project-row:hover {
+  margin: 0px 50px;
+}
+
+.project-row:hover h2 {
+  color: #000;
+}
+
+.mobile-card {
+  position: relative;
+  overflow: hidden;
+  padding: 30px 10px;
+  background: rgb(228, 228, 228);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.mobile-card img {
+  width: 100%;
+  display: block;
+  transition:
+    transform 0.6s ease,
+    opacity 0.6s ease;
+}
+
+.mobile-card:hover img {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.mobile-projects {
+  display: none;
+}
+
+/* ==========================
+   TABLET
+========================== */
+
+@media (max-width: 1024px) {
+  .desktop-projects {
+    display: none;
+  }
+
+  .image-preview {
+    display: none;
+  }
+
+  .work-preview {
+    padding: 6rem 0;
+  }
+
+  .mobile-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .mobile-card img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+  }
+
+  .mobile-card h3 {
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #d4d4d4;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .mobile-card p {
+    margin-top: 0.5rem;
+    color: #5c5c5c;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media (max-width: 768px) {
+  .mobile-projects {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .mobile-card h3 {
+    font-size: 1.6rem;
+  }
+
+  .mobile-card p {
+    font-size: 0.9rem;
+  }
+}

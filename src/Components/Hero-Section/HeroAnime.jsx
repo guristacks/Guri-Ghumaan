@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 const HeroAnime = ({ heroRef, nameRef }) => {
   useGSAP(() => {
     gsap.to(nameRef.current, {
-      y: -120,
+      y: -150,
       ease: "none",
       scrollTrigger: {
         trigger: heroRef.current,
