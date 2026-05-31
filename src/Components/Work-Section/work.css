@@ -1,6 +1,7 @@
 .work-preview {
   background: #fff;
   padding: 8rem 4rem;
+  height: fit-content;
 }
 
 .work-container {
@@ -93,9 +94,61 @@
   display: none;
 }
 
-/* ==========================
-   TABLET
-========================== */
+.workCta {
+  margin-top: 50px;
+}
+
+.fancy-btn {
+  position: relative;
+  padding: 20px 30px;
+  background: #1c1d20;
+  color: #ffffff;
+  border: 1px solid #333 !important;
+  overflow: hidden;
+  z-index: 1;
+}
+sup {
+  font-size: 10px;
+}
+
+.fancy-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--btnBg);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.4s ease;
+  z-index: -1;
+}
+
+.fancy-btn:hover::before {
+  transform: scaleY(1);
+}
+
+.fancy-btn:hover {
+  color: #000000;
+  animation: shake 0.4s ease;
+  transform: scale(1);
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 
 @media (max-width: 1024px) {
   .desktop-projects {
@@ -141,10 +194,6 @@
   }
 }
 
-/* ==========================
-   MOBILE
-========================== */
-
 @media (max-width: 768px) {
   .mobile-projects {
     grid-template-columns: 1fr;
@@ -157,6 +206,11 @@
 
   .mobile-card p {
     font-size: 0.9rem;
+  }
+
+  .mobile-projects:hover .mobile-card img {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 

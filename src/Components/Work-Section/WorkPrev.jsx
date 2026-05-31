@@ -117,6 +117,12 @@ export default function WorkPreview() {
                         ))}
                     </div>
 
+                    <div className="workCta flex ac jc">
+                        <button className="fancy-btn">
+                            More Work <sup>11</sup>
+                        </button>
+                    </div>
+
                     {/* Hover Preview */}
                     <div className="image-preview" ref={imageWrapperRef}>
                         <div className="preview-track">
