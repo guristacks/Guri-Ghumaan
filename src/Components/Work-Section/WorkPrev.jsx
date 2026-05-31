@@ -109,10 +109,12 @@ export default function WorkPreview() {
                                 className="mobile-card" >
                                 <img src={item.image} alt={item.title} />
                                 <h3>{item.title}</h3>
+
                                 <div className="itemAndDate flex ac sb">
                                     <p>{item.type}</p>
                                     <p>{item.date}</p>
                                 </div>
+
                             </a>
                         ))}
                     </div>
@@ -129,6 +131,11 @@ export default function WorkPreview() {
                             {projects.map((item, index) => (
                                 <div className="preview-image" key={index}>
                                     <img src={item.image} alt={item.title} />
+
+                                    <div className="viewCursor flex ac jc">
+                                        <p>View Project</p>
+                                    </div>
+
                                 </div>
                             ))}
                         </div>
