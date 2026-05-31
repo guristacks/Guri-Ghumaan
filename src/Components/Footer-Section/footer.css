@@ -35,7 +35,7 @@ footer {
 .footMiddle {
   margin-top: 50px;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 }
 .footBottom {
   margin-top: 75px;
@@ -62,6 +62,7 @@ footer {
 .fancy-btn {
   border-radius: 30px;
 }
+
 
 @media (max-width: 768px) {
   .foot-text p {
