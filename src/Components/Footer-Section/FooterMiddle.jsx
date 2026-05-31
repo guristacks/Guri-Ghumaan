@@ -16,7 +16,7 @@ const FooterMiddle = () => {
     return (
         <div className="footMiddle flex ac">
             {footerMiddleLinks.map((link, index) => (
-                <a key={index} target="_blank" rel="noopener noreferrer" href={link.url}>
+                <a className="fancy-btn" key={index} target="_blank" rel="noopener noreferrer" href={link.url}>
                     {link.name}
                 </a>
             ))}
