@@ -7,7 +7,7 @@ const NavCta = () => {
       <ul className="cta flex ac">
         <li>
           <a href="contact.html">
-            Contact <MoveUpRight size={14} strokeWidth={2} />
+            Contact <MoveUpRight size={14} strokeWidth={2.7} />
           </a>
         </li>
       </ul>

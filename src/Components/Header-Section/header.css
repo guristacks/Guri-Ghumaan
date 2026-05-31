@@ -30,8 +30,8 @@ header .container {
   padding: 4px 15px;
   display: inline-block;
   border-radius: var(--radius);
-  background-color: #ffffff30;
-  color: #ffffff;
+  background-color: #ffffff8a;
+  color: #000000;
   backdrop-filter: blur(5px);
   letter-spacing: -1px;
   font-weight: 400;
@@ -39,7 +39,6 @@ header .container {
 }
 .nav-links li a:hover {
   background-color: var(--btnBg);
-  color: #000000;
 }
 .cta li a {
   background: var(--btnBg);
