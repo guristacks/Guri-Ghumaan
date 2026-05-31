@@ -13,6 +13,9 @@ header .container {
 .IconCol {
   display: none;
 }
+.menuBtn, .closeBtn {
+  color: #fff;
+}
 .closeBtn {
   display: none;
 }
@@ -39,19 +42,20 @@ header .container {
 }
 .nav-links li a:hover {
   background-color: var(--btnBg);
+  color: #fff;
 }
 .cta li a {
   background: var(--btnBg);
-  color: #000;
+  color: #ffffff;
   display: flex;
   align-items: center;
   gap: 3px;
 }
 .nav-links li:active {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 .cta li:active {
-  transform: scale(0.9);
+  transform: scale(0.95);
 }
 .IconCol button,
 .nav-links li,
@@ -102,7 +106,7 @@ header .container {
   .cta li a:active,
   .IconCol button:active,
   .cta:active {
-    transform: scale(0.9);
+    transform: scale(0.95);
   }
   .cta:hover svg {
     transform: rotate(0deg);

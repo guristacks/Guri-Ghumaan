@@ -5,7 +5,7 @@ const Navbar = () => {
     <nav aria-label="Primary Navigation">
       <ul className="nav-links flex ac">
         <li>
-          <a href="about.html">About</a>
+          <a href="#about">About</a>
         </li>
         <li>
           <a href="#work">Work</a>

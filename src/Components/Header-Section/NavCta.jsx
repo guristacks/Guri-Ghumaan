@@ -6,7 +6,7 @@ const NavCta = () => {
     <nav aria-label="Contact Navigation">
       <ul className="cta flex ac">
         <li>
-          <a href="contact.html">
+          <a href="#contact">
             Contact <MoveUpRight size={14} strokeWidth={2.7} />
           </a>
         </li>
