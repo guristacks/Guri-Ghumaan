@@ -18,7 +18,7 @@ html.lenis body {
 }
 
 .lenis.lenis-smooth {
-  scroll-behavior: auto !important;
+  scroll-behavior: smooth !important;
 }
 
 .lenis.lenis-stopped {
@@ -42,11 +42,11 @@ a {
 }
 
 body {
-  background: #000;
+  background: #1c1d20;
 }
 
 .container {
-  width: min(1280px, 96%);
+  width: min(1440px, 95%);
   margin: auto;
 }
 
@@ -75,17 +75,13 @@ li {
   display: inline-block;
 }
 
-i {
-  font-size: 22px;
-}
-
 span {
   display: inline-block;
 }
 
-section {
+section,
+footer {
   user-select: none;
-  min-height: 100vh;
   color: #fff;
   overflow: hidden;
 }
@@ -134,43 +130,8 @@ button {
   border-radius: var(--radius);
   transition: var(--transition);
   font-family: Montserrat, sans-serif;
-  letter-spacing: -1px;
-  padding: 10px 16px;
+  padding: 20px 30px;
   cursor: pointer;
-}
-
-.primaryBtn {
-  background-color: var(--btnBg);
-  color: #000000;
-  font-size: 16px;
-  font-weight: 400;
-  border: unset;
-  border-radius: var(--radius);
-  transition: var(--transition);
-  font-family: Montserrat, sans-serif;
-  letter-spacing: -1px;
-  padding: 10px 16px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.secondaryBtn {
-  background: rgb(36, 36, 36) !important;
-  color: #fff !important;
-  padding: 10px 16px;
-  border-radius: var(--radius);
-  transition: var(--transition);
-  font-family: Montserrat, sans-serif;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.primaryBtn:hover,
-.secondaryBtn:hover {
-  transform: scale(1.04);
 }
 
 button:hover {
@@ -179,19 +140,4 @@ button:hover {
 
 button:active {
   transform: scale(0.9);
-}
-
-
-/* 📲 Tablets */
-@media (max-width: 1024px) {
-}
-
-/* 📱 Large Mobile */
-
-@media (max-width: 768px) {
-  /* SECTION - 3 WORK */
-}
-
-/* 📱 Small Mobile */
-@media (max-width: 480px) {
 }
