@@ -4,7 +4,7 @@ import Script from "./script";
 import Header from "./Components/Header-Section/header";
 import Hero from "./Components/Hero-Section/hero";
 import Footer from "./Components/Footer-Section/Footer";
-// import AboutPrev from "./Components/AboutPrev-Section/AboutPrev";
+import AboutPrev from "./Components/AboutPrev-Section/AboutPrev";
 import WorkPreview from "./Components/Work-Section/WorkPrev";
 
 const App = () => {
@@ -17,7 +17,7 @@ const App = () => {
       <Header />
       <main>
         <Hero />
-        {/* <AboutPrev /> */}
+        <AboutPrev />
         <WorkPreview />
       </main>
       <Footer />
