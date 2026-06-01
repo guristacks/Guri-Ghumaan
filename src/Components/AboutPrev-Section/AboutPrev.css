@@ -17,11 +17,10 @@
 .abouttext {
   color: #414141;
   margin-bottom: 6em;
-  padding-top: 0.5em;
+  padding-top: 1em;
   padding-left: 30px;
   font-weight: 450;
   font-style: normal;
-  font-size: 1em;
   line-height: 1.66;
 }
 .aboutCta {

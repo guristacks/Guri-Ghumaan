@@ -4,7 +4,7 @@ import AboutPrevContent from "./AboutPrevContent";
 
 const AboutPrev = () => {
   return (
-    <section className="aboutPrev">
+    <section id="AboutPrev" className="aboutPrev">
       <div className="container">
         <AboutPrevContent />
       </div>
