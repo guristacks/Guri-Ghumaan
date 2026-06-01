@@ -16,7 +16,7 @@ const HeroAnime = ({ heroRef, nameRef }) => {
         scrub: true,
       },
     });
-  }, {scope: heroRef});
+  },);
 
   return null;
 };

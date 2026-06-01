@@ -1,8 +1,8 @@
 .hero {
   height: 100vh;
   padding-top: 150px;
-  background-image: url("https://i.pinimg.com/1200x/62/ee/6c/62ee6c8f6fda25185a1c91ba8dfb3971.jpg");
-  background-position: 0% 85%;
+  background-image: url("https://images.pexels.com/photos/6894154/pexels-photo-6894154.jpeg?_gl=1*jbr5gn*_ga*MTk2NTY1NTAwMS4xNzgwMDc1OTcy*_ga_8JE65Q40S6*czE3ODAzMTE3NDYkbzQkZzEkdDE3ODAzMTE3ODkkajE3JGwwJGgw");
+  background-position: 0% 35%;
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(0.9);
@@ -27,6 +27,7 @@
 
 @media (max-width: 768px) {
   .hero {
+    background-position: 50% 0%;
     padding-top: 320px;
   }
 
