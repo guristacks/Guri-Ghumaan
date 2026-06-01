@@ -47,7 +47,7 @@ export default function WorkPreview() {
                 gsap.to(wrapper, {
                     x: e.clientX - 200,
                     y: e.clientY - 150,
-                    duration: 0.3,
+                    duration: 1,
                     ease: "power3.out",
                 });
             }
@@ -133,7 +133,7 @@ export default function WorkPreview() {
                                     <img src={item.image} alt={item.title} />
 
                                     <div className="viewCursor flex ac jc">
-                                        <p>View Project</p>
+                                        <p>View</p>
                                     </div>
 
                                 </div>

@@ -1,6 +1,7 @@
 .work-preview {
   background: #fff;
-  padding: 8rem 4rem;
+  padding: 7rem 4rem;
+  padding-bottom: 5rem;
   height: fit-content;
 }
 
@@ -59,8 +60,8 @@
 
 .viewCursor {
   position: absolute;
-  top: 20%;
-  left: 85%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   transition: opacity 0.3s ease;
   width: 70px;
@@ -74,7 +75,7 @@
 
 .viewCursor p {
   font-size: 0.8rem;
-  padding: 10px;
+  padding: 8px;
   text-align: center;
 }
 .preview-image img {
@@ -124,7 +125,7 @@
 .fancy-btn {
   position: relative;
   padding: 20px 30px;
-  background: #1c1d20;
+  background: var(--bodyBg);
   color: #ffffff;
   border: 1px solid #333 !important;
   overflow: hidden;
