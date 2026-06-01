@@ -5,10 +5,10 @@ const Navbar = () => {
     <nav aria-label="Primary Navigation">
       <ul className="nav-links flex ac">
         <li>
-          <a href="#about">About</a>
+          <a href="#AboutPrev">About</a>
         </li>
         <li>
-          <a href="#work">Work</a>
+          <a href="#Work">Work</a>
         </li>
         <li>
           <a href="#services">Services</a>

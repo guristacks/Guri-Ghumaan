@@ -8,7 +8,7 @@ import FooterBottom from "./FooterBottom";
 const Footer = () => {
 
   return (
-    <footer>
+    <footer id="Contact">
       <div className="container">
         <div className="footer-content f-clmn">
 
