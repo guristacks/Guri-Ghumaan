@@ -1,8 +1,8 @@
 footer {
-  padding-top: 100px;
-  padding-bottom: 10px;
+  padding-top: 7rem;
+  padding-bottom: 1rem;
   color: #ffffff;
-  background: #1c1d20;
+  background: var(--bodyBg);
 }
 .foot-text {
   padding-bottom: 75px;

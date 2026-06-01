@@ -15,17 +15,17 @@ const FooterTop = () => {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-arrow-down-left-icon lucide-arrow-down-left"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-arrow-down-left-icon lucide-arrow-down-left"
                 >
                     <path d="M17 7 7 17" />
                     <path d="M17 17H7V7" />
                 </svg>
             </div>
 
-            <a class="footCta flex ac" href="#">
+            <a className="footCta flex ac" href="#">
                 Get in Touch
             </a>
         </div>
