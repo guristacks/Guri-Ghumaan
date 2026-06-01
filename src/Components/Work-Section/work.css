@@ -199,8 +199,9 @@ sup {
     display: block;
   }
 
-  .mobile-card h3 {
+  .mobile-card h2 {
     margin-top: 1rem;
+    margin-bottom: 0;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid #d4d4d4;
     font-size: 2rem;

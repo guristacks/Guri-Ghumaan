@@ -108,7 +108,7 @@ export default function WorkPreview() {
                             <a key={index} href={item.link} target="_blank" rel="noopener noreferrer"
                                 className="mobile-card" >
                                 <img src={item.image} alt={item.title} />
-                                <h3>{item.title}</h3>
+                                <h2>{item.title}</h2>
 
                                 <div className="itemAndDate flex ac sb">
                                     <p>{item.type}</p>
