@@ -1,0 +1,96 @@
+.aboutPrev {
+  background: #fff;
+  padding: 7rem 4rem;
+  height: fit-content;
+}
+.aboutContent {
+  position: relative;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #cdcccc;
+  gap: 110px;
+}
+.aboutFirsttext {
+  font-size: clamp(1.4em, 2.3vw, 2.5em);
+  padding-right: 30px;
+  color: #000000;
+}
+.abouttext {
+  color: #414141;
+  margin-bottom: 6em;
+  padding-top: 0.5em;
+  padding-left: 30px;
+  font-weight: 450;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 1.66;
+}
+.aboutCta {
+  border-radius: 50%;
+  padding: 71px 38px;
+  font-size: 18px;
+  background: var(--bodyBg);
+  color: #ffffff;
+  position: absolute;
+  bottom: -77px;
+  left: 70%;
+  transition: var(--transition);
+}
+.aboutCta:hover {
+  background: var(--btnBg);
+  rotate: 360deg;
+}
+.aboutCta:active {
+  opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+  .aboutPrev {
+    padding: 8rem 0rem;
+  }
+  .aboutContent {
+    gap: 30px;
+  }
+  .aboutFirsttext {
+    width: 100%;
+  }
+  .abouttext {
+    padding: 0px;
+    width: 70%;
+  }
+  .aboutCta {
+    left: 65%;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutPrev {
+    padding: 8rem 0rem;
+  }
+  .aboutContent {
+    gap: 50px;
+    flex-direction: column;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+  }
+  .aboutFirsttext {
+    padding-right: 0px;
+  }
+  .abouttext {
+    padding: 0px;
+    width: 70%;
+  }
+  .aboutCta {
+    left: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutFirsttext {
+    letter-spacing: -0.5px;
+  }
+  .aboutCta {
+    padding: 60px 26px;
+    bottom: -70px;
+    left: 55%;
+  }
+}
