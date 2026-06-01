@@ -26,7 +26,7 @@ html.lenis body {
 }
 
 :root {
-  --btnBg: #455CE9;
+  --btnBg: #455ce9;
   --bodyBg: #1c1d20;
   --lightBlackP: rgb(75, 75, 75);
   --lightWhiteP: rgb(209, 209, 209);
@@ -88,11 +88,12 @@ footer {
 }
 
 h1 {
-  font-size: clamp(5rem, 12vw, 12rem);
+  font-size: clamp(4rem, 23vw, 15rem);
   line-height: 1.2;
   font-family: Oswald, Montserrat;
   color: #ffffff;
   text-shadow: 1px 1px 5px #0000002b;
+  letter-spacing: -2px;
 }
 
 h2 {

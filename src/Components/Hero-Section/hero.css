@@ -1,8 +1,8 @@
 .hero {
   height: 100vh;
   padding-top: 150px;
-  background-image: url("https://images.pexels.com/photos/6894154/pexels-photo-6894154.jpeg?_gl=1*jbr5gn*_ga*MTk2NTY1NTAwMS4xNzgwMDc1OTcy*_ga_8JE65Q40S6*czE3ODAzMTE3NDYkbzQkZzEkdDE3ODAzMTE3ODkkajE3JGwwJGgw");
-  background-position: 0% 35%;
+  background-image: url("https://images.pexels.com/photos/9208560/pexels-photo-9208560.jpeg?_gl=1*1ujqxx0*_ga*MTk2NTY1NTAwMS4xNzgwMDc1OTcy*_ga_8JE65Q40S6*czE3ODAzMjk0NzEkbzUkZzEkdDE3ODAzMzAwMjQkajYwJGwwJGgw");
+  background-position: 0% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(0.9);
