@@ -59,7 +59,7 @@ const Script = () => {
       });
     };
 
-    if (window.innerWidth < 769) {
+    if (window.innerWidth < 1025) {
       menuBtn?.addEventListener("click", openMenu);
       closeBtn?.addEventListener("click", closeMenu);
     }
