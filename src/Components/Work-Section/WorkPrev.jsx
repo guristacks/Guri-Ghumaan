@@ -82,7 +82,7 @@ export default function WorkPreview() {
     };
 
     return (
-        <section className="work-preview">
+        <section id="Work" className="work-preview">
             <div className="container">
                 <div className="work-container">
 

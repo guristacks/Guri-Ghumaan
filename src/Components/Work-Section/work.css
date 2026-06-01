@@ -22,13 +22,13 @@
   font-size: 4rem;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
-  color: #838383;
+  color: #000;
   margin: 0;
 }
 
 .project-row p {
   font-size: 1rem;
-  color: #5c5c5c;
+  color: #000;
   font-family: "Poppins", sans-serif;
 }
 
@@ -88,8 +88,9 @@
   margin: 0px 50px;
 }
 
-.project-row:hover h2 {
-  color: #000;
+.project-row:hover h2,
+.project-row:hover p {
+  color: #838383;
 }
 
 .mobile-card {
