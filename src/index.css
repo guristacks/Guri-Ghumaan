@@ -88,12 +88,12 @@ footer {
 }
 
 h1 {
-  font-size: clamp(4rem, 23vw, 15rem);
+  font-size: clamp(4rem, 24vw, 15rem);
   line-height: 1.2;
   font-family: Oswald, Montserrat;
   color: #ffffff;
   text-shadow: 1px 1px 5px #0000002b;
-  letter-spacing: -2px;
+  letter-spacing: -5px;
 }
 
 h2 {

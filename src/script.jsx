@@ -33,9 +33,14 @@ const Script = () => {
     // MOBILE NAVBAR
     const menuBtn = document.querySelector(".menuBtn");
     const closeBtn = document.querySelector(".closeBtn");
+    const navLinks = document.querySelector(".nav-links");
     const list = document.querySelectorAll(".nav-links li");
 
+    let isMenuOpen = false;
+
     const openMenu = () => {
+      isMenuOpen = true;
+
       menuBtn.style.display = "none";
       closeBtn.style.display = "flex";
 
@@ -48,6 +53,8 @@ const Script = () => {
     };
 
     const closeMenu = () => {
+      isMenuOpen = false;
+
       menuBtn.style.display = "flex";
       closeBtn.style.display = "none";
 
@@ -59,9 +66,31 @@ const Script = () => {
       });
     };
 
+    // Close menu on scroll
+    const handleScroll = () => {
+      if (isMenuOpen) {
+        closeMenu();
+      }
+    };
+
+    // Close menu on outside click
+    const handleOutsideClick = (e) => {
+      if (
+        isMenuOpen &&
+        !navLinks?.contains(e.target) &&
+        !menuBtn?.contains(e.target) &&
+        !closeBtn?.contains(e.target)
+      ) {
+        closeMenu();
+      }
+    };
+
     if (window.innerWidth < 1025) {
       menuBtn?.addEventListener("click", openMenu);
       closeBtn?.addEventListener("click", closeMenu);
+
+      lenis.on("scroll", handleScroll);
+      document.addEventListener("click", handleOutsideClick);
     }
 
     ScrollTrigger.refresh();
@@ -70,7 +99,10 @@ const Script = () => {
     return () => {
       gsap.ticker.remove(update);
 
+      lenis.off("scroll", handleScroll);
       lenis.destroy();
+
+      document.removeEventListener("click", handleOutsideClick);
 
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
 
