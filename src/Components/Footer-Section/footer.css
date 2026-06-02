@@ -49,7 +49,7 @@ footer {
   padding: 5px 0px;
 }
 .socialLinks a:hover {
-  color: rgb(109, 165, 255);
+  color: var(--btnBg);
   transform: scale(0.95);
 }
 .footLinks small,
