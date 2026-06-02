@@ -1,12 +1,15 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLocation } from "react-router-dom";
 import Lenis from "lenis";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Script = () => {
   const lenisRef = useRef(null);
+
+  const location = useLocation();
 
   useEffect(() => {
     window.history.scrollRestoration = "manual";
@@ -99,7 +102,7 @@ const Script = () => {
       menuBtn?.removeEventListener("click", openMenu);
       closeBtn?.removeEventListener("click", closeMenu);
     };
-  }, []);
+  }, [location.pathname]);
 
   return null;
 };
