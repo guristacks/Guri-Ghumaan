@@ -1,14 +1,14 @@
 import React from "react";
-import { MoveUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const NavCta = () => {
   return (
     <nav aria-label="Contact Navigation">
       <ul className="cta flex ac">
         <li>
-          <a href="#Contact">
-            Contact <MoveUpRight size={14} strokeWidth={2.7} />
-          </a>
+          <Link to="/Contact">
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>
