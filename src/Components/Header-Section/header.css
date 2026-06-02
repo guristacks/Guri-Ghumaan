@@ -13,7 +13,8 @@ header .container {
 .IconCol {
   display: none;
 }
-.menuBtn, .closeBtn {
+.menuBtn,
+.closeBtn {
   color: #fff;
 }
 .closeBtn {
@@ -33,23 +34,20 @@ header .container {
   padding: 8px 15px;
   display: inline-block;
   border-radius: var(--radius);
-  background-color: #ffffff8a;
-  color: #000000;
+  background-color: var(--bodyBg);
+  color: #fff;
   backdrop-filter: blur(5px);
   letter-spacing: -1px;
   font-weight: 400;
   transition: var(--transition);
 }
-.nav-links li a:hover {
+.nav-links li a:hover,
+.cta li a:hover {
   background-color: var(--btnBg);
-  color: #fff;
 }
 .cta li a {
-  background: var(--btnBg);
-  color: #ffffff;
-  display: flex;
   align-items: center;
-  gap: 3px;
+  gap: 5px;
 }
 .nav-links li:active {
   transform: scale(0.95);
@@ -78,8 +76,11 @@ header .container {
   .IconCol {
     display: flex;
   }
-  .IconCol button {
-    padding: 8px 15px;
+  .closeBtn,
+  .menuBtn {
+    background: transparent;
+    padding: 0;
+    padding-left: 3px;
   }
   .nav-links {
     flex-direction: column;
@@ -104,7 +105,6 @@ header .container {
   }
   .nav-links li a:active,
   .cta li a:active,
-  .IconCol button:active,
   .cta:active {
     transform: scale(0.95);
   }
