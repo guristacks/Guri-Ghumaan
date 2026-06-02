@@ -1,6 +1,7 @@
 .aboutPrev {
   background: #fff;
   padding: 7rem 4rem;
+  padding-bottom: 5rem;
   height: fit-content;
 }
 .aboutContent {
@@ -17,7 +18,7 @@
 .abouttext {
   color: #414141;
   margin-bottom: 6em;
-  padding-top: 1em;
+  padding-top: 0.5em;
   padding-left: 30px;
   font-weight: 450;
   font-style: normal;
@@ -44,7 +45,8 @@
 
 @media (max-width: 1024px) {
   .aboutPrev {
-    padding: 8rem 0rem;
+    padding: 7rem 0rem;
+    padding-bottom: 5rem;
   }
   .aboutContent {
     gap: 30px;
@@ -62,9 +64,6 @@
 }
 
 @media (max-width: 768px) {
-  .aboutPrev {
-    padding: 8rem 0rem;
-  }
   .aboutContent {
     gap: 50px;
     flex-direction: column;
