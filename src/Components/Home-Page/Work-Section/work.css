@@ -12,6 +12,7 @@
 .desktop-projects a {
   width: 100%;
 }
+
 .project-row {
   padding: 3.5rem 0;
   border-bottom: 1px solid #cccccc;
@@ -78,6 +79,7 @@
   padding: 8px;
   text-align: center;
 }
+
 .preview-image img {
   width: 100%;
   height: 100%;
@@ -132,6 +134,7 @@
   overflow: hidden;
   z-index: 1;
 }
+
 sup {
   font-size: 10px;
 }
@@ -160,15 +163,19 @@ sup {
   0% {
     transform: rotate(0deg);
   }
+
   25% {
     transform: rotate(-2deg);
   }
+
   50% {
     transform: rotate(2deg);
   }
+
   75% {
     transform: rotate(-2deg);
   }
+
   100% {
     transform: rotate(0deg);
   }

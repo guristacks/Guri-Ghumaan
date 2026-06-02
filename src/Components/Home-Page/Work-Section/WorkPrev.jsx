@@ -1,8 +1,8 @@
 import { useRef, useEffect } from "react";
-import Stacks from "../../assets/Images/Work/stacks-mockup.webp";
-import NexaWave from "../../assets/Images/Work/nexa-mockup.webp";
-import Aurum from "../../assets/Images/Work/aurum-mockup.webp";
-import Elena from "../../assets/Images/Work/elena-mockup.webp";
+import Stacks from "../../../assets/Images/Work/stacks-mockup.webp";
+import NexaWave from "../../../assets/Images/Work/nexa-mockup.webp";
+import Aurum from "../../../assets/Images/Work/aurum-mockup.webp";
+import Elena from "../../../assets/Images/Work/elena-mockup.webp";
 import "./work.css"
 import gsap from "gsap";
 
