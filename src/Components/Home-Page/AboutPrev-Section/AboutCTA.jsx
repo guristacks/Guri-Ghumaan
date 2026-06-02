@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import React from "react";
 
 const AboutCTA = () => {
   return (
-    <a className="aboutCta flex ac jc" href="#">
+    <Link to="/about" className="aboutCta flex ac jc">
       About Me
-    </a>
+    </Link>
   );
 };
 

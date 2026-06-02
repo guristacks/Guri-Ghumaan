@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const FooterTop = () => {
     return (
@@ -25,9 +26,9 @@ const FooterTop = () => {
                 </svg>
             </div>
 
-            <a className="footCta flex ac" href="#">
-                Get in Touch
-            </a>
+            <Link to="/contact" className="footCta flex ac jc">
+                Get In Touch
+            </Link>
         </div>
     )
 }
