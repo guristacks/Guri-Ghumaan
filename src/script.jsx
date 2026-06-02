@@ -66,14 +66,6 @@ const Script = () => {
       });
     };
 
-    // Close menu on scroll
-    const handleScroll = () => {
-      if (isMenuOpen) {
-        closeMenu();
-      }
-    };
-
-    // Close menu on outside click
     const handleOutsideClick = (e) => {
       if (
         isMenuOpen &&
@@ -89,7 +81,6 @@ const Script = () => {
       menuBtn?.addEventListener("click", openMenu);
       closeBtn?.addEventListener("click", closeMenu);
 
-      lenis.on("scroll", handleScroll);
       document.addEventListener("click", handleOutsideClick);
     }
 
@@ -99,7 +90,6 @@ const Script = () => {
     return () => {
       gsap.ticker.remove(update);
 
-      lenis.off("scroll", handleScroll);
       lenis.destroy();
 
       document.removeEventListener("click", handleOutsideClick);

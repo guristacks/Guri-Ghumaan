@@ -1,27 +1,25 @@
 import React from "react";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Routes, Route } from "react-router-dom";
+
 import Script from "./script";
-import Header from "./Components/Header-Section/header";
-import Hero from "./Components/Hero-Section/hero";
-import Footer from "./Components/Footer-Section/Footer";
-import AboutPrev from "./Components/AboutPrev-Section/AboutPrev";
-import WorkPreview from "./Components/Work-Section/WorkPrev";
+import Home from "./Components/Home-Page/Home";
+import About from "./Components/About-Page/About";
+import Contact from "./Components/Contact-Page/Contact";
 
 const App = () => {
   return (
     <>
-
       <Analytics />
       <Script />
+      <SpeedInsights />
 
-      <Header />
-      <main>
-        <Hero />
-        <AboutPrev />
-        <WorkPreview />
-      </main>
-      <Footer />
-
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Contact" element={<Contact />} />
+      </Routes>
     </>
   );
 };
