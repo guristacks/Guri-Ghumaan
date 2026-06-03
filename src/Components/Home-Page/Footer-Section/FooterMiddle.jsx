@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FooterMiddle = () => {
+const FooterMiddle = ({ styles }) => {
 
     const footerMiddleLinks = [
         {
@@ -14,9 +14,9 @@ const FooterMiddle = () => {
     ];
 
     return (
-        <div className="footMiddle flex ac">
+        <div className={`${styles.footMiddle} ${styles.flex} ${styles.ac}`}>
             {footerMiddleLinks.map((link, index) => (
-                <a className="fancy-btn" key={index} target="_blank" rel="noopener noreferrer" href={link.url}>
+                <a className={`${styles.fancyBtn} ${styles.flex} ${styles.ac}`} key={index} target="_blank" rel="noopener noreferrer" href={link.url}>
                     {link.name}
                 </a>
             ))}

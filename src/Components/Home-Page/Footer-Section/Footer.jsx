@@ -1,22 +1,23 @@
 import React from "react";
 import { ArrowDownLeft } from "lucide-react";
-import "./footer.css";
+import styles from "./footer.module.css";
 import FooterTop from "./FooterTop";
 import FooterMiddle from "./FooterMiddle";
 import FooterBottom from "./FooterBottom";
+
 
 const Footer = () => {
 
   return (
     <footer id="Contact">
-      <div className="container">
-        <div className="footer-content f-clmn">
+      <div className={styles.container}>
+        <div className={`${styles.footerContent} ${styles.fClmn}`}>
 
-          <FooterTop />
+          <FooterTop styles={styles} />
 
-          <FooterMiddle />
+          <FooterMiddle styles={styles} />
 
-          <FooterBottom />
+          <FooterBottom styles={styles} />
 
 
         </div>

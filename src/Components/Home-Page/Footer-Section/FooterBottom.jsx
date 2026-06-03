@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FooterBottom = () => {
+const FooterBottom = ({ styles }) => {
 
     const footerBottomLinks = [
         {
@@ -18,15 +18,15 @@ const FooterBottom = () => {
     ];
 
     return (
-        <div className="footBottom flex ac sb">
-            <div className="reserve flex f-clmn">
+        <div className={`${styles.footBottom} ${styles.flex} ${styles.ac} ${styles.sb}`}>
+            <div className={`${styles.reserve} ${styles.flex} ${styles.fClmn}`}>
                 <small> Version</small>
                 <p>© 2026 Guri Ghumaan. All rights reserved.</p>
             </div>
 
-            <div className="footLinks flex f-clmn ac sb">
+            <div className={`${styles.footLinks} ${styles.flex} ${styles.fClmn} ${styles.ac} ${styles.sb}`}>
                 <small> Socials</small>
-                <div className="socialLinks flex ac">
+                <div className={`${styles.socialLinks} ${styles.flex} ${styles.ac}`}>
                     {footerBottomLinks.map((link, index) => (
                         <a key={index} target="_blank" rel="noopener noreferrer" href={link.url}>
                             {link.name}
