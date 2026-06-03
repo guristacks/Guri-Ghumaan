@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const NavCta = () => {
+const NavCta = ({ styles }) => {
   return (
     <nav aria-label="Contact Navigation">
-      <ul className="cta flex ac">
+      <ul className={`${styles.cta} ${styles.flex} ${styles.ac}`}>
         <li>
           <Link to="/Contact">
             Contact

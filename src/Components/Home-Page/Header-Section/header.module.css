@@ -1,3 +1,38 @@
+:root {
+  --btnBg: #455ce9;
+  --bodyBg: #1c1d20;
+  --lightBlackP: rgb(75, 75, 75);
+  --lightWhiteP: rgb(209, 209, 209);
+
+  --radius: 30px;
+  --transition: 0.3s ease;
+}
+
+.container {
+  width: min(1440px, 95%);
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.f-clmn {
+  flex-direction: column;
+}
+
+.sb {
+  justify-content: space-between;
+}
+
+.jc {
+  justify-content: center;
+}
+
+.ac {
+  align-items: center;
+}
+
 header {
   position: absolute;
   top: 10px;
@@ -20,15 +55,15 @@ header .container {
 .closeBtn {
   display: none;
 }
-.nav-links {
+.navLink {
   gap: 10px;
 }
-.nav-links li,
+.navLink li,
 .cta li {
   border-radius: var(--radius);
   transition: var(--transition);
 }
-.nav-links li a,
+.navLink li a,
 .cta li a {
   font-size: 16px;
   padding: 8px 15px;
@@ -41,7 +76,7 @@ header .container {
   font-weight: 400;
   transition: var(--transition);
 }
-.nav-links li a:hover,
+.navLink li a:hover,
 .cta li a:hover {
   background-color: var(--btnBg);
 }
@@ -49,14 +84,14 @@ header .container {
   align-items: center;
   gap: 5px;
 }
-.nav-links li:active {
+.navLink li:active {
   transform: scale(0.95);
 }
 .cta li:active {
   transform: scale(0.95);
 }
 .IconCol button,
-.nav-links li,
+.navLink li,
 .cta li {
   box-shadow: 2px 2px 10px -5px #000;
 }
@@ -82,28 +117,28 @@ header .container {
     padding: 0;
     padding-left: 3px;
   }
-  .nav-links {
+  .navLink {
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
     top: 3rem;
     left: 0;
   }
-  .nav-links li a {
+  .navLink li a {
     letter-spacing: unset;
     font-weight: 400;
   }
-  .nav-links li {
+  .navLink li {
     transform: translateY(-10px);
     display: none;
   }
-  .nav-links li a:hover,
+  .navLink li a:hover,
   .cta li a:hover,
   .IconCol button:hover,
   .cta:hover {
     transform: scale(1);
   }
-  .nav-links li a:active,
+  .navLink li a:active,
   .cta li a:active,
   .cta:active {
     transform: scale(0.95);

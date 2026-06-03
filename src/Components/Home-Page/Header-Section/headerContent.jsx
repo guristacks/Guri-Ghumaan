@@ -3,12 +3,12 @@ import MobileNav from "./mobileNav";
 import Navbar from "./Navbar";
 import NavCta from "./NavCta";
 
-const HeaderContent = ({ navLinks }) => {
+const HeaderContent = ({ menuRef, closeRef, navLinkRef, listRef, styles, navLinks }) => {
   return (
-    <div className="row flex sb ac">
-      <MobileNav />
-      <Navbar navLinks={navLinks} />
-      <NavCta />
+    <div className={`${styles.flex} ${styles.sb} ${styles.ac}`}>
+      <MobileNav menuRef={menuRef} closeRef={closeRef} styles={styles} />
+      <Navbar navLinkRef={navLinkRef} listRef={listRef} styles={styles} navLinks={navLinks} />
+      <NavCta styles={styles} />
     </div>
   );
 };

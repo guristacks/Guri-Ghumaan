@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = ({ navLinks }) => {
+const Navbar = ({ navLinkRef, listRef, styles, navLinks }) => {
   const defaultLinks = [
     { name: "About", path: "/about" },
     { name: "Work", path: "#Work" },
@@ -13,9 +13,11 @@ const Navbar = ({ navLinks }) => {
 
   return (
     <nav aria-label="Primary Navigation">
-      <ul className="nav-links flex ac">
+      <ul ref={navLinkRef} className={`${styles.navLink} ${styles.flex} ${styles.ac} navLink`}>
         {links.map((link, index) => (
-          <li key={index}>
+          <li ref={(el) => {
+            if (el) listRef.current[index] = el;
+          }} key={index}>
             {link.path.startsWith("/") ? (
               <Link to={link.path}>{link.name}</Link>
             ) : (
