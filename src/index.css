@@ -87,15 +87,6 @@ footer {
   overflow: hidden;
 }
 
-h1 {
-  font-size: clamp(4rem, 24vw, 15rem);
-  line-height: 1.2;
-  font-family: Oswald, Montserrat;
-  color: #ffffff;
-  text-shadow: 1px 1px 5px #0000002b;
-  letter-spacing: -5px;
-}
-
 h2 {
   font-size: clamp(2.5rem, 4.5vw, 4rem);
   line-height: 1.2;
