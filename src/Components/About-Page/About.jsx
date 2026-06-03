@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Home-Page/Header-Section/header";
 import Footer from "../Home-Page/Footer-Section/Footer";
+// import styles from "./About.module.css";
 
 const About = () => {
   const navLinks = [
