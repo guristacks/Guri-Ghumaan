@@ -1,9 +1,9 @@
 import React from "react";
 
-const HeroContentBottom = () => {
+const HeroContentBottom = ({ styles }) => {
   return (
-    <div className="l-name flex f-clmn">
-      <div className="small-intro">
+    <div className={`${styles.lName} ${styles.flex} ${styles.fClmn}`}>
+      <div className={styles.smallIntro}>
         <p>Frontend</p>
         <p>Web Developer</p>
       </div>

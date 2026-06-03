@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./hero.css";
+import styles from "./hero.module.css";
 import HeroContent from "./heroContent";
 import HeroAnime from "./HeroAnime";
 
@@ -8,9 +8,9 @@ const Hero = () => {
   const nameRef = useRef(null);
 
   return (
-    <section className="hero flex ac jc" ref={heroRef}>
-      <div className="container">
-        <HeroContent nameRef={nameRef} />
+    <section className={`${styles.hero} ${styles.flex} ${styles.ac} ${styles.jc}`} ref={heroRef}>
+      <div className={styles.container}>
+        <HeroContent styles={styles} nameRef={nameRef} />
         <HeroAnime heroRef={heroRef} nameRef={nameRef} />
       </div>
     </section>

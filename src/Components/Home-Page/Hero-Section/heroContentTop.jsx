@@ -1,8 +1,8 @@
 import React from "react";
 
-const HeroContentTop = () => {
+const HeroContentTop = ({ styles }) => {
   return (
-    <div className="f-name flex">
+    <div className={`${styles.fName} ${styles.flex}`}>
       <h1>GURI</h1>
     </div>
   );
