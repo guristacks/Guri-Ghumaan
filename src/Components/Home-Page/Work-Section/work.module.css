@@ -1,25 +1,79 @@
-.work-preview {
+:root {
+  --btnBg: #455ce9;
+  --bodyBg: #1c1d20;
+  --lightBlackP: rgb(75, 75, 75);
+  --lightWhiteP: rgb(209, 209, 209);
+
+  --radius: 30px;
+  --transition: 0.3s ease;
+}
+
+.container {
+  width: min(1440px, 95%);
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.f-clmn {
+  flex-direction: column;
+}
+
+.sb {
+  justify-content: space-between;
+}
+
+.jc {
+  justify-content: center;
+}
+
+.ac {
+  align-items: center;
+}
+
+h2 {
+  font-size: clamp(2.5rem, 4.5vw, 4rem);
+  line-height: 1.2;
+  font-family: Oswald, Montserrat;
+  margin-bottom: 80px;
+  color: #000;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--offwhite);
+  font-family: Montserrat, sans-serif;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.workPreview {
   background: #fff;
   padding: 7rem 4rem;
   padding-bottom: 5rem;
   height: fit-content;
 }
 
-.work-container {
+.workContainer {
   position: relative;
 }
 
-.desktop-projects a {
+.desktopProjects a {
   width: 100%;
 }
 
-.project-row {
+.projectRow {
   padding: 3.5rem 0;
   border-bottom: 1px solid #cccccc;
   transition: var(--transition);
 }
 
-.project-row h2 {
+.projectRow h2 {
   font-size: 4rem;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
@@ -27,13 +81,13 @@
   margin: 0;
 }
 
-.project-row p {
+.projectRow p {
   font-size: 1rem;
   color: #000;
   font-family: "Poppins", sans-serif;
 }
 
-.image-preview {
+.imagePreview {
   position: fixed;
   width: 400px;
   height: 300px;
@@ -48,12 +102,12 @@
   box-shadow: 20px 20px 10px -10px rgba(0, 0, 0, 0.365);
 }
 
-.preview-track {
+.previewTrack {
   width: 100%;
   height: 400%;
 }
 
-.preview-image {
+.previewImage {
   position: relative;
   width: 100%;
   height: 25%;
@@ -80,22 +134,22 @@
   text-align: center;
 }
 
-.preview-image img {
+.previewImage img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.project-row:hover {
+.projectRow:hover {
   margin: 0px 50px;
 }
 
-.project-row:hover h2,
-.project-row:hover p {
+.projectRow:hover h2,
+.projectRow:hover p {
   color: #838383;
 }
 
-.mobile-card {
+.mobileCard {
   position: relative;
   overflow: hidden;
   padding-bottom: 30px;
@@ -104,7 +158,7 @@
   gap: 25px;
 }
 
-.mobile-card img {
+.mobileCard img {
   width: 100%;
   display: block;
   transition:
@@ -112,12 +166,12 @@
     opacity 0.6s ease;
 }
 
-.mobile-card:hover img {
+.mobileCard:hover img {
   transform: scale(1.05);
   opacity: 0.8;
 }
 
-.mobile-projects {
+.mobileProjects {
   display: none;
 }
 
@@ -125,12 +179,12 @@
   margin-top: 50px;
 }
 
-.fancy-btn {
+.fancyBtn {
   position: relative;
   padding: 20px 30px;
   background: var(--bodyBg);
   color: #ffffff;
-  border: 1px solid #333 !important;
+  border: unset;
   overflow: hidden;
   z-index: 1;
 }
@@ -139,7 +193,7 @@ sup {
   font-size: 10px;
 }
 
-.fancy-btn::before {
+.fancyBtn::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -150,11 +204,11 @@ sup {
   z-index: -1;
 }
 
-.fancy-btn:hover::before {
+.fancyBtn:hover::before {
   transform: scaleY(1);
 }
 
-.fancy-btn:hover {
+.fancyBtn:hover {
   animation: shake 0.6s ease;
   transform: scale(1);
 }
@@ -182,32 +236,32 @@ sup {
 }
 
 @media (max-width: 1024px) {
-  .desktop-projects {
+  .desktopProjects {
     display: none;
   }
 
-  .image-preview {
+  .imagePreview {
     display: none;
   }
 
-  .work-preview {
+  .workPreview {
     padding: 6rem 0;
   }
 
-  .mobile-projects {
+  .mobileProjects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
 
-  .mobile-card img {
+  .mobileCard img {
     width: 100%;
     aspect-ratio: 4/3;
     object-fit: cover;
     display: block;
   }
 
-  .mobile-card h2 {
+  .mobileCard h2 {
     margin-top: 1rem;
     margin-bottom: 0;
     padding-bottom: 0.5rem;
@@ -218,7 +272,7 @@ sup {
     font-family: "Poppins", sans-serif;
   }
 
-  .mobile-card p {
+  .mobileCard p {
     margin-top: 0.5rem;
     color: #5c5c5c;
     font-size: 1rem;
@@ -227,27 +281,27 @@ sup {
 }
 
 @media (max-width: 768px) {
-  .mobile-projects {
+  .mobileProjects {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
 
-  .mobile-card h3 {
+  .mobileCard h3 {
     font-size: 1.6rem;
   }
 
-  .mobile-card p {
+  .mobileCard p {
     font-size: 0.9rem;
   }
 
-  .mobile-projects:hover .mobile-card img {
+  .mobileProjects:hover .mobileCard img {
     transform: scale(1);
     opacity: 1;
   }
 }
 
 @media (max-width: 480px) {
-  .mobile-card {
+  .mobileCard {
     position: relative;
     overflow: hidden;
     display: flex;
