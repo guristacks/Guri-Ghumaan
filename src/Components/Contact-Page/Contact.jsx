@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Home-Page/Header-Section/header";
-import Footer from "../Home-Page/Footer-Section/Footer";
+import styles from "./ContactPage.module.css";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
   const navLinks = [
@@ -13,7 +14,7 @@ const Contact = () => {
   return (
     <>
       <Header navLinks={navLinks} />
-      <Footer />
+      <ContactForm styles={styles} />
     </>
   );
 };
