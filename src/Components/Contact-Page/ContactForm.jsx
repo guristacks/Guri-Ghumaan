@@ -1,7 +1,57 @@
-import React from 'react'
-import { MoveDownRight } from 'lucide-react';
+import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { MoveDownRight } from "lucide-react";
 
 const ContactForm = ({ styles }) => {
+
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        organization: "",
+        service: "",
+        message: "",
+    });
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value,
+        });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            await emailjs.send(
+                "service_iikgj2u",
+                "template_xfmr7y7",
+                {
+                    name: formData.name,
+                    email: formData.email,
+                    organization: formData.organization,
+                    service: formData.service,
+                    message: formData.message,
+                },
+                "jZq_zwwgExUDByktL"
+            );
+
+            alert("Message sent successfully!");
+
+            setFormData({
+                name: "",
+                email: "",
+                organization: "",
+                service: "",
+                message: "",
+            });
+        } catch (error) {
+            console.error("EmailJS Error:", error);
+            alert("Failed to send message.");
+        }
+    };
+
+
     return (
         <section className={styles.contactPage}>
             <div className={styles.container}>
@@ -16,7 +66,7 @@ const ContactForm = ({ styles }) => {
                 <div className={`${styles.lastContent} ${styles.flex} ${styles.sb}`}>
                     <div className={`${styles.formBox} ${styles.flex} ${styles.fClmn}`}>
 
-                        <form className={styles.contactForm}>
+                        <form className={styles.contactForm} onSubmit={handleSubmit}>
                             <div className={`${styles.formGroup} ${styles.flex} ${styles.fClmn}`}>
                                 <label htmlFor="name"> <span>01</span> What's your name ?</label>
                                 <input
@@ -24,7 +74,8 @@ const ContactForm = ({ styles }) => {
                                     id="name"
                                     name="name"
                                     placeholder="John Wick *"
-                                    required
+                                    value={formData.name}
+                                    onChange={handleChange} required
                                 />
                             </div>
 
@@ -35,7 +86,8 @@ const ContactForm = ({ styles }) => {
                                     id="email"
                                     name="email"
                                     placeholder="john@wick.com *"
-                                    required
+                                    value={formData.email}
+                                    onChange={handleChange} required
                                 />
                             </div>
 
@@ -48,6 +100,8 @@ const ContactForm = ({ styles }) => {
                                     id="organization"
                                     name="organization"
                                     placeholder="John & Wick ®"
+                                    value={formData.organization}
+                                    onChange={handleChange}
                                 />
                             </div>
 
@@ -60,6 +114,8 @@ const ContactForm = ({ styles }) => {
                                     id="service"
                                     name="service"
                                     placeholder="Web Design, Web Development..."
+                                    value={formData.service}
+                                    onChange={handleChange}
                                 />
                             </div>
 
@@ -72,7 +128,8 @@ const ContactForm = ({ styles }) => {
                                     name="message"
                                     rows="6"
                                     placeholder="Hello Guri, can you help me with..."
-                                    required
+                                    value={formData.message}
+                                    onChange={handleChange} required
                                 ></textarea>
                             </div>
 
