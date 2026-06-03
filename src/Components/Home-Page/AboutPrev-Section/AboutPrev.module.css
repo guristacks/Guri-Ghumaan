@@ -1,3 +1,38 @@
+:root {
+  --btnBg: #455ce9;
+  --bodyBg: #1c1d20;
+  --lightBlackP: rgb(75, 75, 75);
+  --lightWhiteP: rgb(209, 209, 209);
+
+  --radius: 30px;
+  --transition: 0.3s ease;
+}
+
+.container {
+  width: min(1440px, 95%);
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.sb {
+  justify-content: space-between;
+}
+
+.jc {
+  justify-content: center;
+}
+
+.ac {
+  align-items: center;
+}
+
+p {
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+}
 .aboutPrev {
   background: #fff;
   padding: 7rem 4rem;

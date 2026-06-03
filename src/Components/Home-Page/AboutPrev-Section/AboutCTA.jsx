@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import React from "react";
 
-const AboutCTA = () => {
+const AboutCTA = ({ styles }) => {
   return (
-    <Link to="/about" className="aboutCta flex ac jc">
+    <Link to="/about" className={`${styles.aboutCta} ${styles.flex} ${styles.ac} ${styles.jc}`}>
       About Me
     </Link>
   );

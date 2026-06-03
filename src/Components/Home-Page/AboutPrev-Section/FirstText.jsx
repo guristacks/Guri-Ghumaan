@@ -1,8 +1,8 @@
 import React from "react";
 
-const FirstText = () => {
+const FirstText = ({ styles }) => {
   return (
-    <p className="aboutFirsttext">
+    <p className={styles.aboutFirsttext}>
       Helping brands to stand out in the digital era. Together we will set the
       new status quo. No nonsense, always on the cutting edge.
     </p>
