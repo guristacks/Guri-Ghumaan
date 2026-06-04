@@ -51,18 +51,20 @@ footer {
   background: var(--bodyBg);
 }
 .footText {
+  padding: 0rem 7rem;
   padding-bottom: 75px;
   border-bottom: 1px solid #333;
   position: relative;
   margin-bottom: 75px;
 }
 .footText p {
-  font-size: 8vw;
+  font-size: 6vw;
   line-height: 1.1;
 }
 .footCta {
   border-radius: 50%;
-  padding: 71px 25px;
+  width: 164px;
+  height: 164px;
   font-size: 18px;
   background: #f2f2f2;
   color: #000000;
@@ -80,6 +82,7 @@ footer {
   opacity: 0.8;
 }
 .footMiddle {
+  padding: 0rem 7rem;
   margin-top: 50px;
   flex-wrap: wrap;
   gap: 10px;
@@ -173,6 +176,22 @@ footer {
   }
 }
 
+@media (max-width: 1024px) {
+  .footText {
+    padding: 0rem;
+    padding-bottom: 75px;
+    border-bottom: 1px solid #333;
+    position: relative;
+    margin-bottom: 75px;
+  }
+  .footMiddle {
+    padding: 0rem;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
 @media (max-width: 768px) {
   .footText p {
     font-size: 12vw;
@@ -180,7 +199,8 @@ footer {
   }
   .footCta {
     bottom: -68px;
-    padding: 60px 20px;
+    width: 143px;
+    height: 143px;
     font-size: 16px;
     left: 65%;
   }
@@ -207,7 +227,6 @@ footer {
 
 @media (max-width: 480px) {
   .footCta {
-    padding: 60px 20px;
     font-size: 16px;
     left: 55%;
   }
