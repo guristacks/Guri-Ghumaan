@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { MoveDownRight } from "lucide-react";
+import CEO from "../../assets/Images/Png/favicon.png";
 
 const ContactForm = ({ styles }) => {
 
@@ -58,7 +59,7 @@ const ContactForm = ({ styles }) => {
                 <div className={`${styles.topContent} ${styles.flex} ${styles.ac} ${styles.sb}`}>
                     <p>Let's start a <br /> project together</p>
                     <div className={`${styles.topImg} ${styles.flex} ${styles.fClmn}`}>
-                        <img src="https://images.unsplash.com/photo-1496360166961-10a51d5f367a?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                        <img src={CEO} alt="" />
                         <MoveDownRight size={32} />
                     </div>
                 </div>
