@@ -134,7 +134,7 @@ const ContactForm = ({ styles }) => {
                             </div>
 
                             <div className={`${styles.contactCta} ${styles.flex} ${styles.ac}`}>
-                                <button type="submit" className={`${styles.submitBtn} ${styles.fancyBtn}`}>
+                                <button type="submit" className={styles.submitBtn}>
                                     Send it!
                                 </button>
                             </div>
@@ -144,14 +144,14 @@ const ContactForm = ({ styles }) => {
                     <div className={`${styles.details} ${styles.flex} ${styles.fClmn} ${styles.ac}`}>
                         <div className={`${styles.info} ${styles.flex} ${styles.fClmn}`}>
                             <p> Contact Details </p>
-                            <a href="mailto:guristacks@gmail.com">guristacks@gmail.com</a>
-                            <a href="tel:+917696992194"> +91 7696 992194</a>
+                            <a target="_blank" rel="noopener noreferrer" href="mailto:guristacks@gmail.com">guristacks@gmail.com</a>
+                            <a target="_blank" rel="noopener noreferrer" href="tel:+917696992194"> +91 7696 992194</a>
                         </div>
                         <div className={`${styles.socials} ${styles.flex} ${styles.fClmn}`}>
                             <p> Socials </p>
-                            <a href="https://www.linkedin.com/in/guristacks/">Linkedin</a>
-                            <a href="https://github.com/guristacks"> Github</a>
-                            <a href="https://www.instagram.com/guri_ghumxn/"> Instagram</a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/guristacks/">Linkedin</a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/guristacks"> Github</a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/guri_ghumxn/"> Instagram</a>
                         </div>
                     </div>
                 </div>
