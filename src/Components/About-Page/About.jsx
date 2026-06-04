@@ -22,6 +22,7 @@ const About = () => {
         />
       </Helmet>
       <Header navLinks={navLinks} />
+      <main></main>
       <Footer />
     </>
   );
