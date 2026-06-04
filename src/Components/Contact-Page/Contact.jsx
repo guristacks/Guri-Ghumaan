@@ -14,7 +14,9 @@ const Contact = () => {
   return (
     <>
       <Header navLinks={navLinks} />
-      <ContactForm styles={styles} />
+      <main>
+        <ContactForm styles={styles} />
+      </main>
     </>
   );
 };
