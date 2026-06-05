@@ -8,7 +8,7 @@ const About = () => {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Work", path: "#Work" },
-    { name: "Services", path: "#services" },
+    { name: "Services", path: "/services" },
     { name: "Testimonials", path: "#testimonials" },
   ];
 
