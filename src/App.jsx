@@ -7,6 +7,7 @@ import Script from "./script";
 import Home from "./Components/Home-Page/Home";
 import About from "./Components/About-Page/About";
 import Contact from "./Components/Contact-Page/Contact";
+import Services from "./Components/Services-Page/Services";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
     </>
   );
