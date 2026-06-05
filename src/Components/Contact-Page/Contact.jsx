@@ -8,7 +8,7 @@ const Contact = () => {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Services", path: "#services" },
+    { name: "Services", path: "/services" },
     { name: "Testimonials", path: "#testimonials" },
   ];
 
