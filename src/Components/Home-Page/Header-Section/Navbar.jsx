@@ -5,7 +5,7 @@ const Navbar = ({ navLinkRef, listRef, styles, navLinks }) => {
   const defaultLinks = [
     { name: "About", path: "/about" },
     { name: "Work", path: "#Work" },
-    { name: "Services", path: "#services" },
+    { name: "Services", path: "/services" },
     { name: "Testimonials", path: "#testimonials" },
   ];
 
