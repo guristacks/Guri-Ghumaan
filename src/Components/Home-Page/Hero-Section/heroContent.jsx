@@ -2,11 +2,18 @@ import React from "react";
 import HeroContentTop from "./heroContentTop";
 import HeroContentBottom from "./heroContentBottom";
 
-const HeroContent = ({ styles, nameRef }) => {
+const HeroContent = ({ styles, nameRef, fnameRef, surnameRef }) => {
   return (
-    <div className={`${styles.name} ${styles.flex} ${styles.fClmn}`} ref={nameRef}>
-      <HeroContentTop styles={styles} />
-      <HeroContentBottom styles={styles} />
+    <div
+      className={`${styles.name} ${styles.flex} ${styles.fClmn}`}
+      ref={nameRef}
+    >
+      <HeroContentTop styles={styles} fnameRef={fnameRef} />
+      <HeroContentBottom
+        styles={styles}
+        fnameRef={fnameRef}
+        surnameRef={surnameRef}
+      />
     </div>
   );
 };
