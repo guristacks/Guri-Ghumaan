@@ -113,7 +113,8 @@ header .container {
   }
   .closeBtn,
   .menuBtn {
-    background: transparent;
+    background: unset;
+    box-shadow: unset !important;
     padding: 0;
     padding-left: 3px;
   }

@@ -1,3 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: smooth !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
 :root {
   --btnBg: #455ce9;
   --bodyBg: #1c1d20;
