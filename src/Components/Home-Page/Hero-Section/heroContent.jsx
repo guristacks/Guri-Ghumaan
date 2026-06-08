@@ -2,7 +2,7 @@ import React from "react";
 import HeroContentTop from "./heroContentTop";
 import HeroContentBottom from "./heroContentBottom";
 
-const HeroContent = ({ styles, nameRef, fnameRef, surnameRef }) => {
+const HeroContent = ({ styles, nameRef, fnameRef, surnameRef, shortDescRef }) => {
   return (
     <div
       className={`${styles.name} ${styles.flex} ${styles.fClmn}`}
@@ -13,6 +13,7 @@ const HeroContent = ({ styles, nameRef, fnameRef, surnameRef }) => {
         styles={styles}
         fnameRef={fnameRef}
         surnameRef={surnameRef}
+        shortDescRef={shortDescRef}
       />
     </div>
   );
