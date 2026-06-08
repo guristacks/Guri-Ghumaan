@@ -53,6 +53,7 @@ button:active {
 }
 
 .workPreview {
+  user-select: none;
   background: #fff;
   padding: 7rem 7rem;
   padding-bottom: 5rem;
@@ -141,7 +142,7 @@ button:active {
 }
 
 .projectRow:hover {
-  margin: 0px -50px;
+  margin: 0px -30px;
 }
 
 .projectRow:hover h2,
