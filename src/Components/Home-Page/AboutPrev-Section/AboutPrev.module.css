@@ -34,6 +34,7 @@ p {
   font-family: Montserrat, sans-serif;
 }
 .aboutPrev {
+  user-select: none;
   background: #fff;
   padding: 7rem 7rem;
   padding-bottom: 5rem;
