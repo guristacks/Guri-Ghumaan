@@ -5,9 +5,48 @@ import { Scale } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const HeroAnime = ({ heroRef, nameRef, fnameRef, surnameRef, blackRef }) => {
+const HeroAnime = ({ heroRef, nameRef, fnameRef, surnameRef, blackRef, shortDescRef, helloRef }) => {
   useGSAP(() => {
+
+    const greetings = [
+      { text: "Hello", duration: 0.65 },
+      { text: "नमस्ते", duration: 0.05 },
+      { text: "Bonjour", duration: 0.05 },
+      { text: "Ciao", duration: 0.05 },
+      { text: "Olá", duration: 0.05 },
+      { text: "Hallå", duration: 0.05 },
+      { text: "Guten Tag", duration: 0.05 },
+      { text: "Hallo", duration: 0.05 },
+    ];
+
     const tl = gsap.timeline();
+
+    greetings.forEach((item, index) => {
+      tl.set(helloRef.current, {
+        textContent: item.text,
+      });
+      tl.fromTo(helloRef.current, {
+        opacity: 0,
+        y: 10,
+      },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.1,
+        });
+      tl.to({}, {
+        duration: item.duration,
+      });
+
+      if (index !== greetings.length - 1) {
+        tl.to(helloRef.current, {
+          opacity: 0,
+          y: -10,
+          duration: 0.1,
+        });
+      }
+    }
+    );
 
     gsap.to(nameRef.current, {
       y: -150,
@@ -26,7 +65,7 @@ const HeroAnime = ({ heroRef, nameRef, fnameRef, surnameRef, blackRef }) => {
       ease: "expo.in",
     });
 
-    tl.from([fnameRef.current, surnameRef.current ], {
+    tl.from([fnameRef.current, surnameRef.current, shortDescRef.current], {
       y: 100,
       opacity: 0,
       duration: 1,
