@@ -6,7 +6,6 @@ const Navbar = ({ navLinkRef, listRef, styles, navLinks }) => {
     { name: "About", path: "/about" },
     { name: "Work", path: "#Work" },
     { name: "Services", path: "/services" },
-    { name: "Testimonials", path: "#testimonials" },
   ];
 
   const links = navLinks || defaultLinks;

@@ -9,7 +9,6 @@ const About = () => {
     { name: "Home", path: "/" },
     { name: "Work", path: "#Work" },
     { name: "Services", path: "/services" },
-    { name: "Testimonials", path: "#testimonials" },
   ];
 
   return (
