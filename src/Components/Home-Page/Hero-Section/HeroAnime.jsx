@@ -9,14 +9,14 @@ const HeroAnime = ({ heroRef, nameRef, fnameRef, surnameRef, blackRef, shortDesc
   useGSAP(() => {
 
     const greetings = [
-      { text: "Hello", duration: 0.65 },
-      { text: "नमस्ते", duration: 0.05 },
-      { text: "Bonjour", duration: 0.05 },
-      { text: "Ciao", duration: 0.05 },
-      { text: "Olá", duration: 0.05 },
-      { text: "Hallå", duration: 0.05 },
-      { text: "Guten Tag", duration: 0.05 },
-      { text: "Hallo", duration: 0.05 },
+      { text: "• Hello", duration: 0.5 },
+      { text: "• नमस्ते", duration: 0.03 },
+      { text: "• Bonjour", duration: 0.03 },
+      { text: "• Ciao", duration: 0.03 },
+      { text: "• Olá", duration: 0.03 },
+      { text: "• Hallå", duration: 0.03 },
+      { text: "• Guten Tag", duration: 0.03 },
+      { text: "• Hallo", duration: 0.03 },
     ];
 
     const tl = gsap.timeline();
@@ -27,7 +27,7 @@ const HeroAnime = ({ heroRef, nameRef, fnameRef, surnameRef, blackRef, shortDesc
       });
       tl.fromTo(helloRef.current, {
         opacity: 0,
-        y: 10,
+        y: 0,
       },
         {
           opacity: 1,
