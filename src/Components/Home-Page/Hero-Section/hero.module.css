@@ -45,7 +45,7 @@ h1 {
 .hero {
   position: relative;
   user-select: none;
-  min-height: 100vh;
+  min-height: 110vh;
   padding-top: 150px;
   background-image: url("https://images.pexels.com/photos/9208560/pexels-photo-9208560.jpeg?_gl=1*1ujqxx0*_ga*MTk2NTY1NTAwMS4xNzgwMDc1OTcy*_ga_8JE65Q40S6*czE3ODAzMjk0NzEkbzUkZzEkdDE3ODAzMzAwMjQkajYwJGwwJGgw");
   background-position: 0% 50%;
@@ -67,7 +67,7 @@ h1 {
   inset: 0;
   display: grid;
   place-items: center;
-  font-weight: 500;
+  font-weight: 400;
   color: #fff;
   font-size: clamp(3rem, 4vw, 4rem);
   font-family: Montserrat, sans-serif;
