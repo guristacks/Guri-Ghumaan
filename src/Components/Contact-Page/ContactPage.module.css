@@ -170,7 +170,7 @@ textarea::placeholder {
 .contactForm textarea:focus {
   outline: none;
   box-shadow: none;
-  border-color: unset; /* apna color */
+  border-color: unset;
 }
 .contactCta {
   width: 80%;
@@ -298,6 +298,10 @@ textarea::placeholder {
   .contactPage {
     padding: 10vh 0vw;
     padding-top: 10rem;
+  }
+  .container {
+    width: min(1440px, 95%);
+    margin: auto;
   }
   .topContent {
     flex-direction: column;
