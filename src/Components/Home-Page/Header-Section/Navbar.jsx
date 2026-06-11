@@ -18,7 +18,18 @@ const Navbar = ({ navLinkRef, listRef, styles, navLinks }) => {
             if (el) listRef.current[index] = el;
           }} key={index}>
             {link.path.startsWith("/") ? (
-              <Link to={link.path}>{link.name}</Link>
+
+              <Link
+                to={link.path}
+                onClick={() => {
+                  if (link.path === "/") {
+                    sessionStorage.setItem("fromNavigation", "true");
+                  }
+                }}
+              >
+                {link.name}
+              </Link>
+
             ) : (
               <a href={link.path}>{link.name}</a>
             )}
