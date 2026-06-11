@@ -8,10 +8,12 @@ import Home from "./Components/Home-Page/Home";
 import About from "./Components/About-Page/About";
 import Contact from "./Components/Contact-Page/Contact";
 import Services from "./Components/Services-Page/Services";
+import ScrollToTop from "./Components/scrollToTop";
 
 const App = () => {
   return (
     <>
+      <ScrollToTop />
       <Analytics />
       <Script />
       <SpeedInsights />
