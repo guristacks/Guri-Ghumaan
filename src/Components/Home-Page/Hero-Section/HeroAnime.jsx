@@ -14,7 +14,6 @@ const HeroAnime = ({
   helloRef,
 }) => {
   useGSAP(() => {
-
     const fromNavigation = sessionStorage.getItem("fromNavigation");
 
     if (fromNavigation) {
@@ -26,7 +25,8 @@ const HeroAnime = ({
         textContent: "• Home",
       });
 
-      tl.fromTo(helloRef.current,
+      tl.fromTo(
+        helloRef.current,
         {
           opacity: 0,
           y: 30,
@@ -36,7 +36,7 @@ const HeroAnime = ({
           y: 0,
           duration: 0.3,
           delay: 0.3,
-        }
+        },
       );
 
       tl.to({}, { duration: 0.1 });
@@ -54,11 +54,15 @@ const HeroAnime = ({
         ease: "expo.out",
       });
 
-      tl.from("header", {
-        opacity: 0,
-        duration: 0.3,
-        y: -30,
-      }, "-=1");
+      tl.from(
+        "header",
+        {
+          opacity: 0,
+          duration: 0.3,
+          y: -30,
+        },
+        "-=1",
+      );
 
       gsap.to(nameRef.current, {
         y: -150,
@@ -102,7 +106,7 @@ const HeroAnime = ({
           opacity: 1,
           y: 0,
           duration: 0.1,
-        }
+        },
       );
 
       tl.to({}, { duration: item.duration });
@@ -127,21 +131,22 @@ const HeroAnime = ({
       },
     });
 
+    setTimeout(() => {
+      ScrollTrigger.refresh();
+    }, 300);
+
     tl.to(blackRef.current, {
       yPercent: -100,
       duration: 1.5,
       ease: "expo.in",
     });
 
-    tl.from(
-      [fnameRef.current, surnameRef.current, shortDescRef.current],
-      {
-        y: 100,
-        opacity: 0,
-        duration: 1,
-        ease: "expo.out",
-      }
-    );
+    tl.from([fnameRef.current, surnameRef.current, shortDescRef.current], {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      ease: "expo.out",
+    });
 
     tl.from(
       "header",
@@ -150,7 +155,7 @@ const HeroAnime = ({
         duration: 0.3,
         y: -30,
       },
-      "-=1"
+      "-=1",
     );
   });
 
