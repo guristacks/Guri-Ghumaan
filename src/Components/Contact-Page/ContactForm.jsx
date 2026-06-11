@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { MoveDownRight } from "lucide-react";
 import CEO from "../../assets/Images/Png/favicon.png";
+import ContactAnime from "./ContactAnime";
 
 const ContactForm = ({ styles }) => {
+
+    const blackRef = useRef(null);
+    const helloRef = useRef(null);
 
     const [formData, setFormData] = useState({
         name: "",
@@ -55,6 +59,11 @@ const ContactForm = ({ styles }) => {
 
     return (
         <section className={styles.contactPage}>
+
+            <div ref={blackRef} className={`${styles.black} ${styles.flex} ${styles.ac} ${styles.jc}`}>
+                <h2 ref={helloRef} className={styles.helloText}>• Contact</h2>
+            </div>
+
             <div className={styles.container}>
                 <div className={`${styles.topContent} ${styles.flex} ${styles.ac} ${styles.sb}`}>
                     <p>Let's start a <br /> project together</p>
@@ -157,6 +166,7 @@ const ContactForm = ({ styles }) => {
                     </div>
                 </div>
             </div>
+            <ContactAnime blackRef={blackRef} helloRef={helloRef} />
         </section>
     )
 }
