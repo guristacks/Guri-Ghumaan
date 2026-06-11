@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const FooterTop = ({ styles }) => {
+const FooterTop = ({ styles, footBtn }) => {
   return (
     <div
       className={`${styles.footText} ${styles.flex} ${styles.ac} ${styles.sb}`}
@@ -30,6 +30,7 @@ const FooterTop = ({ styles }) => {
 
       <Link
         to="/contact"
+        ref={footBtn}
         className={`${styles.footCta} ${styles.flex} ${styles.ac} ${styles.jc}`}
       >
         Get In Touch
