@@ -1,0 +1,265 @@
+:root {
+  --btnBg: #455ce9;
+  --bodyBg: #1c1d20;
+  --lightBlackP: rgb(75, 75, 75);
+  --lightWhiteP: rgb(209, 209, 209);
+
+  --radius: 30px;
+  --transition: 0.3s ease;
+}
+.container {
+  width: min(1440px, 95%);
+  margin: auto;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
+}
+.fClmn {
+  flex-direction: column;
+}
+.sb {
+  justify-content: space-between;
+}
+.jc {
+  justify-content: center;
+}
+.ac {
+  align-items: center;
+}
+.menuBtn,
+.closeBtn {
+  color: #000;
+}
+.black {
+  background: #000;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.helloText {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-weight: 400;
+  color: #fff;
+  font-size: clamp(3rem, 4vw, 4rem);
+  font-family: Montserrat, sans-serif;
+}
+.servicesSec {
+  padding: 30vh 12vw;
+  padding-bottom: 11rem;
+  background-color: #fff;
+}
+.servicesTop {
+  position: relative;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #cdcccc;
+}
+.heading {
+  font-size: 4.5vw;
+  line-height: 1.2;
+  font-weight: 450;
+  color: var(--bodyBg);
+  font-weight: 500;
+}
+.circle {
+  border-radius: 50%;
+  width: 164px;
+  height: 164px;
+  font-size: 16px;
+  background: var(--btnBg);
+  color: #ffffff;
+  position: absolute;
+  bottom: -77px;
+  left: 70%;
+  transition: var(--transition);
+}
+.middleSec {
+  padding: 0vw 5vw;
+  padding-bottom: 8rem;
+  background: #fff;
+}
+.servicesMiddle {
+  gap: 3rem;
+}
+.midArrow {
+  width: 5%;
+}
+.midDesc {
+  width: 25%;
+  margin-right: 3rem;
+  color: var(--bodyBg);
+}
+.midDesc p:nth-child(2) {
+  margin-top: 30px;
+  color: #a9a9a9;
+}
+.midImg {
+  width: 75%;
+}
+.midImg img {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+}
+.servicesBottom {
+  background-color: #fff;
+  padding: 0vw 5vw;
+  padding-bottom: 8rem;
+  background: #fff;
+}
+.heading2 {
+  font-size: 3.5vw;
+  line-height: 1.2;
+  font-weight: 500;
+  color: var(--bodyBg);
+}
+.allServices {
+  margin-top: 4rem;
+}
+.service {
+  gap: 30px;
+}
+.numbering p,
+.title p,
+.description p {
+  color: var(--bodyBg);
+}
+.numbering p {
+  color: #8d8d8d;
+  padding: 1.7rem 0;
+  border-bottom: 1px solid #cdcccc;
+}
+.title p {
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .servicesSec {
+    padding: 10vh 5vw;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+  }
+  .middleSec {
+    padding: 0vw 0vw;
+    padding-bottom: 5rem;
+  }
+  .heading {
+    font-size: 6vw;
+  }
+  .circle {
+    left: 65%;
+  }
+  .servicesMiddle {
+    gap: 2rem;
+  }
+  .midDesc {
+    width: 30%;
+    margin-right: 2rem;
+  }
+  .midImg {
+    width: 70%;
+  }
+  .servicesBottom {
+    padding: 0vh 0vw;
+    padding-bottom: 5rem;
+  }
+  .heading2 {
+    font-size: 4vw;
+  }
+  .allServices {
+    margin-top: 3rem;
+  }
+  .grid {
+    gap: 3rem;
+  }
+  .title p {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicesSec {
+    padding: 10vh 0vw;
+    padding-top: 10rem;
+    padding-bottom: 7rem;
+  }
+  .middleSec {
+    padding: 0vw 0vw;
+    padding-bottom: 5rem;
+    background: #fff;
+  }
+  .circle {
+    width: 143px;
+    height: 143px;
+    left: 60%;
+  }
+  .servicesMiddle {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .midArrow,
+  .midDesc,
+  .midImg {
+    margin: 0;
+    width: 100%;
+  }
+  .midDesc p:nth-child(2) {
+    margin-top: 1.2rem;
+  }
+  .servicesBottom {
+    padding: 0;
+    padding-bottom: 5rem;
+  }
+  .heading2 {
+    font-size: 6vw;
+  }
+  .title p {
+    font-size: 3vw;
+  }
+  .allServices {
+    margin-top: 3rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .service {
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 9vw;
+  }
+  .mobileBr {
+    display: none;
+  }
+  .circle {
+    bottom: -70px;
+    left: 55%;
+  }
+  .midImg img {
+    height: 100%;
+  }
+  .heading2 {
+    font-size: 8vw;
+  }
+  .title p {
+    font-size: 5vw;
+  }
+}
