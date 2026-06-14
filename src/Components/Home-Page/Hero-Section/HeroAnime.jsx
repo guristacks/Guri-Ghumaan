@@ -4,10 +4,16 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const HeroAnime = ({ heroRef, nameRef, fnameRef, surnameRef, blackRef, shortDescRef, helloRef, }) => {
-
+const HeroAnime = ({
+  heroRef,
+  nameRef,
+  fnameRef,
+  surnameRef,
+  blackRef,
+  shortDescRef,
+  helloRef,
+}) => {
   useGSAP(() => {
-
     let scrollY = 0;
     const preventScroll = (e) => {
       e.preventDefault();
@@ -35,19 +41,32 @@ const HeroAnime = ({ heroRef, nameRef, fnameRef, surnameRef, blackRef, shortDesc
       window.scrollTo(0, scrollY);
     };
 
+    const createParallax = () => {
+      gsap.to(nameRef.current, {
+        y: -150,
+        ease: "none",
+        scrollTrigger: {
+          trigger: heroRef.current,
+          start: "top top",
+          end: "+=1000",
+          scrub: true,
+        },
+      });
+    };
+
     lockScroll();
+
+    const tl = gsap.timeline({
+      onComplete: () => {
+        unlockScroll();
+        ScrollTrigger.refresh();
+      },
+    });
 
     const fromNavigation = sessionStorage.getItem("fromNavigation");
 
     if (fromNavigation) {
       sessionStorage.removeItem("fromNavigation");
-
-      const tl = gsap.timeline({
-        onComplete: () => {
-          unlockScroll();
-          ScrollTrigger.refresh();
-        },
-      });
 
       tl.set(helloRef.current, {
         textContent: "• Home",
@@ -68,109 +87,49 @@ const HeroAnime = ({ heroRef, nameRef, fnameRef, surnameRef, blackRef, shortDesc
       );
 
       tl.to({}, { duration: 0.1 });
+    } else {
+      const greetings = [
+        { text: "• Hello", duration: 0.5 },
+        { text: "• नमस्ते", duration: 0.03 },
+        { text: "• Bonjour", duration: 0.03 },
+        { text: "• Ciao", duration: 0.03 },
+        { text: "• Olá", duration: 0.03 },
+        { text: "• Hallå", duration: 0.03 },
+        { text: "• Guten Tag", duration: 0.03 },
+        { text: "• Hallo", duration: 0.03 },
+      ];
 
-      tl.to(blackRef.current, {
-        yPercent: -100,
-        duration: 1,
-        ease: "expo.in",
-      });
-
-      tl.from([fnameRef.current, surnameRef.current, shortDescRef.current], {
-        y: 100,
-        opacity: 0,
-        duration: 1,
-        ease: "expo.out",
-      });
-
-      tl.from(
-        "header",
-        {
-          opacity: 0,
-          duration: 0.3,
-          y: -30,
-        },
-        "-=1",
-      );
-
-      gsap.to(nameRef.current, {
-        y: -150,
-        ease: "none",
-        scrollTrigger: {
-          trigger: heroRef.current,
-          start: "top top",
-          end: "+=1000",
-          scrub: true,
-        },
-      });
-
-      return;
-    }
-
-    const greetings = [
-      { text: "• Hello", duration: 0.5 },
-      { text: "• नमस्ते", duration: 0.03 },
-      { text: "• Bonjour", duration: 0.03 },
-      { text: "• Ciao", duration: 0.03 },
-      { text: "• Olá", duration: 0.03 },
-      { text: "• Hallå", duration: 0.03 },
-      { text: "• Guten Tag", duration: 0.03 },
-      { text: "• Hallo", duration: 0.03 },
-    ];
-
-    const tl = gsap.timeline({
-      onComplete: () => {
-        unlockScroll();
-        ScrollTrigger.refresh();
-      },
-    });
-
-    greetings.forEach((item, index) => {
-      tl.set(helloRef.current, {
-        textContent: item.text,
-      });
-
-      tl.fromTo(
-        helloRef.current,
-        {
-          opacity: 0,
-          y: 0,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.1,
-        },
-      );
-
-      tl.to({}, { duration: item.duration });
-
-      if (index !== greetings.length - 1) {
-        tl.to(helloRef.current, {
-          opacity: 0,
-          y: -10,
-          duration: 0.1,
+      greetings.forEach((item, index) => {
+        tl.set(helloRef.current, {
+          textContent: item.text,
         });
-      }
-    });
 
-    gsap.to(nameRef.current, {
-      y: -150,
-      ease: "none",
-      scrollTrigger: {
-        trigger: heroRef.current,
-        start: "top top",
-        end: "+=1000",
-        scrub: true,
-      },
-    });
+        tl.fromTo(
+          helloRef.current,
+          {
+            opacity: 0,
+          },
+          {
+            opacity: 1,
+            duration: 0.1,
+          },
+        );
 
-    setTimeout(() => {
-      ScrollTrigger.refresh();
-    }, 300);
+        tl.to({}, { duration: item.duration });
+
+        if (index !== greetings.length - 1) {
+          tl.to(helloRef.current, {
+            opacity: 0,
+            y: -10,
+            duration: 0.1,
+          });
+        }
+      });
+    }
 
     tl.to(blackRef.current, {
       yPercent: -100,
-      duration: 1.5,
+      duration: fromNavigation ? 1 : 1.5,
       ease: "expo.in",
     });
 
@@ -185,11 +144,14 @@ const HeroAnime = ({ heroRef, nameRef, fnameRef, surnameRef, blackRef, shortDesc
       "header",
       {
         opacity: 0,
-        duration: 0.3,
         y: -30,
+        duration: 0.3,
       },
       "-=1",
     );
+
+    createParallax();
+
     return () => {
       unlockScroll();
     };
