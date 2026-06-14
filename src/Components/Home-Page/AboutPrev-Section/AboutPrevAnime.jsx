@@ -14,7 +14,7 @@ const AboutPrevAnime = ({ AboutBtn }) => {
                     trigger: AboutBtn.current,
                     start: "top 100%",
                     end: "top 80%",
-                    scrub: 2,
+                    scrub: 1,
                 },
             });
         } else {
@@ -24,7 +24,7 @@ const AboutPrevAnime = ({ AboutBtn }) => {
                     trigger: AboutBtn.current,
                     start: "top 110%",
                     end: "top 80%",
-                    scrub: 2,
+                    scrub: 1,
                 },
             });
         }
