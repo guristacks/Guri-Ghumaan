@@ -12,7 +12,7 @@ const FooterAnime = ({ footBtn }) => {
                     trigger: footBtn.current,
                     start: "top 100%",
                     end: "top 80%",
-                    scrub: 2,
+                    scrub: 1,
                 }
             })
         } else {
@@ -22,7 +22,7 @@ const FooterAnime = ({ footBtn }) => {
                     trigger: footBtn.current,
                     start: "top 110%",
                     end: "top 80%",
-                    scrub: 2,
+                    scrub: 1,
                 }
             })
         }
