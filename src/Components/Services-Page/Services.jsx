@@ -24,7 +24,7 @@ const Services = () => {
         <link rel="canonical" href="https://guri-ghumaan.vercel.app/services" />
       </Helmet>
 
-      <Header navLinks={navLinks} />
+      <Header navLinks={navLinks} isDark={true} />
 
       <main>
         <ServicesTop blackRef={blackRef} helloRef={helloRef} styles={styles} />
