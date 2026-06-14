@@ -49,10 +49,6 @@ header .container {
 .IconCol {
   display: none;
 }
-.menuBtn,
-.closeBtn {
-  color: #fff;
-}
 .closeBtn {
   display: none;
 }
