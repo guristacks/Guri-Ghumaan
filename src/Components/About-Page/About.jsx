@@ -2,6 +2,9 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import Header from "../Home-Page/Header-Section/header";
 import Footer from "../Home-Page/Footer-Section/Footer";
+import AboutTop from "./AboutTop";
+import AboutMiddle from "./AboutMiddle";
+import AboutBottom from "./AboutBottom";
 
 const About = () => {
   const navLinks = [
@@ -21,7 +24,9 @@ const About = () => {
       </Helmet>
       <Header navLinks={navLinks} />
       <main>
-        <section ></section>
+        <AboutTop />
+        <AboutMiddle />
+        <AboutBottom />
       </main>
       <Footer />
       
