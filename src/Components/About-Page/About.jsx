@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import Header from "../Home-Page/Header-Section/header";
 import Footer from "../Home-Page/Footer-Section/Footer";
+import styles from "./AboutPage.module.css";
 import AboutTop from "./AboutTop";
 import AboutMiddle from "./AboutMiddle";
 import AboutBottom from "./AboutBottom";
@@ -24,9 +25,9 @@ const About = () => {
       </Helmet>
       <Header navLinks={navLinks} />
       <main>
-        <AboutTop />
-        <AboutMiddle />
-        <AboutBottom />
+        <AboutTop styles={styles} />
+        <AboutMiddle styles={styles} />
+        <AboutBottom styles={styles} />
       </main>
       <Footer />
       
