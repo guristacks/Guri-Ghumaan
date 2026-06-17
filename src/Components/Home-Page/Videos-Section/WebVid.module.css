@@ -97,11 +97,16 @@ html.lenis body {
 }
 
 @media (max-width: 768px) {
+  .WebVidSec{
+    padding-bottom: 15vh;
+  }
   .TopContent,
   .BottomContent {
     gap: 2rem;
   }
-
+.TopContent{
+  margin-top: 0rem;
+}
   .VideoCard {
     height: 180px;
     width: 250px;

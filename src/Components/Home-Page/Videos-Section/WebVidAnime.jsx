@@ -12,7 +12,7 @@ const WebVidAnime = ({ sectionRef, topRef, bottomRef }) => {
           topRef.current,
           { x: "0%" },
           {
-            x: "-65%",
+            x: "-45%",
             ease: "none",
             scrollTrigger: {
               trigger: sectionRef.current,
@@ -26,7 +26,7 @@ const WebVidAnime = ({ sectionRef, topRef, bottomRef }) => {
 
         gsap.fromTo(
           bottomRef.current,
-          { x: "-65%" },
+          { x: "-45%" },
           {
             x: "0%",
             ease: "none",
@@ -44,7 +44,7 @@ const WebVidAnime = ({ sectionRef, topRef, bottomRef }) => {
           topRef.current,
           { x: "0%" },
           {
-            x: "-45%",
+            x: "-65%",
             ease: "none",
             scrollTrigger: {
               trigger: sectionRef.current,
@@ -58,7 +58,7 @@ const WebVidAnime = ({ sectionRef, topRef, bottomRef }) => {
 
         gsap.fromTo(
           bottomRef.current,
-          { x: "-45%" },
+          { x: "-60%" },
           {
             x: "0%",
             ease: "none",
