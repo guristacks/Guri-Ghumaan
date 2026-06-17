@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: smooth !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+:root {
+  --btnBg: #455ce9;
+  --bodyBg: #1c1d20;
+  --lightBlackP: rgb(75, 75, 75);
+  --lightWhiteP: rgb(209, 209, 209);
+
+  --radius: 30px;
+  --transition: 0.3s ease;
+}
+
+.flex {
+  display: flex;
+}
+
+.f-clmn {
+  flex-direction: column;
+}
+
+.sb {
+  justify-content: space-between;
+}
+
+.jc {
+  justify-content: center;
+}
+
+.ac {
+  align-items: center;
+}
+
+.WebVidSec {
+  padding-bottom: 20vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.TopContent,
+.BottomContent {
+  gap: 4rem;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.TopContent {
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+.BottomContent {
+  justify-content: flex-end;
+}
+
+.VideoCard {
+  height: 250px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.VideoCard video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .TopContent,
+  .BottomContent {
+    gap: 2rem;
+  }
+
+  .VideoCard {
+    height: 180px;
+    width: 250px;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+}
