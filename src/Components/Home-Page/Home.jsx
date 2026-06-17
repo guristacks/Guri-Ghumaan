@@ -5,6 +5,7 @@ import Hero from "./Hero-Section/hero";
 import AboutPrev from "./AboutPrev-Section/AboutPrev";
 import WorkPreview from "./Work-Section/WorkPrev";
 import Footer from "./Footer-Section/Footer";
+import WebVid from "./Videos-Section/WebVid";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
         <Hero />
         <AboutPrev />
         <WorkPreview />
+        <WebVid />
       </main>
       <Footer />
     </>
