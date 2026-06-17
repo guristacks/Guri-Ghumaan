@@ -24,3 +24,81 @@ html.lenis body {
 .lenis.lenis-stopped {
   overflow: hidden;
 }
+:root {
+  --btnBg: #455ce9;
+  --bodyBg: #1c1d20;
+  --lightBlackP: rgb(75, 75, 75);
+  --lightWhiteP: rgb(209, 209, 209);
+
+  --radius: 30px;
+  --transition: 0.3s ease;
+}
+
+.flex {
+  display: flex;
+}
+
+.fClmn {
+  flex-direction: column;
+}
+
+.sb {
+  justify-content: space-between;
+}
+
+.jc {
+  justify-content: center;
+}
+
+.ac {
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+span {
+  display: inline-block;
+}
+.AboutPage {
+  padding: 30vh 15vw;
+  padding-bottom: 5rem;
+  height: fit-content;
+}
+.black {
+  background: #000;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.helloText {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-weight: 400;
+  color: #fff;
+  font-size: clamp(3rem, 4vw, 4rem);
+  font-family: Montserrat, sans-serif;
+}
+
+.AboutTopSec {
+  height: 100vh;
+  position: relative;
+  background: #fff;
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+}
