@@ -32,7 +32,7 @@ const WebVid = () => {
         >
           {TopVidInfo.map((video, index) => (
             <div key={index} className={styles.VideoCard}>
-              <video src={video.url} autoPlay muted loop playsInline />
+              <video src={video.url} autoPlay muted loop playsInline preload="none" />
             </div>
           ))}
         </div>
@@ -43,7 +43,7 @@ const WebVid = () => {
         >
           {BottomVidInfo.map((video, index) => (
             <div key={index} className={styles.VideoCard}>
-              <video src={video.url} autoPlay muted loop playsInline />
+              <video src={video.url} autoPlay muted loop playsInline preload="none" />
             </div>
           ))}
         </div>
