@@ -73,7 +73,6 @@ const WebVidAnime = ({ sectionRef, topRef, bottomRef }) => {
         );
       }
     },
-    { scope: sectionRef },
   );
 
   return null;
