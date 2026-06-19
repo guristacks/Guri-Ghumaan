@@ -1,4 +1,5 @@
 import React from "react";
+import { Globe } from "lucide-react";
 
 const ServicesTop = ({ blackRef, helloRef, styles }) => {
   return (
@@ -20,7 +21,9 @@ const ServicesTop = ({ blackRef, helloRef, styles }) => {
           </p>
           <div
             className={`${styles.circle} ${styles.flex} ${styles.ac} ${styles.jc}`}
-          ></div>
+          >
+            <Globe size={60} strokeWidth={0.75} />
+          </div>
         </div>
       </div>
     </section>
