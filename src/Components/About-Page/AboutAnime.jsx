@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
-const AboutAnime = ({ blackRef, helloRef }) => {
+const AboutAnime = ({ blackRef, helloRef, logosRef }) => {
   useGSAP(() => {
     let scrollY = 0;
     const preventScroll = (e) => {
@@ -59,6 +59,15 @@ const AboutAnime = ({ blackRef, helloRef }) => {
       duration: 0.3,
       y: -30,
     });
+
+    gsap.to(logosRef.current, {
+      x: -1100,
+      duration: 20,
+      ease: "none",
+      repeat: -1,
+      yoyo: true,
+    });
+
   });
 
   return null;
