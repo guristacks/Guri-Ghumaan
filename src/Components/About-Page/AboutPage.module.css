@@ -185,7 +185,7 @@ h2 {
   width: 100%;
   overflow: hidden;
   padding: 2rem 0;
-  margin-top: 14vh;
+  margin-top: 13vh;
 }
 
 .logoTrack {
@@ -207,7 +207,7 @@ h2 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 150px;
+  width: 120px;
   height: 100%;
   z-index: 2;
   pointer-events: none;
@@ -220,11 +220,55 @@ h2 {
   position: absolute;
   top: 0;
   right: 0;
-  width: 150px;
+  width: 120px;
   height: 100%;
   z-index: 2;
   pointer-events: none;
   background: linear-gradient(to left, #fff 0%, rgba(255, 255, 255, 0) 100%);
+}
+.testSec {
+  padding-bottom: 15vh;
+  background: #fff;
+}
+.testimonials {
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+.customerCard {
+  position: relative;
+  height: 450px;
+  width: 300px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+.customerInfo {
+  position: absolute;
+  width: 92%;
+  height: 60%;
+  bottom: 3%;
+  left: 4%;
+  right: 4%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background: linear-gradient(#ffffff00, #0000005d, #455be9);
+}
+.msg {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ffffff6e;
+}
+.details{
+  margin-bottom: 1rem;
+}
+.details p:first-child{
+  font-weight: 500;
 }
 
 @media (max-width: 1024px) {
@@ -243,7 +287,7 @@ h2 {
   .heroText {
     font-size: 3.3vw;
   }
-  .logoWrap{
+  .logoWrap {
     margin-top: 5rem;
   }
 }
@@ -273,7 +317,7 @@ h2 {
   .logoWrap::before {
     display: none;
   }
-  .logoWrap{
+  .logoWrap {
     margin-top: 5rem;
   }
 }
@@ -295,7 +339,7 @@ h2 {
     gap: 4rem;
     width: max-content;
   }
-  .logoWrap{
+  .logoWrap {
     margin-top: 4rem;
   }
 }
