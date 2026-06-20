@@ -264,10 +264,10 @@ h2 {
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #ffffff6e;
 }
-.details{
+.details {
   margin-bottom: 1rem;
 }
-.details p:first-child{
+.details p:first-child {
   font-weight: 500;
 }
 
@@ -305,6 +305,20 @@ h2 {
   h2 {
     margin-bottom: 40px;
   }
+  .data {
+    flex-direction: column;
+  }
+  .images {
+    width: 100%;
+  }
+  .numbers {
+    width: 100%;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .numbers p{
+    text-align: center;
+  }
   .logoTrack {
     display: flex;
     align-items: center;
@@ -333,6 +347,16 @@ h2 {
   .heroText {
     font-size: 6vw;
   }
+  .images img {
+    width: 100%;
+  }
+  .images img:first-child {
+    display: none;
+  }
+  .numbers {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
   .logoTrack {
     display: flex;
     align-items: center;
@@ -341,5 +365,30 @@ h2 {
   }
   .logoWrap {
     margin-top: 4rem;
+  }
+  .customerCard {
+    position: relative;
+    height: 350px;
+    width: 250px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+  }
+  .msg {
+    font-size: 14px;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 500;
+  }
+  .details {
+    margin: 0;
+  }
+  .details p:first-child {
+    font-size: 14px;
+  }
+  .details p:last-child {
+    font-size: 14px;
   }
 }
