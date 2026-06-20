@@ -94,7 +94,7 @@ const AboutAnime = ({ blackRef, helloRef, logosRef, counterRefs, sectionRef, tes
 
     gsap.to(testimonialsRef.current, {
       x: -1675,
-      duration: 15,
+      duration: 30,
       ease: "none",
       repeat: -1,
       yoyo: true,
