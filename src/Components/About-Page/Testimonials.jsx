@@ -75,6 +75,9 @@ const customers = [
 const Testimonials = ({ styles, testimonialsRef }) => {
     return (
         <section className={styles.testSec}>
+            <div className={styles.TITLE}>
+                <p>✹ Client Stories</p>
+            </div>
             <div ref={testimonialsRef} className={`${styles.testimonials} ${styles.flex} ${styles.ac}`}>
                 {customers.map((reviews, idx) => (
                     <div style={{ backgroundImage: `url(${reviews.img})`, }} className={styles.customerCard} key={idx}>
