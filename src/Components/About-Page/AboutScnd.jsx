@@ -3,18 +3,30 @@ import React from "react";
 const stats = [
     {
         Result: "$74M",
+        Value: 74,
+        Suffix: "M",
+        Prefix: "$",
         Reason: "Driving growth with strategy.",
     },
     {
         Result: "95%",
+        Value: 95,
+        Suffix: "%",
+        Prefix: "",
         Reason: "Building trusted partnerships.",
     },
     {
         Result: "225+",
+        Value: 225,
+        Suffix: "+",
+        Prefix: "",
         Reason: "Delivering industry success.",
     },
     {
         Result: "92%",
+        Value: 92,
+        Suffix: "%",
+        Prefix: "",
         Reason: "Turning traffic into growth.",
     },
 ];
@@ -32,6 +44,11 @@ const brands = [
     },
     {
         LogoImg:
+            "https://cdn.prod.website-files.com/69a0a45220c8336fe957ccba/69a2aefbeb9a99a07522dd00_Brand%2004.webp",
+        LogoAlt: "Brand 04 company logo",
+    },
+    {
+        LogoImg:
             "https://cdn.prod.website-files.com/69a0a45220c8336fe957ccba/69a2aefbf5f22f3b3bf85a8a_Brand%2001.webp",
         LogoAlt: "Brand 01 company logo",
     },
@@ -39,11 +56,6 @@ const brands = [
         LogoImg:
             "https://cdn.prod.website-files.com/69a0a45220c8336fe957ccba/69a2aefb9dd713edf13a284f_Brand%2002.webp",
         LogoAlt: "Brand 02 company logo",
-    },
-    {
-        LogoImg:
-            "https://cdn.prod.website-files.com/69a0a45220c8336fe957ccba/69a2aefbeb9a99a07522dd00_Brand%2004.webp",
-        LogoAlt: "Brand 04 company logo",
     },
     {
         LogoImg:
@@ -66,9 +78,9 @@ const brands = [
         LogoAlt: "Brand 02 company logo",
     },
 ];
-const AboutScnd = ({ styles, logosRef }) => {
+const AboutScnd = ({ styles, logosRef, counterRefs, sectionRef }) => {
     return (
-        <section className={styles.AboutScnd}>
+        <section className={styles.AboutScnd} ref={sectionRef} >
             <div className={styles.container}>
                 <div className={styles.ScndContent}>
                     <div className={`${styles.data} ${styles.flex} ${styles.ac} ${styles.sb}`}>
@@ -78,9 +90,19 @@ const AboutScnd = ({ styles, logosRef }) => {
                         </div>
 
                         <div className={styles.numbers}>
+
                             {stats.map((item, index) => (
+
                                 <div key={index}>
-                                    <p>{item.Result}</p>
+
+                                    <p
+                                        ref={(el) => (counterRefs.current[index] = el)}
+                                        data-value={item.Value}
+                                        data-prefix={item.Prefix}
+                                        data-suffix={item.Suffix}
+                                    >
+                                        {item.Prefix}0{item.Suffix}
+                                    </p>
                                     <p>{item.Reason}</p>
                                 </div>
                             ))}
