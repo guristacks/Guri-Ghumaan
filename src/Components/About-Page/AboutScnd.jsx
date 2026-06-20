@@ -82,6 +82,9 @@ const AboutScnd = ({ styles, logosRef, counterRefs, sectionRef }) => {
     return (
         <section className={styles.AboutScnd} ref={sectionRef} >
             <div className={styles.container}>
+                <div className={styles.TITLE}>
+                    <p>✹ Growth Metrics</p>
+                </div>
                 <div className={styles.ScndContent}>
                     <div className={`${styles.data} ${styles.flex} ${styles.ac} ${styles.sb}`}>
                         <div className={`${styles.images} ${styles.flex} ${styles.sb}`}>
