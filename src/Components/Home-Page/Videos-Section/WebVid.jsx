@@ -7,53 +7,62 @@ const WebVid = () => {
   const topRef = useRef(null);
   const bottomRef = useRef(null);
 
-  const TopVidInfo = [
-    { url: "/Videos/Top1.mp4" },
-    { url: "/Videos/Top2.mp4" },
-    { url: "/Videos/Top3.mp4" },
-    { url: "/Videos/Top4.mp4" },
-    { url: "/Videos/Top5.mp4" },
+  const topImages = [
+    { url: "/Images/Top1.webp" },
+    { url: "/Images/Top2.webp" },
+    { url: "/Images/Top3.webp" },
+    { url: "/Images/Top4.webp" },
+    { url: "/Images/Top5.webp" },
   ];
 
-  const BottomVidInfo = [
-    { url: "/Videos/Bottom1.mp4" },
-    { url: "/Videos/Bottom2.mp4" },
-    { url: "/Videos/Bottom3.mp4" },
-    { url: "/Videos/Bottom4.mp4" },
-    { url: "/Videos/Bottom5.mp4" },
+  const bottomImages = [
+    { url: "/Images/Bottom1.webp" },
+    { url: "/Images/Bottom2.webp" },
+    { url: "/Images/Bottom3.webp" },
+    { url: "/Images/Bottom4.webp" },
+    { url: "/Images/Bottom5.webp" },
   ];
 
   return (
-    <>
-      <section ref={sectionRef} className={styles.WebVidSec}>
-        <div
-          ref={topRef}
-          className={`${styles.TopContent} ${styles.flex} ${styles.ac}`}
-        >
-          {TopVidInfo.map((video, index) => (
-            <div key={index} className={styles.VideoCard}>
-              <video src={video.url} autoPlay muted loop playsInline preload="none" />
-            </div>
-          ))}
-        </div>
+    <section ref={sectionRef} className={styles.WebVidSec}>
+      <div
+        ref={topRef}
+        className={`${styles.TopContent} ${styles.flex} ${styles.ac}`}
+      >
+        {topImages.map((image, index) => (
+          <div key={index} className={styles.VideoCard}>
+            <img
+              src={image.url}
+              alt={`Top ${index + 1}`}
+              loading="lazy"
+              draggable={false}
+            />
+          </div>
+        ))}
+      </div>
 
-        <div
-          ref={bottomRef}
-          className={`${styles.BottomContent} ${styles.flex} ${styles.ac}`}
-        >
-          {BottomVidInfo.map((video, index) => (
-            <div key={index} className={styles.VideoCard}>
-              <video src={video.url} autoPlay muted loop playsInline preload="none" />
-            </div>
-          ))}
-        </div>
-        <WebVidAnime
-          sectionRef={sectionRef}
-          topRef={topRef}
-          bottomRef={bottomRef}
-        />
-      </section>
-    </>
+      <div
+        ref={bottomRef}
+        className={`${styles.BottomContent} ${styles.flex} ${styles.ac}`}
+      >
+        {bottomImages.map((image, index) => (
+          <div key={index} className={styles.VideoCard}>
+            <img
+              src={image.url}
+              alt={`Bottom ${index + 1}`}
+              loading="lazy"
+              draggable={false}
+            />
+          </div>
+        ))}
+      </div>
+
+      <WebVidAnime
+        sectionRef={sectionRef}
+        topRef={topRef}
+        bottomRef={bottomRef}
+      />
+    </section>
   );
 };
 
