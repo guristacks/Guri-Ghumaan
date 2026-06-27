@@ -87,12 +87,13 @@ html.lenis body {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  background: #e4e4e4;
 }
 
-.VideoCard video {
+.VideoCard img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
