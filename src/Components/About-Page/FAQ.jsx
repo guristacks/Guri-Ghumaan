@@ -29,7 +29,7 @@ const faqs = [
 ];
 
 export default function FAQ({ styles }) {
-    const [active, setActive] = useState(0);
+    const [active, setActive] = useState(null);
 
     const handleToggle = (index) => {
         setActive(active === index ? null : index);
