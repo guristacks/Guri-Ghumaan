@@ -1,79 +1,38 @@
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
-gsap.registerPlugin(ScrollTrigger);
+const WebVidAnime = ({ topRef, bottomRef }) => {
+  useGSAP(() => {
+    const isMobile = window.innerWidth <= 768;
 
-const WebVidAnime = ({ sectionRef, topRef, bottomRef }) => {
-  useGSAP(
-    () => {
-      if (window.innerWidth > 768) {
-        gsap.fromTo(
-          topRef.current,
-          { x: "0%" },
-          {
-            x: "-45%",
-            ease: "none",
-            scrollTrigger: {
-              trigger: sectionRef.current,
-              start: "top bottom",
-              end: "bottom top",
-              scrub: true,
-              invalidateOnRefresh: true,
-            },
-          },
-        );
+    gsap.fromTo(
+      topRef.current,
+      {
+        x: "0%",
+      },
+      {
+        x: isMobile ? "-65%" : "-35%",
+        duration: 8,
+        ease: "none",
+        repeat: -1,
+        yoyo: true,
+      },
+    );
 
-        gsap.fromTo(
-          bottomRef.current,
-          { x: "-45%" },
-          {
-            x: "0%",
-            ease: "none",
-            scrollTrigger: {
-              trigger: sectionRef.current,
-              start: "top bottom",
-              end: "bottom top",
-              scrub: true,
-              invalidateOnRefresh: true,
-            },
-          },
-        );
-      } else{
-        gsap.fromTo(
-          topRef.current,
-          { x: "0%" },
-          {
-            x: "-65%",
-            ease: "none",
-            scrollTrigger: {
-              trigger: sectionRef.current,
-              start: "top bottom",
-              end: "bottom top",
-              scrub: true,
-              invalidateOnRefresh: true,
-            },
-          },
-        );
-
-        gsap.fromTo(
-          bottomRef.current,
-          { x: "-60%" },
-          {
-            x: "0%",
-            ease: "none",
-            scrollTrigger: {
-              trigger: sectionRef.current,
-              start: "top bottom",
-              end: "bottom top",
-              scrub: true,
-              invalidateOnRefresh: true,
-            },
-          },
-        );
-      }
-    },
-  );
+    gsap.fromTo(
+      bottomRef.current,
+      {
+        x: isMobile ? "-65%" : "-35%",
+      },
+      {
+        x: "0%",
+        duration: 8,
+        ease: "none",
+        repeat: -1,
+        yoyo: true,
+      },
+    );
+  });
 
   return null;
 };
