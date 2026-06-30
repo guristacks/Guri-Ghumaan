@@ -9,6 +9,7 @@ import About from "./Components/About-Page/About";
 import Contact from "./Components/Contact-Page/Contact";
 import Services from "./Components/Services-Page/Services";
 import ScrollToTop from "./Components/ScrollToTop";
+import Work from "./Components/Work-Page/Work";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/work" element={<Work />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
       </Routes>
