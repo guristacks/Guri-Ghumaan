@@ -299,7 +299,6 @@ h2 {
   justify-content: space-between;
   cursor: pointer;
   color: #000000;
-  font-size: 1.2rem;
   text-align: left;
   font-weight: 500;
   font-size: 20px;
@@ -328,7 +327,7 @@ h2 {
   padding: 0px 10px;
 }
 .open {
-  max-height: 300px;
+  max-height: 350px;
   opacity: 1;
   padding: 24px 10px;
 }
@@ -465,12 +464,17 @@ h2 {
   .details p:last-child {
     font-size: 14px;
   }
-  .FAQ{
+  .FAQ {
     padding-bottom: 7rem;
   }
-  .question{
-    font-size: 18px;
+  .question {
+    font-size: 16px;
     gap: 1rem;
     line-height: 1.6;
+  }
+  .answer {
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.8;
+    letter-spacing: -0.2px;
   }
 }
