@@ -7,31 +7,43 @@ const ServicesBottom = ({ styles }) => {
       num: "01",
       title: "Frontend Development",
       details:
-        "Crafting modern, responsive websites with smooth animations that enhance engagement and user experience.",
+        "Building fast, responsive websites with clean code, seamless interactions, and engaging user experiences across devices.",
     },
     {
       num: "02",
-      title: "Responsive Web Design",
+      title: "Portfolio Websites",
       details:
-        "Designing fully responsive layouts that deliver consistent experiences across desktops, tablets, and smartphones.",
+        "Crafting unique portfolio websites that showcase your work, strengthen your personal brand, and attract clients.",
     },
     {
       num: "03",
-      title: "Performance Optimization",
+      title: "Business Websites",
       details:
-        "Optimizing website speed, accessibility, and performance to ensure fast loading and smooth interactions.",
+        "Creating professional business websites that build trust, highlight your services, and convert visitors into customers.",
     },
     {
       num: "04",
-      title: "Figma to Code",
+      title: "Website Rebuild",
       details:
-        "Converting Figma designs into pixel-perfect, responsive, and production-ready websites with clean code.",
+        "Rebuilding outdated websites with modern design, optimized performance, refreshed content, and improved functionality.",
     },
     {
       num: "05",
       title: "Website Maintenance",
       details:
         "Providing ongoing updates, bug fixes, and improvements to keep websites running efficiently.",
+    },
+    {
+      num: "06",
+      title: "Performance Optimization",
+      details:
+        "Optimizing website speed, accessibility, and performance to ensure fast loading and smooth interactions.",
+    },
+    {
+      num: "07",
+      title: "Figma to Code",
+      details:
+        "Converting Figma designs into pixel-perfect, responsive, and production-ready websites with clean code.",
     },
   ];
 
