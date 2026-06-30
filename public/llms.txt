@@ -1,20 +1,25 @@
 # Guri Ghumaan
 
-> Portfolio website of Guri Ghumaan, Frontend & Full Stack Web Developer.
+Frontend & Full Stack Web Developer creating modern, responsive websites and web applications.
 
 ## Website
-https://guri-ghumaan.vercel.app
+- Home: <https://guri-ghumaan.vercel.app/>
 
 ## About
 I design and develop modern, responsive websites and web applications.
 
 ## Services
 - Frontend Development
-- Full Stack Development
 - Portfolio Websites
 - Business Websites
 - Landing Pages
 - Website Redesign
+- Performance Optimization
+- Website Maintenance
+- Figma to Code
 
-## Contact
-https://guri-ghumaan.vercel.app/contact
+## Important Links
+- Portfolio: <https://guri-ghumaan.vercel.app/>
+- Contact: <https://guri-ghumaan.vercel.app/contact>
+- GitHub: <https://github.com/guristacks>
+- LinkedIn: <https://linkedin.com/in/guristacks>
