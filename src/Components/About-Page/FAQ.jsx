@@ -47,7 +47,7 @@ export default function FAQ({ styles }) {
               className={styles.question}
               onClick={() => handleToggle(index)}
             >
-              <span>{`0${index + 1} ${item.question}`}</span>
+              <p> <span>{`0${index + 1}`}</span> {item.question}</p>
               <span
                 className={`${styles.icon} ${
                   active === index ? styles.activeIcon : ""

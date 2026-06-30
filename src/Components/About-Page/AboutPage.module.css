@@ -301,9 +301,17 @@ h2 {
   color: #000000;
   text-align: left;
   font-weight: 500;
-  font-size: 20px;
   border-bottom: 1px solid #e0e0e0;
   border-radius: 0;
+}
+.question p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.question p span {
+  margin-right: 10px;
+  color: #989898;
+  font-weight: 300;
 }
 .question:hover {
   transform: scale(1);
@@ -407,6 +415,10 @@ h2 {
   .logoWrap {
     margin-top: 5rem;
   }
+  .question p {
+    font-size: 18px;
+    line-height: 1.2;
+  }
 }
 
 @media (max-width: 480px) {
@@ -467,14 +479,19 @@ h2 {
   .FAQ {
     padding-bottom: 7rem;
   }
-  .question {
+  .question p {
     font-size: 16px;
-    gap: 1rem;
-    line-height: 1.6;
+    line-height: 1.2;
+  }
+  .question p span {
+    margin-right: 5px;
   }
   .answer {
     color: rgba(0, 0, 0, 0.7);
     line-height: 1.8;
     letter-spacing: -0.2px;
+  }
+  .icon {
+    display: none;
   }
 }

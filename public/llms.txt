@@ -1,0 +1,20 @@
+# Guri Ghumaan
+
+> Portfolio website of Guri Ghumaan, Frontend & Full Stack Web Developer.
+
+## Website
+https://guri-ghumaan.vercel.app
+
+## About
+I design and develop modern, responsive websites and web applications.
+
+## Services
+- Frontend Development
+- Full Stack Development
+- Portfolio Websites
+- Business Websites
+- Landing Pages
+- Website Redesign
+
+## Contact
+https://guri-ghumaan.vercel.app/contact
