@@ -86,7 +86,6 @@ span {
   font-size: clamp(3rem, 4vw, 4rem);
   font-family: Montserrat, sans-serif;
 }
-
 .AboutTopSec {
   padding: 30vh 12vw;
   padding-bottom: 20vh;
@@ -95,9 +94,9 @@ span {
   overflow: visible;
 }
 .TopContent {
-  position: relative;
   padding-bottom: 2rem;
   border-bottom: 1px solid #cdcccc;
+  position: relative;
 }
 h2 {
   font-size: 4.5vw;
@@ -306,7 +305,7 @@ h2 {
 }
 .question p {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .question p span {
   margin-right: 10px;
@@ -394,11 +393,21 @@ h2 {
   }
   .numbers {
     width: 100%;
-    align-items: center;
+    align-items: flex-start;
     grid-template-columns: repeat(4, 1fr);
   }
   .numbers p {
     text-align: center;
+  }
+  .numbers p {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    opacity: 0.5;
+  }
+  .numbers > div p:first-child {
+    opacity: 1;
+    font-size: 1.5rem;
+    font-weight: 500;
   }
   .logoTrack {
     display: flex;
@@ -418,6 +427,9 @@ h2 {
   .question p {
     font-size: 18px;
     line-height: 1.2;
+  }
+  .TopBtm {
+    bottom: -9%;
   }
 }
 
@@ -493,5 +505,8 @@ h2 {
   }
   .icon {
     display: none;
+  }
+  .TopBtm {
+    bottom: -10%;
   }
 }

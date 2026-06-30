@@ -19,7 +19,7 @@ const About = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Work", path: "#Work" },
+    { name: "Work", path: "/work" },
     { name: "Services", path: "/services" },
   ];
 
@@ -30,35 +30,18 @@ const About = () => {
         <link rel="canonical" href="https://guri-ghumaan.vercel.app/about" />
       </Helmet>
 
-      <Header
-        navLinks={navLinks}
-        isDark={true}
-      />
+      <Header navLinks={navLinks} isDark={true} />
 
       <main>
-
-        <AboutTop
-          blackRef={blackRef}
-          helloRef={helloRef}
-          styles={styles}
-        />
-
+        <AboutTop blackRef={blackRef} helloRef={helloRef} styles={styles} />
         <AboutScnd
           styles={styles}
           logosRef={logosRef}
           counterRefs={counterRefs}
           sectionRef={sectionRef}
         />
-
-        <FAQ
-          styles={styles}
-        />
-
-        <Testimonials
-          styles={styles}
-          testimonialsRef={testimonialsRef}
-        />
-
+        <FAQ styles={styles} />
+        <Testimonials styles={styles} testimonialsRef={testimonialsRef} />
       </main>
 
       <Footer />
