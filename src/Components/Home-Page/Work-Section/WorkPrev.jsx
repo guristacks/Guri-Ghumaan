@@ -1,4 +1,5 @@
 import { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Stacks from "../../../assets/Images/Work/stacks-mockup.webp";
 import NexaWave from "../../../assets/Images/Work/nexa-mockup.webp";
 import Aurum from "../../../assets/Images/Work/aurum-mockup.webp";
@@ -122,7 +123,9 @@ export default function WorkPreview() {
                 <img src={item.image} alt={item.alt} loading="lazy" />
                 <h2>{item.title}</h2>
 
-                <div className={`${styles.itemAndDate} ${styles.flex} ${styles.ac} ${styles.sb}`}>
+                <div
+                  className={`${styles.itemAndDate} ${styles.flex} ${styles.ac} ${styles.sb}`}
+                >
                   <p>{item.type}</p>
                   <p>{item.date}</p>
                 </div>
@@ -130,10 +133,12 @@ export default function WorkPreview() {
             ))}
           </div>
 
-          <div className={`${styles.workCta} ${styles.flex} ${styles.ac} ${styles.jc}`}>
-            <button className={styles.fancyBtn}>
+          <div
+            className={`${styles.workCta} ${styles.flex} ${styles.ac} ${styles.jc}`}
+          >
+            <Link to="/work" className={styles.fancyBtn}>
               More Work <sup>11</sup>
-            </button>
+            </Link>
           </div>
 
           {/* Hover Preview */}
@@ -143,7 +148,9 @@ export default function WorkPreview() {
                 <div className={styles.previewImage} key={index}>
                   <img src={item.image} alt={item.alt} loading="lazy" />
 
-                  <div className={`${styles.viewCursor} ${styles.flex} ${styles.ac} ${styles.jc}`}>
+                  <div
+                    className={`${styles.viewCursor} ${styles.flex} ${styles.ac} ${styles.jc}`}
+                  >
                     <p>View</p>
                   </div>
                 </div>
