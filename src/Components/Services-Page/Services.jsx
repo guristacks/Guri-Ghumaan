@@ -15,7 +15,7 @@ const Services = () => {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Work", path: "#Work" },
+    { name: "Work", path: "/work" },
   ];
   return (
     <>
