@@ -61,8 +61,8 @@ const AboutAnime = ({ blackRef, helloRef, logosRef, counterRefs, sectionRef, tes
     });
 
     gsap.to(logosRef.current, {
-      x: -1100,
-      duration: 20,
+      x: -900,
+      duration: 25,
       ease: "none",
       repeat: -1,
       yoyo: true,
