@@ -74,7 +74,7 @@ const customers = [
 
 const Testimonials = ({ styles, testimonialsRef }) => {
     return (
-        <section className={styles.testSec}>
+        <section id="reviews" className={styles.testSec}>
             <div className={styles.TITLE}>
                 <p>✹ Client Stories</p>
             </div>
