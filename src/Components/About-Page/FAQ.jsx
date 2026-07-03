@@ -36,7 +36,7 @@ export default function FAQ({ styles }) {
   };
 
   return (
-    <section className={styles.FAQ}>
+    <section id="faq" className={styles.FAQ}>
       <div className={styles.container}>
         <div className={styles.TITLE}>
           <p>✹ FAQ</p>
