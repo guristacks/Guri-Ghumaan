@@ -8,6 +8,8 @@ import AboutAnime from "./AboutAnime";
 import AboutScnd from "./AboutScnd";
 import Testimonials from "./Testimonials";
 import FAQ from "./FAQ";
+import AboutImgSec from "./AboutImgSec";
+import AboutServices from "./AboutServices";
 
 const About = () => {
   const blackRef = useRef(null);
@@ -19,8 +21,9 @@ const About = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Services", path: "/services" },
-    { name: "Work", path: "/work" },
+    { name: "Services", path: "#services" },
+    { name: "FAQ's", path: "#faq" },
+    { name: "Testimonials", path: "#reviews" },
   ];
 
   return (
@@ -34,13 +37,17 @@ const About = () => {
 
       <main>
         <AboutTop blackRef={blackRef} helloRef={helloRef} styles={styles} />
+        <AboutImgSec styles={styles} logosRef={logosRef} />
+
+        <AboutServices styles={styles} />
         <AboutScnd
           styles={styles}
-          logosRef={logosRef}
           counterRefs={counterRefs}
           sectionRef={sectionRef}
         />
+
         <FAQ styles={styles} />
+
         <Testimonials styles={styles} testimonialsRef={testimonialsRef} />
       </main>
 
