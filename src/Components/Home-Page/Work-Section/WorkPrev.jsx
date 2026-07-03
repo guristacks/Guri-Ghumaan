@@ -9,11 +9,11 @@ import gsap from "gsap";
 
 const projects = [
   {
-    title: "Stacks",
-    alt: "Stacks project website homepage preview",
-    type: "IT Agency Landing Page",
-    link: "https://stacks-design-development.vercel.app/",
-    image: Stacks,
+    title: "Elena Morgan",
+    alt: "Elena Morgan personal portfolio website preview",
+    type: "Photography Portfolio",
+    link: "https://elena-morgan.vercel.app/",
+    image: Elena,
     date: "2026",
   },
   {
@@ -25,19 +25,19 @@ const projects = [
     date: "2026",
   },
   {
+    title: "Stacks",
+    alt: "Stacks project website homepage preview",
+    type: "IT Agency Landing Page",
+    link: "https://stacks-design-development.vercel.app/",
+    image: Stacks,
+    date: "2026",
+  },
+  {
     title: "Aurum Luxe",
     alt: "Aurum Luxe luxury brand website preview",
     type: "Jewellery Shop Landing Page",
     link: "https://aurum-luxe-jewellery.vercel.app/",
     image: Aurum,
-    date: "2026",
-  },
-  {
-    title: "Elena Morgan",
-    alt: "Elena Morgan personal portfolio website preview",
-    type: "Photography Portfolio",
-    link: "https://elena-morgan.vercel.app/",
-    image: Elena,
     date: "2026",
   },
 ];
