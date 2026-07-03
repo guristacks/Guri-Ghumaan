@@ -4,21 +4,25 @@ import { Link } from "react-router-dom";
 const Navbar = ({ navLinkRef, listRef, styles, navLinks }) => {
   const defaultLinks = [
     { name: "About", path: "/about" },
-    { name: "Services", path: "/services" },
-    { name: "Work", path: "/work" },
+    { name: "Work", path: "#Work" },
   ];
 
   const links = navLinks || defaultLinks;
 
   return (
     <nav aria-label="Primary Navigation">
-      <ul ref={navLinkRef} className={`${styles.navLink} ${styles.flex} ${styles.ac} navLink`}>
+      <ul
+        ref={navLinkRef}
+        className={`${styles.navLink} ${styles.flex} ${styles.ac} navLink`}
+      >
         {links.map((link, index) => (
-          <li ref={(el) => {
-            if (el) listRef.current[index] = el;
-          }} key={index}>
+          <li
+            ref={(el) => {
+              if (el) listRef.current[index] = el;
+            }}
+            key={index}
+          >
             {link.path.startsWith("/") ? (
-
               <Link
                 to={link.path}
                 onClick={() => {
@@ -29,7 +33,6 @@ const Navbar = ({ navLinkRef, listRef, styles, navLinks }) => {
               >
                 {link.name}
               </Link>
-
             ) : (
               <a href={link.path}>{link.name}</a>
             )}
