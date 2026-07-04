@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: min(1440px, 95%);
+  margin: auto;
+}
+:root {
+  --btnBg: #455ce9;
+  --bodyBg: #1c1d20;
+  --lightBlackP: rgb(75, 75, 75);
+  --lightWhiteP: rgb(209, 209, 209);
+
+  --radius: 30px;
+  --transition: 0.3s ease;
+}
+span {
+  display: inline-block;
+}
+.TITLE {
+  width: 100%;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+.TITLE p {
+  width: 100%;
+  text-align: center;
+  color: #1c1d20ac;
+}
+.FAQ {
+  background-color: #fff;
+  padding: 0vh 12vw;
+  padding-bottom: 18vh;
+}
+.faqItem {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.question {
+  width: 100%;
+  padding: 24px 0px;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  color: #000000;
+  text-align: left;
+  font-weight: 500;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 0;
+}
+.question p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.question p span {
+  margin-right: 10px;
+  color: #989898;
+  font-weight: 300;
+}
+.question:hover {
+  transform: scale(1);
+}
+.icon {
+  font-size: 1.8rem;
+  transition: transform 0.4s ease;
+}
+.activeIcon {
+  transform: rotate(45deg);
+}
+.answerWrapper {
+  background-color: #e0e0e0ab;
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.5s ease,
+    opacity 0.4s ease,
+    padding 0.5s ease;
+  opacity: 0;
+  padding: 0px 10px;
+}
+.open {
+  max-height: 350px;
+  opacity: 1;
+  padding: 24px 10px;
+}
+.answer {
+  color: rgb(0, 0, 0);
+  line-height: 1.8;
+}
+
+@media (max-width: 1024px) {
+  .FAQ {
+    padding: 0vh 5vw;
+    padding-bottom: 8rem;
+  }
+  .title p {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .FAQ {
+    padding: 0vh 0vw;
+    padding-bottom: 8rem;
+  }
+  .question p {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .title p {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .FAQ {
+    padding-bottom: 7rem;
+  }
+  .question p {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .question p span {
+    margin-right: 5px;
+  }
+  .answer {
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.8;
+    letter-spacing: -0.2px;
+  }
+  .icon {
+    display: none;
+  }
+  .title p {
+    font-size: 5vw;
+  }
+}
