@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: min(1440px, 95%);
+  margin: auto;
+}
+:root {
+  --btnBg: #455ce9;
+  --bodyBg: #1c1d20;
+  --lightBlackP: rgb(75, 75, 75);
+  --lightWhiteP: rgb(209, 209, 209);
+
+  --radius: 30px;
+  --transition: 0.3s ease;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
+}
+.fClmn {
+  flex-direction: column;
+}
+.sb {
+  justify-content: space-between;
+}
+.jc {
+  justify-content: center;
+}
+.ac {
+  align-items: center;
+}
+li {
+  list-style: none;
+  display: inline-block;
+}
+.servicesBottom {
+  background-color: #fff;
+  padding: 0vw 5vw;
+  padding-bottom: 8rem;
+  background: #fff;
+}
+.heading2 {
+  font-size: 3.5vw;
+  line-height: 1.2;
+  font-weight: 500;
+  color: var(--bodyBg);
+}
+.allServices {
+  margin-top: 4rem;
+}
+.service {
+  gap: 30px;
+}
+.numbering p,
+.title p,
+.description p {
+  color: var(--bodyBg);
+}
+.numbering p {
+  color: #8d8d8d;
+  padding: 1.7rem 0;
+  border-bottom: 1px solid #cdcccc;
+}
+.title p {
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+@media (max-width: 1024px) {
+  .servicesBottom {
+    padding: 0vh 0vw;
+    padding-bottom: 5rem;
+  }
+  .heading2 {
+    font-size: 4vw;
+  }
+  .allServices {
+    margin-top: 3rem;
+  }
+  .grid {
+    gap: 3rem;
+  }
+  .title p {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 768px) {
+  .servicesBottom {
+    padding: 0;
+    padding-bottom: 5rem;
+  }
+  .heading2 {
+    font-size: 6vw;
+  }
+  .title p {
+    font-size: 5vw;
+  }
+  .allServices {
+    margin-top: 3rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .service {
+    padding: 1rem 0;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #8d8d8d8d;
+  }
+  .numbering p {
+    color: #8d8d8d;
+    padding: 0;
+    border-bottom: 1px;
+  }
+}
+@media (max-width: 480px) {
+  .heading2 {
+    font-size: 8vw;
+  }
+  .title p {
+    font-size: 5vw;
+  }
+}
