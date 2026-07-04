@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
-const AboutAnime = ({ blackRef, helloRef, logosRef, counterRefs, sectionRef, testimonialsRef }) => {
+const AboutAnime = ({ blackRef, helloRef }) => {
   useGSAP(() => {
     let scrollY = 0;
     const preventScroll = (e) => {
@@ -59,47 +59,6 @@ const AboutAnime = ({ blackRef, helloRef, logosRef, counterRefs, sectionRef, tes
       duration: 0.3,
       y: -30,
     });
-
-    gsap.to(logosRef.current, {
-      x: -900,
-      duration: 25,
-      ease: "none",
-      repeat: -1,
-      yoyo: true,
-    });
-
-
-    counterRefs.current.forEach((counter) => {
-      const endValue = Number(counter.dataset.value);
-      const prefix = counter.dataset.prefix || "";
-      const suffix = counter.dataset.suffix || "";
-      const obj = { value: 1 };
-      gsap.to(obj, {
-        value: endValue,
-        duration: 2,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 75%",
-          toggleActions: "play none none none",
-        },
-        onUpdate: () => {
-          counter.textContent =
-            prefix +
-            Math.floor(obj.value) +
-            suffix;
-        },
-      });
-    });
-
-    gsap.to(testimonialsRef.current, {
-      x: -1675,
-      duration: 30,
-      ease: "none",
-      repeat: -1,
-      yoyo: true,
-    });
-
   });
 
   return null;

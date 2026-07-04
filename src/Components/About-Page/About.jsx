@@ -3,21 +3,17 @@ import { Helmet } from "react-helmet-async";
 import Header from "../Home-Page/Header-Section/header";
 import Footer from "../Home-Page/Footer-Section/Footer";
 import styles from "./AboutPage.module.css";
-import AboutTop from "./AboutTop";
+import AboutTop from "./AboutFirst-Section/AboutTop";
 import AboutAnime from "./AboutAnime";
-import AboutScnd from "./AboutScnd";
-import Testimonials from "./Testimonials";
-import FAQ from "./FAQ";
-import AboutImgSec from "./AboutImgSec";
-import AboutServices from "./AboutServices";
+import Testimonials from "./AboutSixth-Section/Testimonials";
+import FAQ from "./AboutFifth-Section/FAQ";
+import AboutImgSec from "./AboutScnd-Section/AboutImgSec";
+import AboutServices from "./AboutFrth-Section/AboutServices";
+import AboutThird from "./AboutThird-Section/AboutThird";
 
 const About = () => {
   const blackRef = useRef(null);
   const helloRef = useRef(null);
-  const logosRef = useRef(null);
-  const counterRefs = useRef([]);
-  const sectionRef = useRef(null);
-  const testimonialsRef = useRef(null);
 
   const navLinks = [
     { name: "Home", path: "/" },
@@ -36,31 +32,17 @@ const About = () => {
       <Header navLinks={navLinks} isDark={true} />
 
       <main>
-        <AboutTop blackRef={blackRef} helloRef={helloRef} styles={styles} />
-        <AboutImgSec styles={styles} logosRef={logosRef} />
-
-        <AboutServices styles={styles} />
-        <AboutScnd
-          styles={styles}
-          counterRefs={counterRefs}
-          sectionRef={sectionRef}
-        />
-
-        <FAQ styles={styles} />
-
-        <Testimonials styles={styles} testimonialsRef={testimonialsRef} />
+        <AboutTop blackRef={blackRef} helloRef={helloRef} />
+        <AboutImgSec />
+        <AboutThird />
+        <AboutServices />
+        <FAQ />
+        <Testimonials styles={styles} />
       </main>
 
       <Footer />
 
-      <AboutAnime
-        blackRef={blackRef}
-        helloRef={helloRef}
-        logosRef={logosRef}
-        counterRefs={counterRefs}
-        sectionRef={sectionRef}
-        testimonialsRef={testimonialsRef}
-      />
+      <AboutAnime blackRef={blackRef} helloRef={helloRef} />
     </>
   );
 };
