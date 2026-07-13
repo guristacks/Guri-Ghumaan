@@ -2,9 +2,8 @@ import { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Stacks from "../../../assets/Images/Work/stacks-mockup.webp";
 import NexaWave from "../../../assets/Images/Work/nexa-mockup.webp";
-// import Aurum from "../../../assets/Images/Work/aurum-mockup.webp";
 import Elena from "../../../assets/Images/Work/elena-mockup.webp";
-import Pardeep from "../../../assets/Images/Work/pardeep-mockup.png";
+import Pardeep from "../../../assets/Images/Work/pardeep-mockup.webp";
 import styles from "./work.module.css";
 import gsap from "gsap";
 
