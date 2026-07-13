@@ -2,8 +2,9 @@ import { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Stacks from "../../../assets/Images/Work/stacks-mockup.webp";
 import NexaWave from "../../../assets/Images/Work/nexa-mockup.webp";
-import Aurum from "../../../assets/Images/Work/aurum-mockup.webp";
+// import Aurum from "../../../assets/Images/Work/aurum-mockup.webp";
 import Elena from "../../../assets/Images/Work/elena-mockup.webp";
+import Pardeep from "../../../assets/Images/Work/pardeep-mockup.png";
 import styles from "./work.module.css";
 import gsap from "gsap";
 
@@ -33,11 +34,11 @@ const projects = [
     date: "2026",
   },
   {
-    title: "Aurum Luxe",
-    alt: "Aurum Luxe luxury brand website preview",
-    type: "Jewellery Shop Landing Page",
-    link: "https://aurum-luxe-jewellery.vercel.app/",
-    image: Aurum,
+    title: "Pardeep Singh",
+    alt: "Pardeep Singh's Portfolio preview",
+    type: "Graphic Designer's Portfolio",
+    link: "https://pardeep-singh.vercel.app/",
+    image: Pardeep,
     date: "2026",
   },
 ];
