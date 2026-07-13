@@ -9,7 +9,6 @@ import Testimonials from "./AboutSixth-Section/Testimonials";
 import FAQ from "./AboutFifth-Section/FAQ";
 import AboutImgSec from "./AboutScnd-Section/AboutImgSec";
 import AboutServices from "./AboutFrth-Section/AboutServices";
-import AboutThird from "./AboutThird-Section/AboutThird";
 
 const About = () => {
   const blackRef = useRef(null);
@@ -34,7 +33,6 @@ const About = () => {
       <main>
         <AboutTop blackRef={blackRef} helloRef={helloRef} />
         <AboutImgSec />
-        <AboutThird />
         <AboutServices />
         <FAQ />
         <Testimonials styles={styles} />

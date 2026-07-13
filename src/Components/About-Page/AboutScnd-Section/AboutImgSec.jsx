@@ -75,7 +75,7 @@ const AboutImgSec = () => {
 
             <div className={styles.midImg}>
               <img
-                src="https://images.pexels.com/photos/37148305/pexels-photo-37148305.jpeg?_gl=1*1quamf9*_ga*MTk2NTY1NTAwMS4xNzgwMDc1OTcy*_ga_8JE65Q40S6*czE3ODEzNzQ1NDckbzkkZzEkdDE3ODEzNzUwMTUkajQ1JGwwJGgw"
+                src="/public/Images/Guri Zudio.jpeg"
                 alt=""
               />
             </div>

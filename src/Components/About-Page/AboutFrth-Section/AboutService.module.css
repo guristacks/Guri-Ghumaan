@@ -46,14 +46,18 @@ li {
   padding-bottom: 8rem;
   background: #fff;
 }
-.heading2 {
-  font-size: 3.5vw;
-  line-height: 1.2;
-  font-weight: 500;
-  color: var(--bodyBg);
-}
 .allServices {
   margin-top: 4rem;
+}
+.TITLE {
+  width: 100%;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+.TITLE p {
+  width: 100%;
+  text-align: center;
+  color: #1c1d20ac;
 }
 .service {
   gap: 30px;
@@ -77,9 +81,6 @@ li {
     padding: 0vh 0vw;
     padding-bottom: 5rem;
   }
-  .heading2 {
-    font-size: 4vw;
-  }
   .allServices {
     margin-top: 3rem;
   }
@@ -94,9 +95,6 @@ li {
   .servicesBottom {
     padding: 0;
     padding-bottom: 5rem;
-  }
-  .heading2 {
-    font-size: 6vw;
   }
   .title p {
     font-size: 5vw;
@@ -121,9 +119,6 @@ li {
   }
 }
 @media (max-width: 480px) {
-  .heading2 {
-    font-size: 8vw;
-  }
   .title p {
     font-size: 5vw;
   }
