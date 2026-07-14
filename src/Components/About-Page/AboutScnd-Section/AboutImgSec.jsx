@@ -75,8 +75,8 @@ const AboutImgSec = () => {
 
             <div className={styles.midImg}>
               <img
-                src="/public/Images/Guri Zudio.jpeg"
-                alt=""
+                src="/Images/Guri Zudio.jpeg"
+                alt="Guri Ghumaan's Image"
               />
             </div>
           </div>
