@@ -17,6 +17,14 @@ const projects = [
     date: "2026",
   },
   {
+    title: "Pardeep Singh",
+    alt: "Pardeep Singh's Portfolio preview",
+    type: "Graphic Designer's Portfolio",
+    link: "https://pardeep-singh.vercel.app/",
+    image: Pardeep,
+    date: "2026",
+  },
+  {
     title: "Nexa Wave",
     alt: "Nexa Wave digital agency website preview",
     type: "Ai Agency Website",
@@ -30,14 +38,6 @@ const projects = [
     type: "IT Agency Landing Page",
     link: "https://stacks-design-development.vercel.app/",
     image: Stacks,
-    date: "2026",
-  },
-  {
-    title: "Pardeep Singh",
-    alt: "Pardeep Singh's Portfolio preview",
-    type: "Graphic Designer's Portfolio",
-    link: "https://pardeep-singh.vercel.app/",
-    image: Pardeep,
     date: "2026",
   },
 ];
