@@ -5,7 +5,7 @@ const faqs = [
   {
     question: "How long does a typical project take?",
     answer:
-      "Most projects are completed within 4–8 weeks, depending on the scope and complexity. Timelines can vary based on the project’s requirements, features, revisions, and overall goals. Once we discuss your project, I’ll provide a clear roadmap, estimated timeline, and development process so you know exactly what to expect from start to launch.",
+      "Most projects are completed within 2–4 weeks, depending on the scope and complexity. Timelines can vary based on the project’s requirements, features, revisions, and overall goals. Once we discuss your project, I’ll provide a clear roadmap, estimated timeline, and development process so you know exactly what to expect from start to launch.",
   },
   {
     question: "What services do you provide?",
