@@ -49,6 +49,11 @@ li {
 .allServices {
   margin-top: 4rem;
 }
+.servicesHeading {
+  letter-spacing: -2px;
+  word-spacing: -1px;
+  font-size: calc(clamp(3.25em, 5vw, 4.5em) * .75);
+}
 .TITLE {
   width: 100%;
   margin-bottom: 2rem;
@@ -76,6 +81,7 @@ li {
   font-size: 1.5vw;
   font-weight: 500;
 }
+
 @media (max-width: 1024px) {
   .servicesBottom {
     padding: 0vh 0vw;
