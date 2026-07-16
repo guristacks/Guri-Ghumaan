@@ -60,52 +60,6 @@
   object-fit: cover;
   object-position: 0% 40%;
 }
-.logoWrap {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  padding: 2rem 0;
-  margin-top: 13vh;
-}
-
-.logoTrack {
-  display: flex;
-  align-items: center;
-  gap: 6rem;
-  width: max-content;
-}
-
-.logoTrack img {
-  height: 40px;
-  width: auto;
-  flex-shrink: 0;
-}
-
-/* Left Fade */
-.logoWrap::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 120px;
-  height: 100%;
-  z-index: 2;
-  pointer-events: none;
-  background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
-}
-
-/* Right Fade */
-.logoWrap::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 120px;
-  height: 100%;
-  z-index: 2;
-  pointer-events: none;
-  background: linear-gradient(to left, #fff 0%, rgba(255, 255, 255, 0) 100%);
-}
 
 @media (max-width: 1024px) {
   .middleSec {
@@ -121,9 +75,6 @@
   }
   .midImg {
     width: 70%;
-  }
-  .logoWrap {
-    margin-top: 5rem;
   }
 }
 
@@ -146,33 +97,9 @@
   .midDesc p:nth-child(2) {
     margin-top: 1.2rem;
   }
-  .logoTrack {
-    display: flex;
-    align-items: center;
-    gap: 5rem;
-    width: max-content;
-  }
-  .logoWrap::after {
-    display: none;
-  }
-  .logoWrap::before {
-    display: none;
-  }
-  .logoWrap {
-    margin-top: 5rem;
-  }
 }
 
 @media (max-width: 480px) {
-  .logoTrack {
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-    width: max-content;
-  }
-  .logoWrap {
-    margin-top: 4rem;
-  }
   .midImg img {
     height: 100%;
   }
