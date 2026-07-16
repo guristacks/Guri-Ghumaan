@@ -51,9 +51,7 @@ const AboutServices = () => {
   return (
     <section id="services" className={styles.servicesBottom}>
       <div className={styles.container}>
-        <div className={styles.TITLE}>
-          <p>✹ Services</p>
-        </div>
+        <h2 className={styles.servicesHeading}>I can help you with... </h2>
 
         <div className={`${styles.allServices} ${styles.grid} ${styles.sb}`}>
           {ServicesInfo.map((service) => (
