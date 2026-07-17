@@ -101,12 +101,6 @@ h3 {
   font-family: Oswald, Montserrat;
 }
 
-h4 {
-  font-size: clamp(1.25rem, 2.5vw, 1.8rem);
-  line-height: 1.35;
-  font-family: Oswald, Montserrat;
-}
-
 p {
   font-size: 16px;
   line-height: 1.6;
