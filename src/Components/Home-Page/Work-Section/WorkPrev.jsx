@@ -137,7 +137,7 @@ export default function WorkPreview() {
             className={`${styles.workCta} ${styles.flex} ${styles.ac} ${styles.jc}`}
           >
             <Link to="/work" className={styles.fancyBtn}>
-              More Work <sup>11</sup>
+              More Work <sup>{projects.length}</sup>
             </Link>
           </div>
 
