@@ -1,5 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import gsap from "gsap";
+import Elena from "../../../src/assets/Images/Work/elena-mockup.webp";
+import Nexa from "../../../src/assets/Images/Work/nexa-mockup.webp";
+import Pardeep from "../../../src/assets/Images/Work/pardeep-mockup.webp";
+import Stacks from "../../../src/assets/Images/Work/stacks-mockup.webp";
 
 const projects = [
   {
@@ -7,8 +11,7 @@ const projects = [
     alt: "Elena Morgan personal portfolio website preview",
     type: "Photography Portfolio",
     link: "https://elena-morgan.vercel.app/",
-    image:
-      "https://cdn.dribbble.com/userupload/18679649/file/original-4862151ee849235dc5910c606ab05a72.jpg?resize=2048x1580&vertical=center",
+    image: Elena,
     location: "Indonesia",
     service: "Design & Development",
     date: "2026",
@@ -18,8 +21,7 @@ const projects = [
     alt: "Pardeep Singh's Portfolio preview",
     type: "Graphic Designer's Portfolio",
     link: "https://pardeep-singh.vercel.app/",
-    image:
-      "https://cdn.dribbble.com/userupload/15995810/file/original-6c7b6700c51ccb1e3891def336f6b187.png?resize=2048x1536&vertical=center",
+    image: Pardeep,
     location: "Dhuri Punjab",
     service: "Design & Development",
     date: "2026",
@@ -29,8 +31,7 @@ const projects = [
     alt: "Nexa Wave digital agency website preview",
     type: "Ai Agency Website",
     link: "https://nexa-wave-agency.vercel.app/",
-    image:
-      "https://cdn.dribbble.com/userupload/14696000/file/original-96e8317a743c62334f1af37926565fb4.jpg?resize=2048x1536&vertical=center",
+    image: Nexa,
     location: "New York",
     service: "Design & Development",
     date: "2026",
@@ -40,8 +41,7 @@ const projects = [
     alt: "Stacks project website homepage preview",
     type: "IT Agency Landing Page",
     link: "https://stacks-design-development.vercel.app/",
-    image:
-      "https://cdn.dribbble.com/userupload/12906199/file/original-c7f9132bb36926b34aefaa1d0509fb8f.jpg?resize=2048x1536&vertical=center",
+    image: Stacks,
     location: "Canada",
     service: "Design & Development",
     date: "2026",
@@ -116,9 +116,15 @@ const WorkTop = ({ styles, blackRef, helloRef }) => {
         <div className={styles.container}>
           <div className={styles.workContainer}>
             <div className={`${styles.CatBtns} ${styles.flex} ${styles.ac}`}>
-              <button>All <sup></sup> </button>
-              <button>Design <sup></sup> </button>
-              <button>Development <sup></sup> </button>
+              <button>
+                All <sup>{projects.length}</sup>{" "}
+              </button>
+              <button>
+                Design <sup>{projects.length}</sup>{" "}
+              </button>
+              <button>
+                Development <sup>{projects.length}</sup>{" "}
+              </button>
             </div>
             {/* Desktop Layout */}
             <div className={styles.desktopProjects}>
