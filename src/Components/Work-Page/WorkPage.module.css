@@ -33,7 +33,10 @@ html.lenis body {
   --radius: 30px;
   --transition: 0.3s ease;
 }
-
+.container {
+  width: min(1440px, 95%);
+  margin: auto;
+}
 .flex {
   display: flex;
 }
@@ -63,22 +66,25 @@ span {
   display: inline-block;
 }
 .WorkTop {
-  padding: 30vh 15vw;
+  padding: 30vh 12vw;
   padding-bottom: 5rem;
-  height: 100vh;
+  background: #fff;
+  overflow: hidden;
+}
+.workScnd {
+  padding: 1rem 7rem 5rem;
   background: #fff;
   overflow: hidden;
 }
 .black {
   background: #000;
   width: 100%;
-  height: 100% ;
+  height: 100vh !important;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  text-align: center;
+  z-index: 999;
 }
 .helloText {
   position: absolute;
@@ -90,9 +96,334 @@ span {
   font-size: clamp(3rem, 4vw, 4rem);
   font-family: Montserrat, sans-serif;
 }
-.WorkTitle p {
+.WorkTitle h3 {
+  font-family: Montserrat;
   font-size: 4.5vw;
   line-height: 1.2;
-  font-weight: 450;
+  font-weight: 500;
   color: #000;
+}
+.workContainer {
+  position: relative;
+}
+.CatBtns {
+  padding: 3.5rem 4vw;
+  padding-top: 0;
+  gap: 0.5rem;
+}
+.CatBtns button {
+  padding: 25px 30px;
+  border-radius: 100px;
+  border: 1px solid #cccccc;
+  background: unset;
+}
+.CatBtns button:hover{
+  transform: scale(1);
+}
+.desktopProjects a {
+  width: 100%;
+}
+.categories {
+  padding: 3.5rem 4vw;
+  border-bottom: 1px solid #cccccc;
+}
+.catLeft,
+.catRight {
+  width: 50%;
+}
+.catLeft p,
+.catRight p {
+  color: #838383;
+  font-size: 13px;
+}
+.projectRow {
+  padding: 3.5rem 4vw;
+  border-bottom: 1px solid #cccccc;
+  transition: var(--transition);
+}
+.projectRow h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.projectRow p {
+  font-size: 1rem;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+
+.imagePreview {
+  position: fixed;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0;
+  scale: 0.9;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  box-shadow: 20px 20px 10px -10px rgba(0, 0, 0, 0.365);
+}
+
+.previewTrack {
+  width: 100%;
+  height: 400%;
+}
+
+.previewImage {
+  position: relative;
+  width: 100%;
+  height: 25%;
+}
+
+.viewCursor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+  width: 70px;
+  height: 70px;
+  background: var(--btnBg);
+  color: #ffffff;
+  border-radius: 50%;
+  z-index: 10;
+  box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.365);
+}
+
+.viewCursor p {
+  font-size: 0.8rem;
+  padding: 8px;
+  text-align: center;
+}
+
+.previewImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projectRow:hover {
+  margin: 0px -20px;
+}
+
+.projectRow:hover h4,
+.projectRow:hover p {
+  color: #838383;
+}
+
+.mobileCard {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.mobileCard img {
+  width: 100%;
+  display: block;
+  transition:
+    transform 0.6s ease,
+    opacity 0.6s ease;
+}
+
+.mobileCard:hover img {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.mobileProjects {
+  display: none;
+}
+
+.workCta {
+  margin-top: 50px;
+}
+
+.fancyBtn {
+  position: relative;
+  padding: 25px 30px;
+  background: transparent;
+  color: #000000;
+  border: 1px solid #999;
+  overflow: hidden;
+  z-index: 1;
+  border-radius: 50px;
+}
+
+sup {
+  font-size: 10px;
+}
+
+.fancyBtn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--btnBg);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.6s ease;
+  z-index: -1;
+}
+
+.fancyBtn:hover::before {
+  transform: scaleY(1);
+}
+
+.fancyBtn:hover {
+  color: #fff;
+  animation: shake 0.6s ease;
+  transform: scale(1);
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-2deg);
+  }
+
+  50% {
+    transform: rotate(2deg);
+  }
+
+  75% {
+    transform: rotate(-2deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 1024px) {
+  .WorkTop {
+    padding: 10vh 5vw;
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+  }
+  .workScnd {
+    padding: 10vh 5vw;
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+  }
+  .CatBtns {
+    padding: 3.5rem 0vw;
+    padding-top: 0;
+    gap: 0.5rem;
+  }
+  .WorkTitle h3 {
+    font-size: 6vw;
+  }
+  .desktopProjects {
+    display: none;
+  }
+
+  .imagePreview {
+    display: none;
+  }
+
+  .workPreview {
+    padding: 6rem 0;
+  }
+
+  .mobileProjects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .mobileCard img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+  }
+
+  .mobileCard h4 {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #d4d4d4;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .mobileCard p {
+    margin-top: 0.5rem;
+    color: #5c5c5c;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@media (max-width: 768px) {
+  .WorkTop {
+    padding: 10vh 0vw;
+    padding-top: 10rem;
+    padding-bottom: 1rem;
+  }
+  .workScnd {
+    padding: 10vh 0vw;
+    padding-top: 0rem;
+    padding-bottom: 6rem;
+  }
+  .CatBtns {
+    padding: 5rem 0vw;
+    padding-top: 0;
+    gap: 0.5rem;
+  }
+  .CatBtns button{
+    font-size: 15px;
+    padding: 20px 30px;
+  }
+  .WorkTitle h3 {
+    margin-bottom: 40px;
+  }
+  .mobileProjects {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .mobileCard h4 {
+    font-size: 1.6rem;
+  }
+
+  .mobileCard p {
+    font-size: 0.9rem;
+  }
+
+  .mobileProjects:hover .mobileCard img {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .WorkTitle h3 {
+    font-size: 9vw;
+    line-height: 1.2;
+    color: var(--bodyBg);
+    font-weight: 500;
+    font-family: Montserrat;
+  }
+  .mobileCard {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
