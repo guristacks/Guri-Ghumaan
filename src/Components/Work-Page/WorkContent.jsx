@@ -117,13 +117,19 @@ const WorkTop = ({ styles, blackRef, helloRef }) => {
           <div className={styles.workContainer}>
             <div className={`${styles.CatBtns} ${styles.flex} ${styles.ac}`}>
               <button>
-                All <sup>{projects.length}</sup>{" "}
+                All <sup>{projects.length}</sup>
               </button>
               <button>
-                Design <sup>{projects.length}</sup>{" "}
+                Design <sup>{projects.length}</sup>
               </button>
               <button>
-                Development <sup>{projects.length}</sup>{" "}
+                Webflow <sup>{projects.length - projects.length}</sup>
+              </button>
+              <button>
+                Development <sup>{projects.length}</sup>
+              </button>
+              <button>
+                Wordpress <sup>{projects.length - projects.length}</sup>
               </button>
             </div>
             {/* Desktop Layout */}

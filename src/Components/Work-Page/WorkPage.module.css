@@ -118,10 +118,15 @@ span {
   background: unset;
   font-family: "Poppins", sans-serif;
 }
+.CatBtns button:first-child {
+  background-color: #000;
+  color: #fff;
+}
+
 .CatBtns button:hover {
   transform: scale(1);
 }
-sup{
+sup {
   font-size: 10px;
 }
 .desktopProjects a {
