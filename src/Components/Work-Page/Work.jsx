@@ -22,12 +22,13 @@ const Work = () => {
         <link rel="canonical" href="https://guri-ghumaan.vercel.app/work" />
       </Helmet>
 
-      <Header navLinks={navLinks} />
+      <Header navLinks={navLinks} isDark={true} />
 
       <main>
         <WorkTop blackRef={blackRef} helloRef={helloRef} styles={styles} />
       </main>
       <Footer />
+      <WorkPageAnime blackRef={blackRef} helloRef={helloRef} />
     </>
   );
 };
