@@ -116,9 +116,13 @@ span {
   border-radius: 100px;
   border: 1px solid #cccccc;
   background: unset;
+  font-family: "Poppins", sans-serif;
 }
-.CatBtns button:hover{
+.CatBtns button:hover {
   transform: scale(1);
+}
+sup{
+  font-size: 10px;
 }
 .desktopProjects a {
   width: 100%;
@@ -385,7 +389,7 @@ sup {
     padding-top: 0;
     gap: 0.5rem;
   }
-  .CatBtns button{
+  .CatBtns button {
     font-size: 15px;
     padding: 20px 30px;
   }
@@ -413,11 +417,15 @@ sup {
 
 @media (max-width: 480px) {
   .WorkTitle h3 {
-    font-size: 9vw;
+    font-size: 12vw;
     line-height: 1.2;
     color: var(--bodyBg);
     font-weight: 500;
     font-family: Montserrat;
+    letter-spacing: -1px;
+  }
+  .WorkTitle h3 br {
+    display: none;
   }
   .mobileCard {
     position: relative;
@@ -425,5 +433,8 @@ sup {
     display: flex;
     flex-direction: column;
     gap: 10px;
+  }
+  .CatBtns {
+    flex-wrap: wrap;
   }
 }
