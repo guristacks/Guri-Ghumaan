@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = ({ navLinkRef, listRef, styles, navLinks }) => {
   const defaultLinks = [
     { name: "About", path: "/about" },
-    { name: "Work", path: "#Work" },
+    { name: "Work", path: "/Work" },
   ];
 
   const links = navLinks || defaultLinks;
