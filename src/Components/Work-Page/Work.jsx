@@ -2,9 +2,10 @@ import React, { useRef } from "react";
 import { Helmet } from "react-helmet-async";
 import Header from "../Home-Page/Header-Section/header";
 import Footer from "../Home-Page/Footer-Section/Footer";
-import WorkTop from "./WorkContent";
 import styles from "./WorkPage.module.css";
 import WorkPageAnime from "./WorkPageAnime";
+import WorkTitle from "./WorkTitle/WorkTitle";
+import ShowCase from "./ShowCase/ShowCase";
 
 const Work = () => {
   const blackRef = useRef(null);
@@ -25,7 +26,8 @@ const Work = () => {
       <Header navLinks={navLinks} isDark={true} />
 
       <main>
-        <WorkTop blackRef={blackRef} helloRef={helloRef} styles={styles} />
+        <WorkTitle blackRef={blackRef} helloRef={helloRef} styles={styles} />
+        <ShowCase styles={styles} />
       </main>
       <Footer />
       <WorkPageAnime blackRef={blackRef} helloRef={helloRef} />
