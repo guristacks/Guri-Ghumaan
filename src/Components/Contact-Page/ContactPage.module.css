@@ -216,10 +216,7 @@ textarea::placeholder {
   transform: translateX(-50%);
   transition: width 0.4s ease;
 }
-.socials a:hover,
-.info a:hover {
-  animation: shake 0.6s linear;
-}
+
 .socials a:hover::after,
 .info a:hover::after {
   width: 100%;
@@ -233,28 +230,6 @@ textarea::placeholder {
 .socials p {
   color: #a2a2a2;
   margin-bottom: 1rem;
-}
-
-@keyframes shake {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  25% {
-    transform: rotate(-2deg);
-  }
-
-  50% {
-    transform: rotate(2deg);
-  }
-
-  75% {
-    transform: rotate(-2deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
 }
 .socialIcons{
   gap: 8px;
