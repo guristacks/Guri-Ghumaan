@@ -1,9 +1,5 @@
 import { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Stacks from "../../../assets/Images/Work/stacks-mockup.webp";
-import NexaWave from "../../../assets/Images/Work/nexa-mockup.webp";
-import Elena from "../../../assets/Images/Work/elena-mockup.webp";
-import Pardeep from "../../../assets/Images/Work/pardeep-mockup.webp";
 import styles from "./work.module.css";
 import gsap from "gsap";
 
@@ -13,7 +9,7 @@ const projects = [
     alt: "Elena Morgan personal portfolio website preview",
     type: "Photography Portfolio",
     link: "https://elena-morgan.vercel.app/",
-    image: Elena,
+    image: "/Images/Work/elena-mockup.webp",
     date: "2026",
   },
   {
@@ -21,7 +17,7 @@ const projects = [
     alt: "Pardeep Singh's Portfolio preview",
     type: "Graphic Designer's Portfolio",
     link: "https://pardeep-singh.vercel.app/",
-    image: Pardeep,
+    image: "/Images/Work/pardeep-mockup.webp",
     date: "2026",
   },
   {
@@ -29,7 +25,7 @@ const projects = [
     alt: "Nexa Wave digital agency website preview",
     type: "Ai Agency Website",
     link: "https://nexa-wave-agency.vercel.app/",
-    image: NexaWave,
+    image: "/Images/Work/nexa-mockup.webp",
     date: "2026",
   },
   {
@@ -37,7 +33,7 @@ const projects = [
     alt: "Stacks project website homepage preview",
     type: "IT Agency Landing Page",
     link: "https://stacks-design-development.vercel.app/",
-    image: Stacks,
+    image: "/Images/Work/stacks-mockup.webp",
     date: "2026",
   },
 ];
