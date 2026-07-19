@@ -179,6 +179,9 @@ button:active {
 .workCta {
   margin-top: 50px;
 }
+.workCta a {
+  font-family: "Poppins", sans-serif;
+}
 
 .fancyBtn {
   position: relative;
