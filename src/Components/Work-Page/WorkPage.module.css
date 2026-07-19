@@ -112,6 +112,9 @@ span {
   padding-top: 0;
   gap: 0.5rem;
 }
+.CatBtns sup{
+  margin-left: 2px;
+}
 .CatBtns button {
   position: relative;
   cursor: pointer;
