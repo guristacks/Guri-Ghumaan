@@ -8,19 +8,19 @@ const WebVid = () => {
   const bottomRef = useRef(null);
 
   const topImages = [
-    { url: "/Images/Top1.webp" },
-    { url: "/Images/Top2.webp" },
-    { url: "/Images/Top3.webp" },
-    { url: "/Images/Top4.webp" },
-    { url: "/Images/Top5.webp" },
+    { url: "/Images/Slider/Top1.webp" },
+    { url: "/Images/Slider/Top2.webp" },
+    { url: "/Images/Slider/Top3.webp" },
+    { url: "/Images/Slider/Top4.webp" },
+    { url: "/Images/Slider/Top5.webp" },
   ];
 
   const bottomImages = [
-    { url: "/Images/Bottom1.webp" },
-    { url: "/Images/Bottom2.webp" },
-    { url: "/Images/Bottom3.webp" },
-    { url: "/Images/Bottom4.webp" },
-    { url: "/Images/Bottom5.webp" },
+    { url: "/Images/Slider/Bottom1.webp" },
+    { url: "/Images/Slider/Bottom2.webp" },
+    { url: "/Images/Slider/Bottom3.webp" },
+    { url: "/Images/Slider/Bottom4.webp" },
+    { url: "/Images/Slider/Bottom5.webp" },
   ];
 
   return (
