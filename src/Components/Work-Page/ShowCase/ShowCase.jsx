@@ -1,9 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
-import Elena from "../../../../src/assets/Images/Work/elena-mockup.webp";
-import Nexa from "../../../../src/assets/Images/Work/nexa-mockup.webp";
-import Pardeep from "../../../../src/assets/Images/Work/pardeep-mockup.webp";
-import Stacks from "../../../../src/assets/Images/Work/stacks-mockup.webp";
 
 const projects = [
   {
@@ -12,7 +8,7 @@ const projects = [
     type: "Photography Portfolio",
     category: "Development",
     link: "https://elena-morgan.vercel.app/",
-    image: Elena,
+    image: "/Images/Work/elena-mockup.webp",
     location: "Indonesia",
     service: "Design & Development",
     date: "2026",
@@ -23,7 +19,7 @@ const projects = [
     type: "Portfolio",
     category: "Development",
     link: "https://pardeep-singh.vercel.app/",
-    image: Pardeep,
+    image: "/Images/Work/pardeep-mockup.webp",
     location: "Dhuri, Punjab",
     service: "Design & Development",
     date: "2026",
@@ -34,7 +30,7 @@ const projects = [
     type: "Agency",
     category: "Development",
     link: "https://nexa-wave-agency.vercel.app/",
-    image: Nexa,
+    image: "/Images/Work/nexa-mockup.webp",
     location: "New York",
     service: "Design & Development",
     date: "2026",
@@ -45,7 +41,7 @@ const projects = [
     type: "Agency",
     category: "Development",
     link: "https://stacks-design-development.vercel.app/",
-    image: Stacks,
+    image: "/Images/Work/stacks-mockup.webp",
     location: "Canada",
     service: "Design & Development",
     date: "2026",
@@ -53,8 +49,7 @@ const projects = [
   {
     title: "Vit Calendar",
     category: "Webflow",
-    image:
-      "https://cdn.dribbble.com/userupload/44968707/file/243f005f914b732c3bb50aed7a2a2b78.png?resize=2048x1536&vertical=center",
+    image: "/Images/WorkPage/SS1.webp",
     alt: "Maya Visnyei's Website image",
     type: "Digital Calendar",
     location: "Canada",
@@ -65,8 +60,7 @@ const projects = [
   {
     title: "Swipeeely",
     category: "Webflow",
-    image:
-      "https://cdn.dribbble.com/userupload/45592431/file/e35988898ed06437777c29c3e156e94f.png?resize=2048x1536&vertical=center",
+    image: "/Images/WorkPage/SS2.webp",
     alt: "",
     type: "Digital Card",
     location: "Australia",
@@ -77,10 +71,9 @@ const projects = [
   {
     title: "Janice D’Souza",
     category: "Wordpress",
-    image:
-      "https://assets.awwwards.com/awards/submissions/2026/06/6a36a94554705806316197.jpg",
-    alt: "Architecture Photographer's website image",
-    type: "Photographer",
+    image: "/Images/WorkPage/SS3.webp",
+    alt: "Makeup Artist Janice D’Souza's Website image",
+    type: "Makeup Artist",
     location: "Goa, India",
     service: "WordPress Development",
     date: "2026",
@@ -89,8 +82,7 @@ const projects = [
   {
     title: "Dhun Wellness",
     category: "Wordpress",
-    image:
-      "https://assets.awwwards.com/awards/submissions/2025/07/6871093d6e9f2956161491.jpg",
+    image: "/Images/WorkPage/SS4.webp",
     alt: "",
     type: "Wellness Club",
     location: "Mumbai, India",
@@ -101,8 +93,7 @@ const projects = [
   {
     title: "Riley",
     category: "Design",
-    image:
-      "https://cdn.dribbble.com/userupload/42834516/file/original-4996861a5b60ae4bb62daa757512cf6d.png?resize=1504x1128&vertical=center",
+    image: "/Images/WorkPage/SS5.webp",
     alt: "",
     type: "Studio",
     location: "France",
@@ -113,8 +104,7 @@ const projects = [
   {
     title: "Golf Pro",
     category: "Design",
-    image:
-      "https://cdn.dribbble.com/userupload/38834629/file/original-f2b801b68515a22a1700eaf9524a0f0c.png?resize=2048x1536&vertical=center",
+    image: "/Images/WorkPage/SS6.webp",
     alt: "",
     type: "Golf Club",
     location: "USA",
