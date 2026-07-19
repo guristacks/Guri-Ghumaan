@@ -14,6 +14,7 @@ const HeaderContent = ({
 }) => {
   return (
     <div className={`${styles.flex} ${styles.sb} ${styles.ac}`}>
+      <NavCta styles={styles} isDark={isDark} />
       <MobileNav
         menuRef={menuRef}
         closeRef={closeRef}
@@ -25,8 +26,8 @@ const HeaderContent = ({
         listRef={listRef}
         styles={styles}
         navLinks={navLinks}
+        isDark={isDark}
       />
-      <NavCta styles={styles} />
     </div>
   );
 };

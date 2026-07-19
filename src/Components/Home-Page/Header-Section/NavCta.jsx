@@ -1,17 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const NavCta = ({ styles }) => {
+const NavCta = ({ styles, isDark }) => {
   return (
-    <nav aria-label="Contact Navigation">
-      <ul className={`${styles.cta} ${styles.flex} ${styles.ac}`}>
-        <li>
-          <Link to="/Contact">
-            Contact
-          </Link>
-        </li>
-      </ul>
-    </nav>
+    <p className={styles.nameTag}>
+      <a href="#HERO" style={{ color: isDark ? "#000" : "#fff" }}>
+        © guristacks
+      </a>
+    </p>
   );
 };
 

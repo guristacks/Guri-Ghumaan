@@ -14,10 +14,14 @@ const Hero = () => {
 
   return (
     <section
+      id="HERO"
       className={`${styles.hero} ${styles.flex} ${styles.ac} ${styles.jc}`}
       ref={heroRef}
     >
-      <div ref={blackRef} className={`${styles.black} ${styles.flex} ${styles.ac} ${styles.jc}`}>
+      <div
+        ref={blackRef}
+        className={`${styles.black} ${styles.flex} ${styles.ac} ${styles.jc}`}
+      >
         <h2 ref={helloRef} className={styles.helloText}></h2>
       </div>
       <div className={styles.container}>
