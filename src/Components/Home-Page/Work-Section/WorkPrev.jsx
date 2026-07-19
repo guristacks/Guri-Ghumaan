@@ -7,7 +7,7 @@ const projects = [
   {
     title: "Elena Morgan",
     alt: "Elena Morgan personal portfolio website preview",
-    type: "Photography Portfolio",
+    type: "Photographer",
     link: "https://elena-morgan.vercel.app/",
     image: "/Images/Work/elena-mockup.webp",
     date: "2026",
@@ -15,7 +15,7 @@ const projects = [
   {
     title: "Pardeep Singh",
     alt: "Pardeep Singh's Portfolio preview",
-    type: "Graphic Designer's Portfolio",
+    type: "Graphic Designer",
     link: "https://pardeep-singh.vercel.app/",
     image: "/Images/Work/pardeep-mockup.webp",
     date: "2026",
@@ -23,7 +23,7 @@ const projects = [
   {
     title: "Nexa Wave",
     alt: "Nexa Wave digital agency website preview",
-    type: "Ai Agency Website",
+    type: "AI Agency",
     link: "https://nexa-wave-agency.vercel.app/",
     image: "/Images/Work/nexa-mockup.webp",
     date: "2026",
@@ -31,7 +31,7 @@ const projects = [
   {
     title: "Stacks",
     alt: "Stacks project website homepage preview",
-    type: "IT Agency Landing Page",
+    type: "Design Agency",
     link: "https://stacks-design-development.vercel.app/",
     image: "/Images/Work/stacks-mockup.webp",
     date: "2026",
