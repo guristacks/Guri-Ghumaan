@@ -3,9 +3,9 @@ import { Helmet } from "react-helmet-async";
 import Header from "../Home-Page/Header-Section/header";
 import Footer from "../Home-Page/Footer-Section/Footer";
 import styles from "./WorkPage.module.css";
-import WorkPageAnime from "./WorkPageAnime";
 import WorkTitle from "./WorkTitle/WorkTitle";
 import ShowCase from "./ShowCase/ShowCase";
+import AboutAnime from "../About-Page/AboutAnime";
 
 const Work = () => {
   const blackRef = useRef(null);
@@ -31,7 +31,7 @@ const Work = () => {
         <ShowCase styles={styles} />
       </main>
       <Footer />
-      <WorkPageAnime blackRef={blackRef} helloRef={helloRef} />
+      <AboutAnime blackRef={blackRef} helloRef={helloRef} />
     </>
   );
 };
