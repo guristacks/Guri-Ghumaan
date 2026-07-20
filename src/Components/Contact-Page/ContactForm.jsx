@@ -1,10 +1,10 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import CEO from "../../assets/Images/Png/favicon.png";
-import ContactAnime from "./ContactAnime";
 
 import { MoveDownRight, Mail, Phone } from "lucide-react";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import AboutAnime from "../About-Page/AboutAnime";
 
 const ContactForm = ({ styles }) => {
   const blackRef = useRef(null);
@@ -250,7 +250,7 @@ const ContactForm = ({ styles }) => {
           </div>
         </div>
       </div>
-      <ContactAnime blackRef={blackRef} helloRef={helloRef} />
+      <AboutAnime blackRef={blackRef} helloRef={helloRef} />
     </section>
   );
 };
