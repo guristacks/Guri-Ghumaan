@@ -59,6 +59,9 @@ const AboutAnime = ({ blackRef, helloRef }) => {
       duration: 0.3,
       y: -30,
     });
+    return () => {
+      unlockScroll();
+    };
   });
 
   return null;
