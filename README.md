@@ -6,31 +6,33 @@ From smooth animations to clean UI design, every section of this portfolio is cr
 
 This portfolio reflects a creative approach to frontend development — combining aesthetics, motion, responsiveness, and modern technologies to build websites that not only look premium but also feel engaging and professional.
 
-**Live Website** 🔗 https://guri-ghumaan.vercel.app/
+**Live Website** 🔗 https://guristacks.vercel.app/
 
 ---
 
-## ✨ What I Build
+## ✨ I can help you with...
 
-- 🚀 Modern Landing Pages  
-- 💎 Premium Portfolio Websites  
-- 🎨 Interactive Frontend Experiences  
-- ⚡ Smooth Animated Websites  
-- 📱 Fully Responsive Designs  
-- 🛍️ Brand & Business Websites  
-- 🎯 Conversion-Focused UI Design  
+- 🚀 Frontend Development
+- 💎 Portfolio Websites
+- 🛍️ Business Websites
+- 🧩 WordPress Development
+- 📱 Webflow Development
+- 🔩 Website Rebuild
+- 🛠️ Website Maintenance
+- ⚡ Performance Optimization
+- 🧑🏻‍💻 Figma to Code
 
 ---
 
 ## 🔥 Why Work With Me?
 
-- Clean and modern UI/UX approach  
-- Smooth GSAP-powered animations  
-- Responsive design for all devices  
-- Fast-loading and optimized websites  
-- Attention to detail and visual hierarchy  
-- Modern React.js development workflow  
-- Interactive experiences that keep users engaged  
+- Clean and modern UI/UX approach
+- Smooth GSAP-powered animations
+- Responsive design for all devices
+- Fast-loading and optimized websites
+- Attention to detail and visual hierarchy
+- Modern React.js development workflow
+- Interactive experiences that keep users engaged
 
 ---
 
@@ -49,13 +51,13 @@ This portfolio reflects a creative approach to frontend development — combinin
 
 ## ⚡ Features Included In My Projects
 
-- Premium modern layouts  
-- Interactive animations and transitions  
-- Smooth scrolling experiences  
-- Optimized performance and SEO  
-- Mobile-first responsive development  
-- Reusable and scalable code structure  
-- Clean and maintainable frontend architecture  
+- Premium modern layouts
+- Interactive animations and transitions
+- Smooth scrolling experiences
+- Optimized performance and SEO
+- Mobile-first responsive development
+- Reusable and scalable code structure
+- Clean and maintainable frontend architecture
 
 ---
 
@@ -63,10 +65,11 @@ This portfolio reflects a creative approach to frontend development — combinin
 
 If you're looking for a modern website, landing page, or interactive frontend experience, feel free to reach out.
 
-- **GitHub:** https://github.com/guristacks  
-- **LinkedIn:** https://www.linkedin.com/in/guristacks  
+- **Website:** https://guristacks.vercel.app
+- **GitHub:** https://github.com/guristacks
+- **LinkedIn:** https://www.linkedin.com/in/guristacks
 - **Email:** [guristacks@gmail.com](mailto:guristacks@gmail.com)
-- **Instagram:** https://www.instagram.com/guri_ghumxn 
+- **Instagram:** https://www.instagram.com/guristacks
 
 ---
 
