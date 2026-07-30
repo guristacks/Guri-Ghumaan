@@ -34,13 +34,11 @@
 }
 
 header {
-  user-select: none;
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 0;
   right: 0;
   height: 3.5rem;
-  user-select: none;
   z-index: 9;
 }
 header .container {
@@ -114,6 +112,9 @@ header .container {
 }
 
 @media (max-width: 1024px) {
+  header{
+    position: absolute;
+  }
   .IconCol {
     display: flex;
   }
