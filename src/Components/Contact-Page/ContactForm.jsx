@@ -1,7 +1,5 @@
 import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import CEO from "../../assets/Images/Png/favicon.png";
-
 import { MoveDownRight, Mail, Phone } from "lucide-react";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import AboutAnime from "../About-Page/AboutAnime";
@@ -76,7 +74,7 @@ const ContactForm = ({ styles }) => {
             Let's start a <br /> project together
           </p>
           <div className={`${styles.topImg} ${styles.flex} ${styles.fClmn}`}>
-            <img src={CEO} alt="" />
+            <img src="/Images/favicon.png" alt="Guri Ghumaan's Image" />
             <MoveDownRight size={32} />
           </div>
         </div>
