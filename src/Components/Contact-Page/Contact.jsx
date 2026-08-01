@@ -17,7 +17,7 @@ const Contact = () => {
         <title>Contact - Guri Ghumaan</title>
         <link
           rel="canonical"
-          href="https://guri-ghumaan.vercel.app/contact"
+          href="https://guristacks.vercel.app/contact"
         />
       </Helmet>
 

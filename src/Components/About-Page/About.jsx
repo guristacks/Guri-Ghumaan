@@ -25,7 +25,7 @@ const About = () => {
     <>
       <Helmet>
         <title>About - Guri Ghumaan</title>
-        <link rel="canonical" href="https://guri-ghumaan.vercel.app/about" />
+        <link rel="canonical" href="https://guristacks.vercel.app/about" />
       </Helmet>
 
       <Header navLinks={navLinks} isDark={true} />

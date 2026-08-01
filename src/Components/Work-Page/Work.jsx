@@ -21,7 +21,7 @@ const Work = () => {
     <>
       <Helmet>
         <title>Work - Guri Ghumaan</title>
-        <link rel="canonical" href="https://guri-ghumaan.vercel.app/work" />
+        <link rel="canonical" href="https://guristacks.vercel.app/work" />
       </Helmet>
 
       <Header navLinks={navLinks} isDark={true} />

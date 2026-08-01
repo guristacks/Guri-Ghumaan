@@ -14,7 +14,7 @@ const Home = () => {
         <title>Guri Ghumaan - Frontend Developer</title>
         <link
           rel="canonical"
-          href="https://guri-ghumaan.vercel.app/"
+          href="https://guristacks.vercel.app/"
         />
       </Helmet>
       <Header />
