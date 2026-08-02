@@ -239,7 +239,7 @@ const ContactForm = ({ styles }) => {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://www.instagram.com/guri_ghumxn/"
+                  href="https://www.instagram.com/guristacks/"
                 >
                   Instagram
                 </a>
