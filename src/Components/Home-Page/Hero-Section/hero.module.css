@@ -51,7 +51,6 @@ h1 {
   background-position: 0% 35%;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(0.9);
   overflow: hidden;
 }
 .black {
