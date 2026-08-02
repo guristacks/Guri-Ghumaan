@@ -8,7 +8,7 @@ const FooterMiddle = ({ styles }) => {
             url: "mailto:guristacks@gmail.com",
         },
         {
-            name: "+91 7696 992194",
+            name: "+91 76969 92194",
             url: "tel:+917696992194",
         }
     ];
