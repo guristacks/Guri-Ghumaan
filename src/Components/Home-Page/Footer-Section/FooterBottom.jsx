@@ -9,7 +9,7 @@ const FooterBottom = ({ styles }) => {
         },
         {
             name: "Instagram",
-            url: "https://www.instagram.com/guri_ghumxn/",
+            url: "https://www.instagram.com/guristacks/",
         },
         {
             name: "GitHub",
