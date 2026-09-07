@@ -5,6 +5,14 @@ import gsap from "gsap";
 
 const projects = [
   {
+    title: "Nek Disha",
+    alt: "Nek Disha Foundation",
+    type: "Foundation",
+    link: "https://nekdisha.vercel.app/",
+    image: "/Images/Work/nekDisha.png",
+    date: "2026",
+  },
+  {
     title: "Elena Morgan",
     alt: "Elena Morgan personal portfolio website preview",
     type: "Photographer",
@@ -18,14 +26,6 @@ const projects = [
     type: "Graphic Designer",
     link: "https://pardeep-singh.vercel.app/",
     image: "/Images/Work/pardeep-mockup.webp",
-    date: "2026",
-  },
-  {
-    title: "Nexa Wave",
-    alt: "Nexa Wave digital agency website preview",
-    type: "AI Agency",
-    link: "https://nexa-wave-agency.vercel.app/",
-    image: "/Images/Work/nexa-mockup.webp",
     date: "2026",
   },
   {
